@@ -22,13 +22,36 @@
     <section id="filtros"> <!--Sección de filtros para el catálogo de razas-->
         <form id="Filtro-razas" action="/resultado-filtro" method="GET">   <!--Cada campo tiene una etiqueta ( label) asociada y un select(desplegable) para que el usuario seleccione la opción que desee-->
             <label for="nombre de raza"> Buscar por nombre de raza:</label> <!--Filtro por nombre de raza-->
-            <select id="nombre-raza" name="nombre-raza1"
+        <select id="nombre-raza" name="nombre-raza1"
+            <option></option>
             <option value="Labrador"> Labrador Retriever</option> <!-- De aqui hacia abajo, añadire mas razas-->
             <option value="Bulldog"> Bulldog Ingles</option>
             <option value="Beagle"> Beagle</option>
-    </section>    
+        </select>   
 
-<h3>Filtrar razas</h3> <!--Filtro por caracteristicas-->
+        <h3>Filtrar razas</h3> <!--Filtro por caracteristicas-->
+        <label for="grupo">Grupo:</label>
+ <select id="grupo"> name="grupo" 
+     <option value="Deportivo"> Deportivo</option>  <!--Seleccionar las razas depende de la zona-->
+     <option value="Compañia">De Compañia</option>  <!--Se agrega depende de las necesidades del publico objetivo-->
+     <option value="Trabajo"> De Trabajo</option>
+ </select>
+
+        <label for="Ladridos">Nivel de Ladridos:</label>
+ <select id="Ladridos"> name="Ladridos">     <!--Filtro nivel de ladridos-->
+        <option value="bajo"> bajo</option>
+        <option value="moderado"> moderado</option>
+        <option value="alto"> alto</option>
+ </select>
+    
+         <label for="tamaño"> Tamaño</label> <!--Filtro por tamaño de perro-->
+ <select id="Tamaño" name="Tamaño"> 
+         <option value="Pequeños"> Pequeños</option>
+         <option value="Medianos"> Medianos</option>
+         <option value="Grandes"> Grandes</option>
+ </select>
+
+    
 
 
 
