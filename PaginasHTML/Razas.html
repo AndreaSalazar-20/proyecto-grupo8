@@ -19,8 +19,8 @@
              </p>
         </section>
 
-    <section id="filtros"> <!--Sección de filtros para el catálogo de razas-->
-        <form id="Filtro-razas" action="/resultado-filtro" method="GET">   <!--Cada campo tiene una etiqueta ( label) asociada y un select(desplegable) para que el usuario seleccione la opción que desee-->
+<section id="filtros"> <!--Sección de filtros para el catálogo de razas-->
+<form id="Filtro-razas" action="/resultado-filtro" method="GET">   <!--Cada campo tiene una etiqueta ( label) asociada y un select(desplegable) para que el usuario seleccione la opción que desee-->
             <label for="nombre de raza"> Buscar por nombre de raza:</label> <!--Filtro por nombre de raza-->
         <select id="nombre-raza" name="nombre-raza1"
             <option></option>  <!--NO SE PORQUE ME DA EROR AQUI-->
@@ -44,16 +44,20 @@
         <option value="alto"> alto</option>
  </select>
     
-         <label for="tamaño"> Tamaño</label> <!--Filtro por tamaño de perro-->
+         <label for="tamaño"> Tamaño</label> <!--Filtro por tamaño del perro-->
  <select id="Tamaño" name="Tamaño"> 
          <option value="Pequeños"> Pequeños</option>
          <option value="Medianos"> Medianos</option>
          <option value="Grandes"> Grandes</option>
  </select>
 
-    
+ <button type="reset"> Limpiar todo</button> <!--Botón para limpiar los filtros--> 
 
+ <button type="submit"></button> <!--Botón para enviar los filtros y buscar la raza-->
 
+</form>
+<!--AGREGAR AQUI FUNCIONALIDADES DE JAVASCRIPT-->
 
 </body>
 </html>
+
