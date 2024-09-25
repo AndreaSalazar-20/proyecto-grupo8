@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de razas</title>
+</head>
+<body>
+    <header>
+        <!-- Aquí empieza el header -->
+        <div>
+            <img src="../CatalogoHTML/ImagenesRazasHTML/Logo perro1.png" width="10%" alt="Logo de un perro">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Razas.html">Raza de perros</a></li>
+                <li><a href="./HTML DE TIENDA/tienda.html">Tienda</a></li>
+                <li><a href="AdopcionesHTML/Adopciones.html">¡Adopta!</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="Donaciones.html">Donaciones</a></li>
+                <li><a href="Redsocial.html">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header> <!-- Aquí termina el header -->
+
+    <hr>
+
+    <section id="intro">
+        <!-- Introducción -->
+        <h1> ¿Por qué es importante conocer las razas? </h1>
+        <p> Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que ambos puedan vivir felices. 
+            Cada raza tiene su propia personalidad, nivel de actividad y cuidados especiales que debes considerar. Por ejemplo, algunos perros
+            son más adecuados para familias con niños pequeños, mientras que otros requieren un nivel de actividad física más elevado o un espacio
+            amplio.
+        </p>
+        <p>
+            Además, al comprender su temperamento y necesidades de entrenamiento, puedes garantizar una convivencia armoniosa y satisfacer sus 
+            necesidades físicas y emocionales. A continuación, utiliza los filtros para encontrar la raza que mejor se ajuste a ti y a tu hogar.
+        </p>
+    </section>
+
+    <hr>
+
+    <inside id="filtros">
+        <!-- Sección de filtros para el catálogo de razas -->
+        <form id="Filtro-razas" action="/resultado-filtro" method="GET">
+            <!-- Filtro por nombre de raza -->
+            <label for="nombre-raza">Buscar por nombre de raza:</label>
+            <select id="nombre-raza" name="nombre-raza">
+                <option value=""></option> <!-- Opción vacía -->
+                <option value="Labrador">Labrador Retriever</option>
+                <option value="Bulldog">Bulldog Inglés</option>
+                <option value="Beagle">Beagle</option>
+            </select>   
+
+            <h3>Filtrar razas</h3>
+            
+            <!-- Filtro por grupo -->
+            <label for="grupo">Grupo:</label>
+            <select id="grupo" name="grupo">
+                <option value="Deportivo">Deportivo</option>
+                <option value="Compañia">De Compañía</option>
+                <option value="Trabajo">De Trabajo</option>
+            </select>
+
+            <!-- Filtro por nivel de ladridos -->
+            <label for="ladridos">Nivel de Ladridos:</label>
+            <select id="ladridos" name="ladridos">
+                <option value="bajo">Bajo</option>
+                <option value="moderado">Moderado</option>
+                <option value="alto">Alto</option>
+            </select>
+    
+            <!-- Filtro por tamaño del perro -->
+            <label for="tamaño">Tamaño:</label>
+            <select id="tamaño" name="tamaño">
+                <option value="Pequeños">Pequeños</option>
+                <option value="Medianos">Medianos</option>
+                <option value="Grandes">Grandes</option>
+            </select>
+
+            <!-- Botones -->
+            <button type="reset">Limpiar todo</button>
+            <button type="submit">Entregar</button>
+        </form>
+    </inside>
+
+    <hr>
+
+    <section id="catalogo-razas">
+        <!-- Aquí agregarás las fotos y descripciones de las razas -->
+        <h2>Catálogo de razas</h2>
+        <!-- Puedes agregar aquí tus imágenes y descripciones más adelante -->
+    </section>
+
+</body>
+</html>
