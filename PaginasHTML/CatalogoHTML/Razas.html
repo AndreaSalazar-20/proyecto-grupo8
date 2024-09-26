@@ -6,28 +6,27 @@
     <title>Catálogo de razas</title>
 </head>
 <body>
-    <header>
-        <!-- Aquí empieza el header -->
+    <header> <!-- Aquí empieza el header -->
         <div>
             <img src="../CatalogoHTML/ImagenesRazasHTML/Logo perro1.png" width="10%" alt="Logo de un perro">
         </div>
         <nav>
             <ul>
                 <li><a href="Razas.html">Raza de perros</a></li>
-                <li><a href="./HTML DE TIENDA/tienda.html">Tienda</a></li>
-                <li><a href="AdopcionesHTML/Adopciones.html">¡Adopta!</a></li>
-                <li><a href="#">Comunidad</a></li>
-                <li><a href="Donaciones.html">Donaciones</a></li>
-                <li><a href="Redsocial.html">Redes Sociales</a></li>
+                <li><a href="../HTML DE TIENDA/tienda.html">Tienda</a></li>
+                <li><a href="../AdopcionesHTML/Adopciones.html">¡Adopta!</a></li>
+                <li><a href="../Redsocial.html">Comunidad</a></li>
+                <li><a href="../Donaciones.html">Donaciones</a></li>
+                <li><a href="">Registrarse</a></li>
             </ul>
         </nav>
     </header> <!-- Aquí termina el header -->
 
     <hr>
 
+  <main>
     <section id="intro">
-        <!-- Introducción -->
-        <h1> ¿Por qué es importante conocer las razas? </h1>
+        <h1> ¿Por qué es importante conocer las razas? </h1>              <!-- Introducción con pregunta -->
         <p> Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que ambos puedan vivir felices. 
             Cada raza tiene su propia personalidad, nivel de actividad y cuidados especiales que debes considerar. Por ejemplo, algunos perros
             son más adecuados para familias con niños pequeños, mientras que otros requieren un nivel de actividad física más elevado o un espacio
@@ -38,60 +37,113 @@
             necesidades físicas y emocionales. A continuación, utiliza los filtros para encontrar la raza que mejor se ajuste a ti y a tu hogar.
         </p>
     </section>
+  
 
     <hr>
 
+    <section>                                                               <!--Aqui inicia la primera raza 1/25-->                                                    
+        <h2>Catálogo de Razas</h2>
+        <div class="razas-grid">
+            <article class="raza">
+                <img src="../CatalogoHTML/ImagenesRazasHTML/dogo/dogo-argentino.png" width="20%" alt="Dogo Argentino">
+                <h3>Dogo Argentino</h3>
+                <p><strong>Grupo:</strong> Perros de trabajo</p>
+                <p><strong>Nivel de ladrido:</strong> Moderado</p>
+                <p><strong>Tamaño:</strong> Grande</p>
+    
+                <button>Ver más</button>
+                <div style="display:none;">
+                    <p>Raza argentina creada para la caza mayor, fuerte, protector y valiente.</p>
+                </div>
+    
+                <a href="https://www.youtube.com/watch?v=kL9yaJ4VkbI" target="_blank">Ver video</a>
+            </article>
+        </div>
+    </section>                                                             <!-- Desde aqui van las secciones de las siguientes razas-->
+  </main>
+    
+    <hr>
+
     <inside id="filtros">
-        <!-- Sección de filtros para el catálogo de razas -->
-        <form id="Filtro-razas" action="/resultado-filtro" method="GET">
-            <!-- Filtro por nombre de raza -->
-            <label for="nombre-raza">Buscar por nombre de raza:</label>
+        <form id="Filtro-razas" action="/resultado-filtro" method="GET">   <!-- Sección de filtros para el catálogo de razas -->
+            <label for="nombre-raza">Buscar por nombre de raza:</label>    <!-- Filtro por nombre de raza -->
             <select id="nombre-raza" name="nombre-raza">
-                <option value=""></option> <!-- Opción vacía -->
+                <option value=""></option>                                 <!-- Opción vacia para obligar a escoger -->
+                <option value="Dogo">Dogo Argentino</option>
+                <option value="Fila">Fila Brasileiro</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Pastor">Pastor Alemán</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="ShihTzu">Shih Tzu</option>
+                <option value="Caniche">Caniche</option>
                 <option value="Labrador">Labrador Retriever</option>
-                <option value="Bulldog">Bulldog Inglés</option>
+                <option value="Boxer">Boxer</option>
+                <option value="BulldogF">Bulldog Frances</option>
+                <option value="BulldogI">Bulldog Inglés</option>
+                <option value="Yorkshire">Yorkshire terrier</option> 
                 <option value="Beagle">Beagle</option>
+                <option value="Golden">Golden Retriever</option>
+                <option value="Akita">Akita Inu</option>
+                <option value="mestizo">Mestizo</option>
+                <option value="Salchicha">Dachshund</option>
+                <option value="Cocker">Cocker Spaniel</option>
+                <option value="Maltés">Maltés</option>
+                <option value="MaltésCocker">Maltés con Cocker</option>
+                <option value="Husky">Husky siberiano</option>
+                <option value="Bernardo">San Bernardo</option>
+                <option value="Pomerania">Pomerania</option>
+                <option value="Samoyedo">Samoyedo</option>
+                <option value="Corgi">Corgi</option> 
             </select>   
 
             <h3>Filtrar razas</h3>
             
-            <!-- Filtro por grupo -->
-            <label for="grupo">Grupo:</label>
+            <label for="grupo">Grupo:</label>                              <!-- Filtro por grupo -->
             <select id="grupo" name="grupo">
+                <option value=""></option>
                 <option value="Deportivo">Deportivo</option>
                 <option value="Compañia">De Compañía</option>
                 <option value="Trabajo">De Trabajo</option>
             </select>
 
-            <!-- Filtro por nivel de ladridos -->
-            <label for="ladridos">Nivel de Ladridos:</label>
+            <label for="ladridos">Nivel de Ladridos:</label>                <!-- Filtro por nivel de ladridos -->
             <select id="ladridos" name="ladridos">
+                <option value=""></option>
                 <option value="bajo">Bajo</option>
                 <option value="moderado">Moderado</option>
                 <option value="alto">Alto</option>
             </select>
     
-            <!-- Filtro por tamaño del perro -->
-            <label for="tamaño">Tamaño:</label>
+            <label for="tamaño">Tamaño:</label>                             <!-- Filtro por tamaño del perro -->
             <select id="tamaño" name="tamaño">
+                <option value=""></option>
                 <option value="Pequeños">Pequeños</option>
                 <option value="Medianos">Medianos</option>
                 <option value="Grandes">Grandes</option>
             </select>
 
-            <!-- Botones -->
-            <button type="reset">Limpiar todo</button>
+            <button type="reset">Limpiar todo</button>                      <!-- Botones -->
             <button type="submit">Entregar</button>
         </form>
-    </inside>
+    </inside>                                                               <!--Cierre del inside-->
 
-    <hr>
-
-    <section id="catalogo-razas">
-        <!-- Aquí agregarás las fotos y descripciones de las razas -->
-        <h2>Catálogo de razas</h2>
-        <!-- Puedes agregar aquí tus imágenes y descripciones más adelante -->
-    </section>
+    <footer>                                                                <!--Aqui empieza el footer-->
+        <div>
+            <div>
+                <h4>Siguenos</h4>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>          <!-- NO ME FUNCIONAN LOS ICONOS, NO SE PORQUE-->
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-solid fa-envelope"></i></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Acerca de...</h4>
+                <p>&copy; 2024 Huellas en tu Vida. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>                                                               <!--aqui termina el footer-->
 
 </body>
 </html>
