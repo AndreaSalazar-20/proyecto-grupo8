@@ -1,65 +1,555 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de razas</title>
 </head>
+
 <body>
-        <section id="intro"> <!--Introducción-->
-            <h1> ¿Por qué es importante conocer las razas? </h1>
-            <p>  Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que ambos puedan vivir felices. 
-                 Cada raza tiene su propia personalidad, nivel de actividad y cuidados especiales que debes considerar. Por ejemplo, algunos perros
-                 son más adecuados para familias con niños pequeños, mientras que otros requieren un nivel de actividad física más elevado o un espacio
-                 amplio.
-            </p>
-             <p>
-                 Además, al comprender su temperamento y necesidades de entrenamiento, puede garantizar una convivencia armoniosa y satisfacer sus 
-                necesidades físicas y emocionales. A continuación, utiliza los filtros para encontrar la raza que mejor se ajuste a ti ya tu hogar.
-             </p>
-        </section>
-<hr>
 
-<hr>
-<section id="filtros"> <!--Sección de filtros para el catálogo de razas-->
-<form id="Filtro-razas" action="/resultado-filtro" method="GET">   <!--Cada campo tiene una etiqueta ( label) asociada y un select(desplegable) para que el usuario seleccione la opción que desee-->
-            <label for="nombre de raza"> Buscar por nombre de raza:</label> <!--Filtro por nombre de raza-->
-        <select id="nombre-raza" name="nombre-raza1">
-            <option></option>  <!--NO SE PORQUE ME DA EROR AQUI-->
-            <option value="Labrador"> Labrador Retriever</option> <!-- De aqui hacia abajo, añadire mas razas-->
-            <option value="Bulldog"> Bulldog Ingles</option>
-            <option value="Beagle"> Beagle</option>
-        </select>   
+    <main id="intro"> <!--Introducción-->
+        <h1> ¿Por qué es importante conocer las razas? </h1>
+        <p> Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que ambos
+            puedan vivir felices.
+            Cada raza tiene su propia personalidad, nivel de actividad y cuidados especiales que debes considerar. Por
+            ejemplo, algunos perros
+            son más adecuados para familias con niños pequeños, mientras que otros requieren un nivel de actividad
+            física más elevado o un espacio
+            amplio.
+        </p>
+        <p>
+            Además, al comprender su temperamento y necesidades de entrenamiento, puede garantizar una convivencia
+            armoniosa y satisfacer sus
+            necesidades físicas y emocionales. A continuación, utiliza los filtros para encontrar la raza que mejor se
+            ajuste a ti y a tu hogar.
+        </p>
+    </main>
 
-        <h3>Filtrar razas</h3> <!--Filtro por caracteristicas-->
-        <label for="grupo">Grupo:</label>
- <select id="grupo"> name="grupo" 
-     <option value="Deportivo"> Deportivo</option>  <!--Seleccionar las razas depende de la zona-->
-     <option value="Compañia">De Compañia</option>  <!--Se agrega depende de las necesidades del publico objetivo-->
-     <option value="Trabajo"> De Trabajo</option>
- </select>
+    <hr>
 
-        <label for="Ladridos">Nivel de Ladridos:</label>
- <select id="Ladridos"> name="Ladridos">     <!--Filtro nivel de ladridos-->
-        <option value="bajo"> bajo</option>
-        <option value="moderado"> moderado</option>
-        <option value="alto"> alto</option>
- </select>
-    
-         <label for="tamaño"> Tamaño</label> <!--Filtro por tamaño del perro-->
- <select id="Tamaño" name="Tamaño"> 
-         <option value="Pequeños"> Pequeños</option>
-         <option value="Medianos"> Medianos</option>
-         <option value="Grandes"> Grandes</option>
- </select>
+    <div class="razas-grid"> <!--Tipos de raza-->
+        <article class="razas">
+            <img src="../imagenes/perros/dogoArgentino.png" width="20%" alt="Dogo Argentino">
+            <h3>Dogo Argentino</h3>
+            <p><strong>Grupo:</strong> Perros de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong> Moderado</p>
+            <p><strong>Tamaño:</strong> Grande</p>
 
- <button type="reset"> Limpiar todo</button> <!--Botón para limpiar los filtros--> 
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
 
- <button type="submit">Entregar</button> <!--Botón para enviar los filtros y buscar la raza-->
+            <div class="descripción" style="display:none;">
+                <p>Raza argentina creada para la caza mayor, fuerte, protector y valiente.</p>
+            </div>
 
-</form>
-<!--AGREGAR AQUI FUNCIONALIDADES DE JAVASCRIPT-->
+            <a href="https://youtu.be/kL9yaJ4VkbI?si=nL_NNU7hfDRCcTqh" target="_blank">Ver video</a>
+        </article>
+    </div>
 
+    <div class="razas-grid"> <!--Otra raza2-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Fila Brasileiro</h3>
+            <p><strong>Grupo:</strong> Perros de guardia</p>
+            <p><strong>Nivel de ladrido:</strong> Moderado</p>
+            <p><strong>Tamaño:</strong> Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Raza brasileña poderosa y leal, ideal para la guardia y protección.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza3-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Chihuahua</h3>
+            <p><strong>Grupo:</strong> Perros de compañía</p>
+            <p><strong>Nivel de ladrido:</strong> Alto </p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Pequeño, valiente y alerta, conocido por su carácter protector y enérgico.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza4-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Pastor Alemán</h3>
+            <p><strong>Grupo:</strong> Perros de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong> Moderado </p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Inteligente, versátil y leal, utilizado en tareas de protección y servicio.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza5-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Rottweiler</h3>
+            <p><strong>Grupo:</strong> Perros de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado </p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Fuerte, protector y confiable, ideal para guardia y tareas de trabajo.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza6-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Shih Tzu</h3>
+            <p><strong>Grupo:</strong> Perros de compañia</p>
+            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado </p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Afectuoso y sociable, con un pelaje distintivo y gran compañía.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza7-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Caniche</h3>
+            <p><strong>Grupo:</strong>Perros de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Varía (miniatura, mediano, grande)</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza8-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Labrador Retriever</h3>
+            <p><strong>Grupo:</strong>Perros de caza</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Amigable, obediente y versátil, utilizado para labores de asistencia y caza.
+                </p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza9-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Bóxer</h3>
+            <p><strong>Grupo:</strong>Perros de Trabajo</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Energético, juguetón y protector, ideal para familias y tareas de vigilancia.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza10-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Bulldog Francés</h3>
+            <p><strong>Grupo:</strong>Perros de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza11-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Bulldog Inglés</h3>
+            <p><strong>Grupo:</strong>Perros de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+            <p><strong>Tamaño:</strong>Mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Calmado, cariñoso y de aspecto robusto, un perro familiar confiable.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza12-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Yorkshire Terrier</h3>
+            <p><strong>Grupo:</strong>Perros de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Alto</p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Enérgico, valiente y muy protector, pese a su pequeño tamaño.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza13-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Beagle</h3>
+            <p><strong>Grupo:</strong>Perros de caza</p>
+            <p><strong>Nivel de ladrido:</strong>Alto</p>
+            <p><strong>Tamaño:</strong>Mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Olfateador nato, amigable y juguetón, con gran instinto de caza.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza14-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Golden Retriever</h3>
+            <p><strong>Grupo:</strong>Perros de caza</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Cariñoso, amigable y muy inteligente, popular por su lealtad.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza15-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Akita Inu</h3>
+            <p><strong>Grupo:</strong>Perros de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Digno, leal y protector, conocido por su temperamento reservado.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza16-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Perro mestizo</h3>
+            <p><strong>Grupo:</strong>Varia</p>
+            <p><strong>Nivel de ladrido:</strong>Varia</p>
+            <p><strong>Tamaño:</strong>Varia</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Varía según la mezcla de razas, pero tienden a ser adaptables y únicos en temperamento.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza17-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Dachshund</h3>
+            <p><strong>Grupo:</strong>Perro de caza</p>
+            <p><strong>Nivel de ladrido:</strong>Alto</p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Determinado y valiente, criado para cazar tejones y otras presas.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza18-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Cocker Spaniel</h3>
+            <p><strong>Grupo:</strong>Perro de caza</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Dulce y sociable, con grandes instintos para la caza y el rastreo.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza19-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Maltés</h3>
+            <p><strong>Grupo:</strong>Perro de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Pequeño, elegante y cariñoso, con un pelaje largo y sedoso.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza20-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Maltés con Cocker</h3>
+            <p><strong>Grupo:</strong>Perro de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Cruce afectuoso y juguetón, con características de ambas razas.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza21-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Husky Siberiano</h3>
+            <p><strong>Grupo:</strong>Perro de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo (tienden a aullar más que ladrar)</p>
+            <p><strong>Tamaño:</strong>Mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Energético, independiente y resistente, criado para tirar trineos.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza22-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>San Bernardo</h3>
+            <p><strong>Grupo:</strong>Perro de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Gentil, calmado y fuerte, famoso por sus labores de rescate en montañas.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza23-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Pomerania</h3>
+            <p><strong>Grupo:</strong>Perro de compañia</p>
+            <p><strong>Nivel de ladrido:</strong>Alto</p>
+            <p><strong>Tamaño:</strong>Pequeño</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Vivaz, alerta y muy protector, con un pelaje esponjoso y gran carácter.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza24-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Samoyedo</h3>
+            <p><strong>Grupo:</strong>Perro de trabajo</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Grande</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Sociable, amistoso y resistente, conocido por su distintivo pelaje blanco.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <div class="razas-grid"> <!--Otra raza25-->
+        <article class="razas">
+            <img> <!--Luego subire todas las imagenes-->
+            <h3>Corgi</h3>
+            <p><strong>Grupo:</strong>Perro de pastoreo</p>
+            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
+
+            <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+
+            <div class="descripción" style="display:none;">
+                <p>Inteligente, activo y valiente, excelente perro pastor con cuerpo robusto.</p>
+            </div>
+
+            <a> </a> <!--Luego subire cada video-->
+        </article>
+    </div>
+
+    <hr>
+
+    <inside> <!--Sección de filtros para el catálogo de razas-->
+        <form id="Filtro-razas" action="/resultado-filtro" method="GET">
+            <!--Cada campo tiene una etiqueta (label) asociada y un select (desplegable) para que el usuario seleccione la opción que desee-->
+            <label for="nombre-raza">Buscar por nombre de raza:</label> <!--Filtro por nombre de raza-->
+            <select id="nombre-raza" name="nombre-raza1">
+                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
+                <option value="Dogo">Dogo Argentino</option> <!-- Desde aquí hacia abajo, añadiré más razas-->
+                <option value="Fila">Fila Brasileiro</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Pastor">Pastor Alemán</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="ShihTzu">Shih Tzu</option>
+                <option value="Caniche">Caniche</option>
+                <option value="L.Retriever">Labrador Retriever</option>
+                <option value="Bóxer">Bóxer</option>
+                <option value="Bulldog">Bulldog Frances</option>
+                <option value="Bulldog">Bulldog Inglés</option>
+                <option value="Yorkshire">Yorkshire terrier</option>
+                <option value="Beagle">Beagle</option>
+                <option value="G.Retriever">Golden Retriever</option>
+                <option value="Akita">Akita Inu</option>
+                <option value="Mestizo">Perro mestizo</option>
+                <option value="Dachshund">Dachshund</option>
+                <option value="Cocker">Cocker Spaniel</option>
+                <option value="Maltés">Maltés</option>
+                <option value="M.Cocker">Maltés con Cocker</option>
+                <option value="Husky">Husky siberiano</option>
+                <option value="Bernardo">San Bernardo</option>
+                <option value="Pomerania">Pomerania</option>
+                <option value="Samoyedo">Samoyedo</option>
+                <option value="Corgi">Corgi</option>
+            </select>
+
+            <h3>Filtrar razas</h3> <!--Filtro por características-->
+            <label for="grupo">Grupo:</label>
+            <select id="grupo" name="grupo">
+                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
+                <option value="Deportivo">Deportivo</option>
+                <option value="Compania">De Compañía</option>
+                <option value="Trabajo">De Trabajo</option>
+                <option value="Guardia">De Guardia</option>
+                <option value="Guardia">De Caza</option>
+                <option value="Guardia">De Pastoreo</option>
+            </select>
+
+            <label for="Ladridos">Nivel de Ladridos:</label>
+            <select id="Ladridos" name="Ladridos"> <!--Filtro nivel de ladridos-->
+                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
+                <option value="bajo">Bajo</option>
+                <option value="moderado">Moderado</option>
+                <option value="alto">Alto</option>
+            </select>
+
+            <label for="tamaño">Tamaño:</label> <!--Filtro por tamaño del perro-->
+            <select id="Tamaño" name="Tamaño">
+                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
+                <option value="Pequeños">Pequeño</option>
+                <option value="Medianos">Mediano</option>
+                <option value="Grandes">Grande</option>
+            </select>
+
+            <button type="reset">Limpiar todo</button> <!--Botón para limpiar los filtros-->
+
+            <button type="submit">Entregar</button> <!--Botón para enviar los filtros y buscar la raza-->
+        </form>
+    </inside>
+
+    <!--AQUÍ AGREGARE LAS FUNCIONALIDADES DE JAVASCRIPT-->
 </body>
-</html>
 
+</html>
