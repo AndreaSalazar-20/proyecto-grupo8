@@ -9,15 +9,17 @@
 <script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
 <body>
     <header ><!--Aqui empieza el header-->
-        <div">
+        <div>
             <img src="./imagenes/logoDog.png" width="10%" alt="">
         </div>
         <nav>
-            <li><a href="../proyecto-grupo8/html/razas.html">Raza de perros</a></li>
-            <li><a href="../proyecto-grupo8/html/tienda/tienda.html">Tienda</a></li>
-            <li><a href="../proyecto-grupo8/html/adopciones/adopciones.html">¡Adopta!</a></li>
-            <li><a href="..//proyecto-grupo8/html/donaciones.html">Donaciones</a></li>
-            <li><a href="..//proyecto-grupo8/html/redSocial.html">Comunidad</a></li>
+            <ul>
+                <li><a href="../proyecto-grupo8/html/razas.html">Raza de perros</a></li>
+                <li><a href="../proyecto-grupo8/html/tienda/tienda.html">Tienda</a></li>
+                <li><a href="../proyecto-grupo8/html/adopciones/adopciones.html">¡Adopta!</a></li>
+                <li><a href="..//proyecto-grupo8/html/donaciones.html">Donaciones</a></li>
+                <li><a href="..//proyecto-grupo8/html/redSocial.html">Comunidad</a></li>
+            </ul>
         </nav>
         <form>
             <input type="search" placeholder="Buscar...">
@@ -25,11 +27,11 @@
         </form>
     </header> <!--aqui termina el header👀-->
     <main>
-    <div><!--esta seria la primera seccion que apareceria el inicio. El nombre, un pequeño texto y
+    <div id="container"><!--esta seria la primera seccion que apareceria el inicio. El nombre, un pequeño texto y
         una imagen a la izq(o derecha). Podria llevar un boton para redirigir a la pag de Adopcion-->
         <h1>Huellas en tu vida</h1>
         <p>Cambia tu vida y la de un peludito adoptando uno hoy</p>
-        <img src="./images/perro_viendo.png" width="30%" alt="">
+        <img src="../proyecto-grupo8/imagenes/index/perroMain6.png" width="50%" alt="">
         <button>¡Quiero adoptar!</button>
     </div>
     <div><!--esta seccion es una pequeña presentacion-->
@@ -41,26 +43,26 @@
             persona para mejor.</p>
         </div>
         <div>
-        <img src="../proyecto-grupo8/imagenes/index/perro_viendo.png" width="25%" alt="">
+        <img src="../proyecto-grupo8/imagenes/index/perroMainCaricia.png" width="25%" alt="">
         </div>
     </div>
     <div> <!--En esta parte iria una seccion algunos de los objetivos de la paginas.
         Una seccion con 3 columnas, un icono o imagen y un objetivo, yo agregue 3-->
         <h2>Que puedes encontrar aqui...</h2>
-        <div>
-            <p>Apoyo a refugios de perros locales encontrando el hogar perfecto para ellos.</p>
-        </div>
-        <div>
-            <p>En la tienda encontraras diferentes productos para cuidar a tu perrito.</p>
-        </div>
-        <div>
-            <p>Un espacio donde puedas compartir tus historias con una gran comunidad
-                amantes de los animale.s</p>
-        </div>
+        <section class="layout">
+            <div class="caja1 marginLeft"> <img src="../proyecto-grupo8/imagenes/index/conceptDogRefugie.png" width="20%" alt="">
+                <p>Apoyo a refugios de perros locales encontrando el hogar perfecto para ellos.</p></div>
+            <div class="caja1"> <img src="../proyecto-grupo8/imagenes/index/conceptDogBone.png" width="20%" alt="">
+                <p>En la tienda encontraras diferentes productos para cuidar a tu perrito.</p></div>
+            <div class="caja1 marginRight"><img src="../proyecto-grupo8/imagenes/index/conceptDogLove.png" width="20%" alt="">
+                <p>Un espacio donde puedas compartir tus historias con una gran comunidad
+                    amantes de los animales.</p></div>
+          </section>
+          <br>
     </div>
     </main>
     <section>
-        <img src="../proyecto-grupo8/imagenes/index/perroCaricia.png" width="20%" alt="">
+        <img src="../proyecto-grupo8/imagenes/index/perroMainWaving.png" width="50%" alt="">
         <h2>Cada perro merece una oportunidad.</h2>
         <p>Hacemos que el proceso de adopcion facilite el coincidir tus posibilidades con las necesidades 
             de una raza en especifico por medio de un test.</p>
