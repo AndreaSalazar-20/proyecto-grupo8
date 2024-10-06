@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de adopción - Huellas en tu vida</title>
+</head>
+
+<body>
+    <main>
+        <section id="formulario">
+            <h2>Formulario de Adopción</h2> <!--Cada apartado de preguntas sera interactivo-->
+            <progress id="barraProgreso" value="0" max="5"></progress> <!--Barra de progreso superior -->
+            <form id="adopcionForm">
+
+                <div class="pregunta" id="preguntaNombre"> <!-- Información Personal -->
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="pregunta" id="preguntaEdad">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="pregunta" id="preguntaDireccion">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="pregunta" id="preguntaTelefono">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="pregunta" id="preguntaCorreo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+
+                <div class="pregunta" id="preguntaVivienda"> <!-- Estilo de Vida -->
+                    <label for="vivienda">¿Vives en una casa, departamento o condominio?</label>
+                    <input type="text" id="vivienda" name="vivienda" required>
+                </div>
+                <div class="pregunta" id="preguntaJardin">
+                    <label for="jardin">¿Tienes un jardín o un área al aire libre?</label>
+                    <input type="text" id="jardin" name="jardin" required>
+                </div>
+                <div class="pregunta" id="preguntaOcupacion">
+                    <label for="ocupacion">¿Cuál es tu ocupación y horario laboral?</label>
+                    <input type="text" id="ocupacion" name="ocupacion" required>
+                </div>
+                <div class="pregunta" id="preguntaHoras">
+                    <label for="horas">¿Cuántas horas al día estarás en casa?</label>
+                    <input type="number" id="horas" name="horas" required>
+                </div>
+
+
+                <div class="pregunta" id="preguntaExperiencia"> <!-- Experiencia con Mascotas -->
+                    <label for="experiencia">¿Has tenido mascotas anteriormente? Si es así, ¿qué tipo y cuántas?</label>
+                    <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+                </div>
+                <div class="pregunta" id="preguntaRazon">
+                    <label for="razon">¿Cuál es la razón por la que quieres adoptar un perro?</label>
+                    <textarea id="razon" name="razon" rows="4" required></textarea>
+                </div>
+                <div class="pregunta" id="preguntaNecesidades">
+                    <label for="necesidades">¿Estás familiarizado con las necesidades de cuidado de un perro?</label>
+                    <textarea id="necesidades" name="necesidades" rows="4" required></textarea>
+                </div>
+
+
+                <div class="pregunta" id="preguntaTamano"> <!-- Preferencias del Perro -->
+                    <label for="tamano">¿Qué tamaño de perro prefieres (pequeño, mediano, grande)?</label>
+                    <input type="text" id="tamano" name="tamano" required>
+                </div>
+                <div class="pregunta" id="preguntaRaza">
+                    <label for="razas">¿Tienes alguna preferencia de raza o tipo de perro?</label>
+                    <input type="text" id="razas" name="razas">
+                </div>
+                <div class="pregunta" id="preguntaCaracteristicas">
+                    <label for="caracteristicas">¿Buscas un perro con características específicas (ej. activo,
+                        tranquilo, juguetón)?</label>
+                    <input type="text" id="caracteristicas" name="caracteristicas">
+                </div>
+
+
+                <div class="pregunta" id="preguntaNinos"> <!-- Compatibilidad Familiar -->
+                    <label for="ninos">¿Tienes niños en casa? Si es así, ¿cuántos y qué edades tienen?</label>
+                    <input type="text" id="ninos" name="ninos">
+                </div>
+                <div class="pregunta" id="preguntaAnimales">
+                    <label for="animales">¿Tienes otros animales en casa? Si es así, ¿qué tipo y cuántos?</label>
+                    <input type="text" id="animales" name="animales">
+                </div>
+                <div class="pregunta" id="preguntaInteraccion">
+                    <label for="interaccion">¿Cómo te gustaría que el perro interactuara con tu familia?</label>
+                    <textarea id="interaccion" name="interaccion" rows="4"></textarea>
+                </div>
+
+
+                <div class="pregunta" id="preguntaEntrenamiento"> <!-- Compromiso -->
+                    <label for="entrenamiento">¿Estás dispuesto a invertir tiempo en entrenamiento y socialización del
+                        perro?</label>
+                    <textarea id="entrenamiento" name="entrenamiento" rows="4" required></textarea>
+                </div>
+                <div class="pregunta" id="preguntaTiempo">
+                    <label for="tiempo">¿Cuánto tiempo puedes dedicar diariamente al ejercicio y juego del
+                        perro?</label>
+                    <textarea id="tiempo" name="tiempo" rows="4" required></textarea>
+                </div>
+
+
+                <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
