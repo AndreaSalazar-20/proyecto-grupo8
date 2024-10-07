@@ -6,6 +6,10 @@ header{
     justify-content: space-between;
 }
 
+/*#banner{
+    background-image: url(../imagenes/index/wave.png);
+}*/
+
 header img{
     width: 100px;
     margin-left: 25px;
@@ -113,24 +117,27 @@ p{
 
 .ending{
     background-color: #3d4670;
-    width: 100%;
 }
 
 .ending .cajitas-footer{
-    width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 25px 0px;
+}
+
+.ending .cajitas-footer .caja2{
+    text-align: center;
+    display: block;
 }
 
 .ending .cajitas-footer .caja2 img{
-    width: 60%;
+    width: 45%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 150px;
+    padding-top: 30px;
 }
 
 .ending .cajitas-footer .caja2 h4{
@@ -139,9 +146,30 @@ p{
     font-size: 20px;
 }
 
-.ending .cajitas-footer .caja2 a{
-    color: #f6f7f8;
-    margin-bottom: 10px;
+/*.ending .cajitas-footer .caja2 ul li{
+    text-align: center;
+    display: block;
+}*/
+
+.ending .cajitas-footer .caja2 li{
+    list-style: none;
+}
+
+.ending .cajitas-footer .caja2 p{
+    color: #cbcedc;
+    font-size: 20px;
+}
+
+i{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffce3f;
+    background-color: #29304f;
+    border-radius: 100%;
+    text-align: center;
 }
 
 .ending .cajitas-footer .caja2 .social-media a{
@@ -152,6 +180,7 @@ p{
     line-height: 45px;
     color: #ffce3f;
     background-color: #29304f;
+    border-radius: 100%;
     margin-right: 10px;
     text-align: center;
     transition: all 300ms ease;
@@ -162,5 +191,7 @@ p{
 }
 
 .ending .copyright{
+    margin-left: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #e8eaf1;
 }
