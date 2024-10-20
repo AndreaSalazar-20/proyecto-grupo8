@@ -1,3 +1,86 @@
+<<<<<<< HEAD
+=======
+/*Liliana-index*/
+header{
+    background-color: #3d4670;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*#banner{
+    background-image: url(../imagenes/index/wave.png);
+}*/
+
+header img{
+    width: 100px;
+    margin-left: 25px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+header a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #e8eaf1;
+    transition: all 300ms ease;
+}
+
+header ul li{
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header a:hover{
+    color: #ffce3f;
+}
+
+label{
+    position: relative;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+input{
+    background-color: #79ade0;
+    width: 0px;
+    transition: width 1s, border-radius 1s;
+    border-radius: 50%;
+    border-color: transparent;
+    outline: none;
+    padding: 12px 20px 10px 16px;
+    color: #29304f;
+    cursor: pointer;
+}
+
+input:focus{
+    border-radius: 10%/20%;
+    width: 150px;
+    color: #29304f;
+}
+
+.glass{
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+input:focus + img{
+    opacity: 0;
+}
+
+
+>>>>>>> 94886ca0871998d65226a649752f518ef7edd63f
 body {
   background-color: #f8f9fa;
   font-family: 'Quicksand';
@@ -319,3 +402,18 @@ a:hover {
   font-size: 14px;
   color: #e8eaf1;
 }
+
+/*Andrea-adopciones*/
+
+
+
+
+
+/*Katherine-razas*/
+
+
+
+
+
+
+/*Gabriela-Red Social*/

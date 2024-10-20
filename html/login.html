@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & register</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="https://kit.fontawesome.com/61322ee628.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="signin-signup">
+        
+        <!--Formulario para iniciar sesión al sistema-->
+        <form action="" class="signin-form">
+          <h2 class="title">Iniciar sesión</h2>
+          <h3 class="title2">Bienvenido a Huellas en tu vida!</h3>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="Correo electrónico">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Contraseña">
+          </div>
+          <input type="submit" value="Iniciar sesión" class="btn">
+          
+        </form>
+
+        <!--Formulario para registrarse al sistema-->
+        <form action="" class="signup-form">
+          <h2 class="title">Regístrate!</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Usuario">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="phone" placeholder="Teléfono">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="password" placeholder="Correo electrónico">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Contraseña">
+          </div>
+          <input type="submit" value="Registrarse" class="btn">
+          
+        </form>
+      </div>
+
+      <!--Panel para iniciar sesión al lado izquierdo-->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3 class="title3">Has regresado!</h3>
+            <h4 class="title4">Nos alegra tenerte de vuelta!</h4>
+            <button class="btn" id="signin-btn">Iniciar sesión</button>
+          </div>
+          <img src="../imagenes/cuteDog.png" alt="" class="image">
+        </div>
+
+        <!--Panel para registrarse al lado derecho-->
+        <div class="panel right-panel">
+          <div class="content">
+            <h3 class="title3">¿No estás registrado?</h3>
+            <h4 class="title4">Regístrate y sé parte de nuestra comunidad!</h4>
+            <button class="btn" id="signup-btn">Registrarse</button>
+          </div>
+          <img src="../imagenes/familyDogs.png" alt="" class="image">
+        </div>
+
+      </div>
+
+    </div>
+    <script src="../Scripts/login.js"></script>
+  </body>
+</html>
