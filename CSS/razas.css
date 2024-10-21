@@ -205,6 +205,9 @@ body {
 .filtro-colores,
 .filtro-enfermedades {
     border: 1px solid #3D4670;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    font-weight: 400;
     border-radius: 4px;
     line-height: 18px;
     padding: 9px 8px;
@@ -214,6 +217,24 @@ body {
     /* Agrega espacio entre párrafos */
 }
 
+.label-filtro {
+    font-family: 'Quicksand', sans-serif;
+    /* Fuente uniforme */
+    font-size: 14px;
+    /* Tamaño de la fuente */
+    color: #3D4670;
+    /* Color del texto */
+    font-weight: 500;
+    /* Peso medio del texto */
+    margin-bottom: 8px;
+    /* Espaciado debajo del label */
+    display: block;
+    /* Ocupa toda la línea */
+    letter-spacing: 0.4px;
+    /* Espaciado entre letras */
+    line-height: 1.0;
+    /* Aumenta el espacio entre líneas */
+}
 
 
 .contenedor .footer {
