@@ -40,8 +40,8 @@ body {
 }
 
 .contenedor .header {
-    background-color: #12203e;
-    color: #fff;
+    background-color: #3D4670;
+    color: #FFFFFF;
     grid-area: header;
     font-family: 'Quicksand', sans-serif;
     /* Fuente para el título - quitar segun el contenido*/
@@ -54,21 +54,22 @@ body {
 .contenedor .contenido h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    font-size: medium;
     /* Fuente para el h1 */
     /* Agregar para el texto de su descripcion */
 }
 
-.contenedor .contenido ul {
+.contenedor .contenido p {
     list-style: none;
 }
 
-.contenedor .contenido ul li {
-    margin: 15px;
-    font-weight: bold;
+.contenedor .contenido p {
+    margin: 5px;
+    font-weight: regular;
 }
 
 .contenedor .coleccion {
-    background-color: #8e8d8d;
+    background-color: #E8EAF1;
     /* cambiar */
     grid-area: coleccion;
     display: grid;
@@ -83,7 +84,7 @@ body {
     padding: 20px;
     position: relative;
     overflow: hidden;
-    background-color: #b5b563;
+    background-color: #F6F7F8;
     /*cambiar*/
     background-size: cover;
     background-position: center center;
@@ -94,10 +95,62 @@ body {
     justify-content: center;
 }
 
+.titulo-razas {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+
+}
+
+.descripcion-texto {
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    color: #3D4670;
+    text-align: left;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+
+.image-container {
+    width: 100%;
+    /* El contenedor ocupa el 100% del espacio disponible */
+    height: 200px;
+    /* Fija la altura del contenedor */
+    display: flex;
+    /* Flexbox para alinear la imagen */
+    align-items: center;
+    /* Centra la imagen verticalmente */
+    justify-content: center;
+    /* Centra la imagen horizontalmente */
+    overflow: hidden;
+    /* Oculta el desbordamiento si la imagen es más grande */
+}
+
+.tituloImag {
+    width: 100%;
+    /* Hacer que la imagen ocupe el 100% del ancho de su contenedor */
+    height: 200px;
+    /* Establece una altura fija para todas las imágenes */
+    object-fit: contain;
+    /* Mantiene la proporción original de la imagen sin recortar */
+    min-width: 100%;
+    /* Asegura que incluso las imágenes pequeñas se expandan */
+    min-height: 200px;
+    /* Asegura que las imágenes pequeñas tengan la altura adecuada */
+}
+
 .contenedor .sidebar {
     grid-column: 3 / 4;
-    background: #faa43d;
-    text-align: center;
+    background: #e8eaf1;
+    text-align: left;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -106,16 +159,36 @@ body {
     grid-area: sidebar;
 }
 
+.filtro-raza,
+.filtro-grupo,
+.filtro-ladrido,
+.filtro-tamaño,
+.filtro-esperanza,
+.filtro-peso,
+.filtro-colores,
+.filtro-enfermedades {
+    border: 1px solid #3D4670;
+    border-radius: 4px;
+    line-height: 18px;
+    padding: 9px 8px;
+    width: 100%;
+    white-space: pre-line;
+    margin-bottom: 20px;
+    /* Agrega espacio entre párrafos */
+}
+
+
+
 .contenedor .footer {
-    background: #12203e;
-    color: #fff;
+    background: #3D4670;
+    color: #FFFFFF;
     grid-area: footer;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #3D4670;
+    color: #ffffff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -128,22 +201,41 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #FFCE3F;
+    border: 4px solid #E8EAF1;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 25px;
+    background-color: #FFFFFF;
     display: none;
     overflow: hidden;
+    border-radius: 30px 10% 0px 0%;
+}
+
+.textofiltro {
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    margin: 5px;
+    line-height: 1.6;
+    /* Espacio vertical entre líneas */
+    color: #3D4670;
+    text-align: left;
+    letter-spacing: 0.05em;
+    display: block;
+    /*    margin-block-start: 1em;
+    margin-block-end: 1em; */
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
 }
 
 .accordion:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: #E8EAF1;
     float: right;
     margin-left: 5px;
 }
@@ -184,16 +276,60 @@ button,
     background-color: #79ADE0;
     color: #FFFFFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 10px 20px;
     cursor: pointer;
     text-decoration: none;
     /* Para quitar el subrayado en el link */
     display: inline-block;
     /* Para que el enlace tenga las mismas propiedades de botón */
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
 }
 
 .video-button:hover {
-    background-color: #5b92c9;
+    background-color: #3D4670;
+    border: 2px solid #FFCE3F;
     /* Estilo hover opcional */
+}
+
+.btn-estilo {
+    background-color: #FFCE3F;
+    /* Color de fondo del botón */
+    color: #3D4670;
+    /* Color del texto */
+    border-radius: 50px;
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    font-family: 'Quicksand', sans-serif;
+    /* Fuente del botón */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s ease;
+    /* Efecto de transición */
+    margin-block-start: 3%;
+    margin-block-end: 3%;
+}
+
+.btn-estilo:hover {
+    background-color: #79ADE0;
+    /* Color de fondo al pasar el mouse */
+}
+
+.btn-estilo:focus {
+    outline: none;
+    /* Eliminar el contorno al hacer clic */
+    box-shadow: 0 0 0 3px #3D4670;
+    /* Sombra de enfoque con color #3D4670 */
+}
+
+.btn-estilo:disabled {
+    background-color: #E8EAF1;
+    /* Color de fondo cuando está deshabilitado */
+    color: #A0A0A0;
+    /* Color del texto cuando está deshabilitado */
+    cursor: not-allowed;
+    /* Cursor de no permitido */
 }
