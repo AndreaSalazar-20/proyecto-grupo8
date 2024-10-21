@@ -1,78 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Raleway', sans-serif; /* Fuente para el cuerpo */
-    background-color: #F6F7F8; /* Color de fondo */
-    color: #3D4670; /* Color de texto */
-    margin: 0; /* Sin márgenes por defecto */
-    padding: 20px; /* Espaciado interno */
+    background-color: #F6F7F8;
+    color: #3D4670;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    /* Añadido para espaciado interno */
 }
 
-/* Estilos para títulos */
-h1 {
-    font-family: 'Quicksand', sans-serif; /* Fuente para el título */
-    text-align: center; /* Centrar el h1 */
+.contenedor {
+    width: 98%;
+    /* 90% */
+    max-width: 1500px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:
+        'header header header header header'
+        'contenido contenido contenido contenido sidebar'
+        'coleccion coleccion coleccion coleccion sidebar'
+        'footer footer footer footer footer';
 }
 
-/* Estilos para párrafos */
-p {
-    font-family: 'Raleway', sans-serif; /* Fuente para los párrafos */
-    font-weight: 400; /* Peso de fuente regular */
-    font-size: 21px; /* Tamaño de fuente */
-    text-align: center; /* Centrar los párrafos */
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .coleccion,
+.contenedor .sidebar,
+.contenedor .footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
 }
 
-img {
-width: 50%; /* 20% del ancho del contenedor */
-height: auto; /* Mantiene la proporción */
+.contenedor .header {
+    background-color: #12203e;
+    color: #fff;
+    grid-area: header;
+    font-family: 'Quicksand', sans-serif;
+    /* Fuente para el título - quitar segun el contenido*/
 }
 
-/* Estilos para el grid de razas */
-.razas-grid {
-    display: grid; /* Usar cuadrícula para el diseño */
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    grid-gap: 20px; /* Espacio entre las cajas */
-    padding: 20px; /* Añadir padding alrededor del grid */
+.contenedor .contenido {
+    grid-area: contenido;
 }
 
-/* Estilos para cada raza */
-.razas {
-    background-color: #FFFFFF; /* Color de fondo de los artículos */
-    border: 1px solid #E8EAF1; /* Borde sutil */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 16px; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
-    transition: transform 0.2s; /* Efecto de transición para hover */
+.contenedor .contenido h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    /* Fuente para el h1 */
+    /* Agregar para el texto de su descripcion */
 }
 
-.razas:hover {
-    transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+.contenedor .contenido ul {
+    list-style: none;
+}
+
+.contenedor .contenido ul li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.contenedor .coleccion {
+    background-color: #8e8d8d;
+    /* cambiar */
+    grid-area: coleccion;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #b5b563;
+    /*cambiar*/
+    background-size: cover;
+    background-position: center center;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background: #faa43d;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100px;
+    /* height: 300px; */
+    grid-area: sidebar;
+}
+
+.contenedor .footer {
+    background: #12203e;
+    color: #fff;
+    grid-area: footer;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2796';
+    /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-areas:
+            'header header header header header'
+            'contenido contenido contenido contenido contenido'
+            'coleccion coleccion coleccion coleccion coleccion'
+            'sidebar sidebar sidebar sidebar sidebar'
+            'footer footer footer footer footer';
+    }
 }
 
 /* Estilos para botones */
 button {
-    background-color: #79ADE0; /* Color de fondo del botón */
-    color: #FFFFFF; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    background-color: #79ADE0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #FFCE3F; /* Color de fondo al pasar el mouse */
+    background-color: #FFCE3F;
 }
 
-/* Estilos para el contenedor de filtros */
-.container {
-    display: grid; /* Usar grid para alinear columnas */
-    gap: 20px; /* Espacio entre columnas */
-    margin: 20px; /* Margen alrededor del contenedor */
+/* Estilos para botones para ver el video */
+button,
+.video-button {
+    background-color: #79ADE0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Para quitar el subrayado en el link */
+    display: inline-block;
+    /* Para que el enlace tenga las mismas propiedades de botón */
 }
 
-/* Estilos para la sección de filtros */
-.filtros {
-    flex: 1; /* Sección de filtros ocupa 1 parte */
-    background-color: #FFFFFF; /* Fondo blanco para los filtros */
-    border: 1px solid #E8EAF1; /* Borde sutil */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 16px; /* Espaciado interno */
+.video-button:hover {
+    background-color: #5b92c9;
+    /* Estilo hover opcional */
 }
