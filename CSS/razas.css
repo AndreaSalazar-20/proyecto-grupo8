@@ -95,6 +95,43 @@ body {
     justify-content: center;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    /* Levantar la tarjeta al hacer hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra más intensa al hacer hover */
+}
+
+.card:hover::after {
+    content: "";
+    /* Necesario para mostrar el pseudo-elemento */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 30%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    width: 100px;
+    /* Ancho del círculo */
+    height: 100px;
+    /* Alto del círculo */
+    border-radius: 50%;
+    /* Hacerlo un círculo */
+    background-color: #ffce3f80;
+    /* Color del círculo con opacidad */
+    transform: translate(-50%, -50%);
+    /* Centrar el círculo */
+    transition: opacity 0.3s ease;
+    /* Transición de opacidad */
+    opacity: 1;
+    /* Opacidad al hacer hover */
+}
+
+.card::after {
+    opacity: 0;
+    /* Ocultar el círculo por defecto */
+}
+
 .titulo-razas {
     font-family: 'Quicksand', sans-serif;
     font-size: 150%;
