@@ -13,14 +13,57 @@ body{
 
 .title1{
     padding: 20px;
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    
+    text-align: center;  
 }
 
 .title1 h1{
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
     font-size: 40px;
     font-weight: 800;
+}
+
+.title1 h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btnbuscar{
+    position: relative;
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+
+.btnbuscar input{
+    background-color: #E8EAF1 ;
+    padding: 10px;
+    height: 45px;
+    width: 96%;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btnbuscar button{
+    background-color: #79ADE0;
+    padding: 10px 20px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 5px 5px 0;
+    color: #f6f7f8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnbuscar button:hover{
+    background-color: #ffce3f;
+    color: #79ADE0;
 }
 
 .container{
@@ -28,6 +71,7 @@ body{
     padding: 20px;
     display: flex;
     gap: 20px;
+    align-items: flex-start; /*Alinea los elementos al inicio de la línea, independientes en altura*/
 }
 
 .contenedor-card{
@@ -39,6 +83,32 @@ body{
     display: flex;
     flex-wrap: wrap;/*Si los elementos no caben, irán en la siguiente linea*/
     
+}
+
+.card{
+    height:auto;
+    width: 20%;/*El tamaño de cada card en una columna*/
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #E8EAF1 ;
+    cursor: default;
+    transition: all 400ms ease;/*Efecto suave con transición de 400 milisegundos*/
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,4);
+    transform: translateY(-3%);/*La card se levantará un % como efecto*/
+}
+
+
+.card .contenido{
+    padding: 5px;
 }
 
 .contenido h2{
@@ -59,31 +129,6 @@ body{
     margin-left: 10px;  
 }
 
-.card{
-    height:auto;
-    width: 20%;/*El tamaño de cada card en una columna*/
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    cursor: default;
-    transition: all 400ms ease;/*Efecto suave con transición de 400 milisegundos*/
-}
-
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,4);
-    transform: translateY(-3%);/*La card se levantará un % como efecto*/
-}
-
-.card img{
-    width: 100%;
-    height: 250px;
-}
-
-.card .contenido{
-    padding: 5px;
-}
-
 .contenedor-categoria{
     margin-right: 50px;
     /*background-color: #E8EAF1;*/
@@ -95,6 +140,7 @@ body{
     flex-direction: column;
     width: 20%;
     justify-content: space-between;
+    height: auto;
 }
 
 .contenedor-categoria h2{
@@ -107,6 +153,7 @@ body{
 } 
 
 .menu{
+    
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -122,5 +169,10 @@ body{
 
 .referencias img{
     margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.referencias img:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,6);
 }
 
