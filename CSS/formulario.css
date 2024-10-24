@@ -1,7 +1,5 @@
 body {
-    background-color: #F6F7F8;
-    color: #3D4670;
-    font-family: 'Raleway', sans-serif;
+    background-color: #3D4670;
     padding: 20px;
     /* Añadido para espaciado interno */
     display: flex;
@@ -113,7 +111,7 @@ select {
     padding: 8px;
     border: 2px solid #79ADE0;
     /* Borde azul claro */
-    border-radius: 10px;
+    border-radius: 50px;
     /* Bordes redondeados */
     background-color: #F6F7F8;
     /* Color de fondo de entradas */

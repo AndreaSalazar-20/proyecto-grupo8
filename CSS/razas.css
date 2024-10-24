@@ -65,7 +65,7 @@ body {
 
 .contenedor .contenido p {
     margin: 5px;
-    font-weight: regular;
+    font-weight: 400;
 }
 
 .contenedor .coleccion {
@@ -144,7 +144,7 @@ body {
 
 .descripcion-texto {
     font-family: 'Raleway', sans-serif;
-    font-size: small;
+    font-size: medium;
     font-weight: 400;
     color: #3D4670;
     text-align: left;
@@ -206,11 +206,11 @@ body {
 .filtro-peso,
 .filtro-colores,
 .filtro-enfermedades {
-    border: 1px solid #3D4670;
+    border: 2px solid #3D4670;
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: 400;
-    border-radius: 4px;
+    border-radius: 50px;
     line-height: 18px;
     padding: 9px 8px;
     width: 100%;
@@ -220,14 +220,10 @@ body {
 }
 
 .label-filtro {
-    font-family: 'Quicksand', sans-serif;
-    /* Fuente uniforme */
-    font-size: 14px;
-    /* Tamaño de la fuente */
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    font-weight: 400;
     color: #3D4670;
-    /* Color del texto */
-    font-weight: 500;
-    /* Peso medio del texto */
     margin-bottom: 8px;
     /* Espaciado debajo del label */
     display: block;
@@ -354,9 +350,9 @@ button,
 }
 
 .btn-estilo {
-    background-color: #FFCE3F;
+    background-color: #3D4670;
     /* Color de fondo del botón */
-    color: #3D4670;
+    color: #ffffff;
     /* Color del texto */
     border-radius: 50px;
     padding: 10px 20px;
@@ -381,14 +377,14 @@ button,
 .btn-estilo:focus {
     outline: none;
     /* Eliminar el contorno al hacer clic */
-    box-shadow: 0 0 0 3px #3D4670;
+    box-shadow: 0 0 0 3px #FFCE3F;
     /* Sombra de enfoque con color #3D4670 */
 }
 
 .btn-estilo:disabled {
     background-color: #E8EAF1;
     /* Color de fondo cuando está deshabilitado */
-    color: #A0A0A0;
+    color: #FFFFFF;
     /* Color del texto cuando está deshabilitado */
     cursor: not-allowed;
     /* Cursor de no permitido */
