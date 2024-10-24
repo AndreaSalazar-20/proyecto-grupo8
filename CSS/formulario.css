@@ -10,7 +10,7 @@ body {
 
 /* Contenedor */
 .contenedor {
-    background-color: #FFFFFF;
+    background-color: #F6F7F8;
     /* Fondo blanco para el contenedor */
     padding: 20px;
     /* Relleno dentro del contenedor */
@@ -49,11 +49,12 @@ form {
 
 /* Formulario de adopción */
 .formulario-adopcion {
+    background-color: #FFFFFF;
     padding: 20px;
     /* Relleno dentro del formulario */
     border-radius: 10px;
     /* Bordes redondeados */
-    /*  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
 }
 
@@ -62,18 +63,21 @@ fieldset {
     border: 2px solid #79ADE0;
     padding: 15px;
     border-radius: 10px;
-    background-color: #E8EAF1;
+    background-color: hsl(0, 0%, 100%);
     /* Color de fondo para fieldsets */
 }
 
 legend {
-    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    font-weight: 800;
     color: #3D4670;
     /* Color de texto del legend */
 }
 
 /* Preguntas */
 .pregunta {
+    /*  width: 200px; */
     display: flex;
     flex-direction: column;
     /* Disposición vertical */
@@ -91,7 +95,9 @@ legend {
 }
 
 label {
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    font-weight: 400;
     color: #3D4670;
     /* Color de texto de las etiquetas */
 }
@@ -103,15 +109,17 @@ input[type="tel"],
 input[type="email"],
 textarea,
 select {
-    padding: 10px;
-    border: 1px solid #79ADE0;
+    width: 95%;
+    padding: 8px;
+    border: 2px solid #79ADE0;
     /* Borde azul claro */
     border-radius: 10px;
     /* Bordes redondeados */
-    font-size: 1rem;
-    /* Tamaño de fuente estándar */
     background-color: #F6F7F8;
     /* Color de fondo de entradas */
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    font-weight: 300;
 
 }
 
@@ -145,8 +153,8 @@ button[type="submit"] {
     /* Sin borde */
     padding: 15px;
     /* Relleno dentro del botón */
-    font-size: 1.2rem;
-    /* Tamaño de fuente del botón */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
     font-weight: bold;
     /* Texto en negrita */
     border-radius: 10px;
@@ -163,6 +171,7 @@ button[type="submit"]:hover {
 }
 
 .barra-progreso {
+    margin-bottom: 5%;
     width: 100%;
     /* Ancho de la barra */
     height: 20px;
