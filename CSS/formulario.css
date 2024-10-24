@@ -1,0 +1,209 @@
+body {
+    background-color: #F6F7F8;
+    color: #3D4670;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    /* Añadido para espaciado interno */
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor */
+.contenedor {
+    background-color: #FFFFFF;
+    /* Fondo blanco para el contenedor */
+    padding: 20px;
+    /* Relleno dentro del contenedor */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    max-width: 600px;
+    /* Ancho máximo para el contenedor */
+    width: 90%;
+    /* Ancho del contenedor */
+    margin: 0;
+    /* Eliminar margen superior */
+}
+
+/* Títulos */
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: #3D4670;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* Espaciado entre elementos del formulario */
+}
+
+/* Formulario de adopción */
+.formulario-adopcion {
+    padding: 20px;
+    /* Relleno dentro del formulario */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    /*  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Fieldsets */
+fieldset {
+    border: 2px solid #79ADE0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #E8EAF1;
+    /* Color de fondo para fieldsets */
+}
+
+legend {
+    font-weight: bold;
+    color: #3D4670;
+    /* Color de texto del legend */
+}
+
+/* Preguntas */
+.pregunta {
+    display: flex;
+    flex-direction: column;
+    /* Disposición vertical */
+    align-items: flex-start;
+    /* Alinear verticalmente al centro */
+    gap: 8px;
+    /* Espaciado entre preguntas */
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    color: #3D4670;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+}
+
+label {
+    font-weight: bold;
+    color: #3D4670;
+    /* Color de texto de las etiquetas */
+}
+
+/* Entradas y selecciones */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #79ADE0;
+    /* Borde azul claro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    font-size: 1rem;
+    /* Tamaño de fuente estándar */
+    background-color: #F6F7F8;
+    /* Color de fondo de entradas */
+
+}
+
+input[type="radio"] {
+    margin-right: 0%;
+    /* Espacio a la derecha de los radios */
+}
+
+/* Estilo para el foco */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #FFCE3F;
+    /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(255, 206, 63, 0.5);
+    /* Añade una sombra suave al enfocar */
+    outline: none;
+    /* Elimina el contorno predeterminado */
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+    background-color: #FFCE3F;
+    /* Color de fondo del botón */
+    color: #FFFFFF;
+    /* Color de texto del botón */
+    border: none;
+    /* Sin borde */
+    padding: 15px;
+    /* Relleno dentro del botón */
+    font-size: 1.2rem;
+    /* Tamaño de fuente del botón */
+    font-weight: bold;
+    /* Texto en negrita */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor en forma de puntero */
+    transition: background-color 0.3s ease;
+    /* Transición suave del color de fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #3D4670;
+    /* Cambio de color al pasar el ratón */
+}
+
+.barra-progreso {
+    width: 100%;
+    /* Ancho de la barra */
+    height: 20px;
+    /* Altura de la barra */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background-color: #E8EAF1;
+    /* Color de fondo de la barra */
+}
+
+.barra-progreso::-webkit-progress-bar {
+    background-color: #E8EAF1;
+    /* Color del fondo de la barra */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.barra-progreso::-webkit-progress-value {
+    background-color: #79ADE0;
+    /* Color de progreso */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.barra-progreso::-moz-progress-bar {
+    background-color: #3D4670;
+    /* Color de progreso */
+}
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 15px;
+        /* Espaciado en pantallas pequeñas */
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        /* Ajustar relleno en pantallas pequeñas */
+        font-size: 1rem;
+        /* Tamaño de fuente estándar */
+    }
+}

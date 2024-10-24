@@ -4,152 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!--navegador-->
     <title>Formulario de adopción - Huellas en tu vida</title>
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Raleway:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"><!-- Fuentes -->
 </head>
 
 <body>
-    <main>
-        <section id="formulario">
-            <h2>Formulario de Adopción</h2> <!--Cada apartado de preguntas sera interactivo-->
-            <progress id="barraProgreso" value="0" max="5"></progress> <!--Barra de progreso superior -->
-            <form id="adopcionForm">
+    <div class="contenedor">
+        <main>
+            <section id="formulario">
+                <h2>Formulario de Adopción</h2>
+                <progress id="barraProgreso" value="0" max="5" class="barra-progreso"></progress>
+                <form id="adopcionForm" class="formulario-adopcion">
 
-                <div class="pregunta"> <!-- Información Personal -->
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="pregunta">
-                    <label for="dui">DUI:</label>
-                    <input type="number" id="dui" name="dui" required>
-                </div>
-                <div class="pregunta">
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" name="direccion" required>
-                </div>
-                <div class="pregunta">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>
-                <div class="pregunta">
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div><br> 
+                    <!-- Fieldset 1: Información Personal -->
+                    <fieldset>
+                        <legend>Información Personal</legend>
+                        <div class="pregunta">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="pregunta">
+                            <label for="dui">DUI:</label>
+                            <input type="number" id="dui" name="dui" required>
+                        </div>
+                        <div class="pregunta">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="pregunta">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="pregunta">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                    </fieldset>
 
-                <div class="pregunta">
-                    <label for="horas">¿Cuántas horas al día estarás en casa?</label>
-                    <input type="number" id="horas" name="horas" required>
-                </div>
+                    <!-- Fieldset 2: Estilo de Vida -->
+                    <fieldset>
+                        <legend>Estilo de Vida</legend>
+                        <div class="pregunta">
+                            <label for="horas">¿Cuántas horas al día estarás en casa?</label>
+                            <input type="number" id="horas" name="horas" required>
+                        </div>
+                        <div class="pregunta">
+                            <label>Vivienda:</label><br>
+                            <input type="radio" id="propia" name="group_radio1" value="propia">
+                            <label for="propia">Propia</label><br>
+                            <input type="radio" id="alquiler" name="group_radio1" value="alquiler">
+                            <label for="alquiler">Alquiler</label><br>
+                            <input type="radio" id="custodia" name="group_radio1" value="custodia">
+                            <label for="custodia">Custodia</label>
+                        </div>
+                        <div class="pregunta">
+                            <label>¿Tienes un jardín?</label><br>
+                            <input type="radio" id="rdb_jardin_si" name="group_radio2" value="si">
+                            <label for="rdb_jardin_si">Sí</label><br>
+                            <input type="radio" id="rdb_jardin_no" name="group_radio2" value="no">
+                            <label for="rdb_jardin_no">No</label>
+                        </div>
+                    </fieldset>
 
-                <div class="pregunta"> <!-- Estilo de Vida -->
-                    <label for="vivienda">Viviendo:</label><br>
-                    <input type="radio" id="propia" name="group_radio1" value="propia">
-                    <label for="propia">propia</label><br>
+                    <!-- Fieldset 3: Experiencia con Mascotas -->
+                    <fieldset>
+                        <legend>Experiencia con Mascotas</legend>
+                        <div class="pregunta">
+                            <label>¿Has tenido mascotas anteriormente?</label><br>
+                            <input type="radio" id="rdb_experiencia_si" name="group_radio3" value="si">
+                            <label for="rdb_experiencia_si">Sí</label><br>
+                            <input type="radio" id="rdb_experiencia_no" name="group_radio3" value="no">
+                            <label for="rdb_experiencia_no">No</label>
+                        </div>
+                        <div class="pregunta">
+                            <label>¿Estás familiarizado con las necesidades de cuidado de un perro?</label><br>
+                            <input type="radio" id="rdb_necesidades_si" name="group_radio4" value="si">
+                            <label for="rdb_necesidades_si">Sí</label><br>
+                            <input type="radio" id="rdb_necesidades_no" name="group_radio4" value="no">
+                            <label for="rdb_necesidades_no">No</label>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="alquiler" name="group_radio1" value="alquiler">
-                    <label for="alquiler">Alquiler</label><br>
+                    <!-- Fieldset 4: Compatibilidad Familiar -->
+                    <fieldset>
+                        <legend>Compatibilidad Familiar</legend>
+                        <div class="pregunta">
+                            <label>¿Tienes niños en casa?</label><br>
+                            <input type="radio" id="rdb_niños_si" name="group_radio5" value="si">
+                            <label for="rdb_niños_si">Sí</label><br>
+                            <input type="radio" id="rdb_niños_no" name="group_radio5" value="no">
+                            <label for="rdb_niños_no">No</label>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="custodia" name="group_radio1" value="custodia">
-                    <label for="custodia">custodia</label>
-                </div>
-                
-                <div class="pregunta">
-                    <label for="jardin">¿Tienes un jardín?</label>
-                    <input type="radio" id="rdb_jardin_si" name="group_radio2" value="si">
-                    <label for="rdb_jardin_si">si</label><br>
+                    <!-- Fieldset 5: Preferencias del Perro -->
+                    <fieldset>
+                        <legend>Preferencias del Perro</legend>
+                        <div class="pregunta">
+                            <label for="tamano">¿Qué tamaño de perro prefieres (pequeño, mediano, grande)?</label>
+                            <select id="Tamaño" name="Tamaño" required>
+                                <option value="Pequeños">Pequeño</option>
+                                <option value="Medianos">Mediano</option>
+                                <option value="Grandes">Grande</option>
+                            </select>
+                        </div>
+                        <div class="pregunta">
+                            <label for="razas">¿Tienes alguna preferencia de raza o tipo de perro?</label>
+                            <select id="nombre-raza" name="nombre-raza1" required>
+                                <option value="Dogo">Dogo Argentino</option>
+                                <option value="Fila">Fila Brasileiro</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Pastor">Pastor Alemán</option>
+                                <option value="Rottweiler">Rottweiler</option>
+                                <option value="ShihTzu">Shih Tzu</option>
+                                <option value="Caniche">Caniche</option>
+                                <option value="L.Retriever">Labrador Retriever</option>
+                                <option value="Bóxer">Bóxer</option>
+                                <option value="Bulldog">Bulldog Francés</option>
+                                <option value="Bulldog">Bulldog Inglés</option>
+                                <option value="Yorkshire">Yorkshire terrier</option>
+                                <option value="Beagle">Beagle</option>
+                                <option value="G.Retriever">Golden Retriever</option>
+                                <option value="Akita">Akita Inu</option>
+                                <option value="Mestizo">Perro mestizo</option>
+                                <option value="Dachshund">Dachshund</option>
+                                <option value="Cocker">Cocker Spaniel</option>
+                                <option value="Maltés">Maltés</option>
+                                <option value="M.Cocker">Maltés con Cocker</option>
+                                <option value="Husky">Husky siberiano</option>
+                                <option value="Bernardo">San Bernardo</option>
+                                <option value="Pomerania">Pomerania</option>
+                                <option value="Samoyedo">Samoyedo</option>
+                                <option value="Corgi">Corgi</option>
+                            </select>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="rdb_jardin_no" name="group_radio2" value="no">
-                    <label for="rdb_jardin_no">no</label><br>
-                </div>
+                    <!-- Fieldset 6: Acuerdo sobre Entrevista Socioeconómica -->
+                    <fieldset>
+                        <legend>Acuerdo sobre Entrevista Socioeconómica</legend>
+                        <div class="pregunta">
+                            <label>¿Está de acuerdo en realizar entrevista socioeconómica?</label><br>
+                            <input type="radio" id="rdb_entrevista_si" name="group_radio6" value="si">
+                            <label for="rdb_entrevista_si">Sí</label><br>
+                            <input type="radio" id="rdb_entrevista_no" name="group_radio6" value="no">
+                            <label for="rdb_entrevista_no">No</label>
+                        </div>
+                    </fieldset>
 
-
-                <div class="pregunta"> <!-- Experiencia con Mascotas -->
-                    <label for="experiencia">¿Has tenido mascotas anteriormente?</label>
-                    <input type="radio" id="rdb_experiencia_si" name="group_radio3" value="si">
-                    <label for="rdb_experiencia_si">si</label><br>
-
-                    <input type="radio" id="rdb_experiencia_no" name="group_radio3" value="no">
-                    <label for="rdb_experiencia_no">no</label><br>
-                </div>
-
-                <div class="pregunta">
-                    <label for="necesidades">¿Estás familiarizado con las necesidades de cuidado de un perro?</label>
-                    <input type="radio" id="rdb_necesidades_si" name="group_radio4" value="si">
-                    <label for="rdb_necesidades_si">si</label><br>
-
-                    <input type="radio" id="rdb_necesidades_no" name="group_radio4" value="no">
-                    <label for="rdb_necesidades_no">no</label><br>
-                </div>
-
-                <div class="pregunta"> <!-- Compatibilidad Familiar -->
-                    <label for="ninos">¿Tienes niños en casa?</label>
-                    <input type="radio" id="rdb_niños_si" name="group_radio5" value="si">
-                    <label for="rdb_niñoss_si">si</label><br>
-
-                    <input type="radio" id="rdb_niños_no" name="group_radio5" value="no">
-                    <label for="rdb_niños_no">no</label><br>
-                </div>
-
-                <div class="pregunta">
-                    <label for="razon">¿Cuál es la razón por la que quieres adoptar un perro?</label>
-                    <textarea id="razon" name="razon" rows="4" required></textarea>
-                </div>
-               
-
-
-                <div class="pregunta"> <!-- Preferencias del Perro -->
-                    <label for="tamano">¿Qué tamaño de perro prefieres (pequeño, mediano, grande)?</label>
-                    <select id="Tamaño" name="Tamaño">
-                        <option value="Pequeños">Pequeño</option>
-                        <option value="Medianos">Mediano</option>
-                        <option value="Grandes">Grande</option>
-                    </select>
-                </div>
-
-                <div class="pregunta">
-                    <label for="razas">¿Tienes alguna preferencia de raza o tipo de perro?</label>
-                    <select id="nombre-raza" name="nombre-raza1">                       
-                        <option value="Dogo">Dogo Argentino</option> <!-- Desde aquí hacia abajo, añadiré más razas-->
-                        <option value="Fila">Fila Brasileiro</option>
-                        <option value="Chihuahua">Chihuahua</option>
-                        <option value="Pastor">Pastor Alemán</option>
-                        <option value="Rottweiler">Rottweiler</option>
-                        <option value="ShihTzu">Shih Tzu</option>
-                        <option value="Caniche">Caniche</option>
-                        <option value="L.Retriever">Labrador Retriever</option>
-                        <option value="Bóxer">Bóxer</option>
-                        <option value="Bulldog">Bulldog Frances</option>
-                        <option value="Bulldog">Bulldog Inglés</option>
-                        <option value="Yorkshire">Yorkshire terrier</option>
-                        <option value="Beagle">Beagle</option>
-                        <option value="G.Retriever">Golden Retriever</option>
-                        <option value="Akita">Akita Inu</option>
-                        <option value="Mestizo">Perro mestizo</option>
-                        <option value="Dachshund">Dachshund</option>
-                        <option value="Cocker">Cocker Spaniel</option>
-                        <option value="Maltés">Maltés</option>
-                        <option value="M.Cocker">Maltés con Cocker</option>
-                        <option value="Husky">Husky siberiano</option>
-                        <option value="Bernardo">San Bernardo</option>
-                        <option value="Pomerania">Pomerania</option>
-                        <option value="Samoyedo">Samoyedo</option>
-                        <option value="Corgi">Corgi</option>
-                    </select>
-                </div>
-
-                <div class="pregunta"> <!-- Acuerdo -->
-                    <label for="entrevista">¿Esta de acuerdo en realizar entrevista socioeconomica?</label>
-                    <input type="radio" id="rdb_entrevista_si" name="group_radio6" value="si">
-                    <label for="rdb_entrevista_si">si</label><br>
-
-                    <input type="radio" id="rdb_entrevista_no" name="group_radio6" value="no">
-                    <label for="rdb_entrevista_no">no</label><br>
-                </div>
-
-                <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
-            </form>
-        </section>
-    </main>
-
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
