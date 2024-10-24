@@ -14,7 +14,8 @@ body {
     /* Relleno dentro del contenedor */
     border-radius: 10px;
     /* Bordes redondeados */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    /*  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
     /* Sombra suave */
     max-width: 600px;
     /* Ancho máximo para el contenedor */
