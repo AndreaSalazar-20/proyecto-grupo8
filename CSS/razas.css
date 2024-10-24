@@ -7,17 +7,17 @@ body {
     background-color: #F6F7F8;
     color: #3D4670;
     font-family: 'Raleway', sans-serif;
-    padding: 20px;
+    /*  padding: 20px; */
     /* Añadido para espaciado interno */
 }
 
 .contenedor {
-    width: 98%;
+    width: 100%;
     /* 90% */
-    max-width: 1500px;
+    max-width: auto;
     margin: 10px auto;
     display: grid;
-    grid-gap: 20px;
+    /*   grid-gap: 0px; */
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
 
@@ -72,9 +72,10 @@ body {
     background-color: #E8EAF1;
     /* cambiar */
     grid-area: coleccion;
+    /* justify-content: right; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+    gap: 10px;
 }
 
 .card {
@@ -86,8 +87,8 @@ body {
     overflow: hidden;
     background-color: #F6F7F8;
     /*cambiar*/
-    background-size: cover;
-    background-position: center center;
+    background-size: 10px;
+    /*  background-position: center center; */
 
     text-align: center;
     display: flex;
@@ -190,7 +191,8 @@ body {
     text-align: left;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: right;
+    padding-right: 35px;
     min-height: 100px;
     /* height: 300px; */
     grid-area: sidebar;
@@ -265,7 +267,7 @@ body {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 25px;
+    padding: 15px;
     background-color: #FFFFFF;
     display: none;
     overflow: hidden;
