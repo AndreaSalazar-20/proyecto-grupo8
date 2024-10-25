@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: #F6F7F8;
-    color: #3D4670;
+    background-color: #f6f7f8;
+    color: #3d4670;
     font-family: 'Raleway', sans-serif;
     /*  padding: 20px; */
     /* Añadido para espaciado interno */
@@ -15,9 +15,9 @@ body {
     width: 100%;
     /* 90% */
     max-width: auto;
-    margin: 10px auto;
+    margin: 0;
     display: grid;
-    /*   grid-gap: 0px; */
+    grid-gap: 20px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
 
@@ -40,8 +40,8 @@ body {
 }
 
 .contenedor .header {
-    background-color: #3D4670;
-    color: #FFFFFF;
+    background-color: #3d4670;
+    color: #ffffff;
     grid-area: header;
     font-family: 'Quicksand', sans-serif;
     /* Fuente para el título - quitar segun el contenido*/
@@ -69,29 +69,33 @@ body {
 }
 
 .contenedor .coleccion {
-    background-color: #E8EAF1;
+    background-color: #e8eaf1;
     /* cambiar */
     grid-area: coleccion;
     /* justify-content: right; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(90px 1fr 50px);
     gap: 10px;
 }
 
 .card {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+
     border-radius: 10px;
     min-height: 200px;
     font-weight: bold;
     padding: 20px;
-    position: relative;
+    position: static;
     overflow: hidden;
-    background-color: #F6F7F8;
+    background-color: #f6f7f8;
     /*cambiar*/
     background-size: 10px;
     /*  background-position: center center; */
 
     text-align: center;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -104,7 +108,7 @@ body {
 }
 
 .card:hover::after {
-    content: "";
+    content: '';
     /* Necesario para mostrar el pseudo-elemento */
     position: absolute;
     /* Posicionamiento absoluto */
@@ -139,14 +143,13 @@ body {
     font-weight: bold;
     margin-inline-start: 1px;
     margin-inline-end: 1px;
-
 }
 
 .descripcion-texto {
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: 400;
-    color: #3D4670;
+    color: #3d4670;
     text-align: left;
     letter-spacing: 0.05em;
     display: block;
@@ -155,7 +158,6 @@ body {
     margin-inline-start: 1px;
     margin-inline-end: 1px;
 }
-
 
 .image-container {
     width: 100%;
@@ -173,15 +175,18 @@ body {
 }
 
 .tituloImag {
-    width: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
     /* Hacer que la imagen ocupe el 100% del ancho de su contenedor */
-    height: 200px;
+    /* height: 200px; */
     /* Establece una altura fija para todas las imágenes */
-    object-fit: contain;
+    /* object-fit: contain; */
     /* Mantiene la proporción original de la imagen sin recortar */
-    min-width: 100%;
+    /* min-width: 100%; */
     /* Asegura que incluso las imágenes pequeñas se expandan */
-    min-height: 200px;
+    /* min-height: 200px; */
     /* Asegura que las imágenes pequeñas tengan la altura adecuada */
 }
 
@@ -206,7 +211,7 @@ body {
 .filtro-peso,
 .filtro-colores,
 .filtro-enfermedades {
-    border: 2px solid #3D4670;
+    border: 2px solid #3d4670;
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: 400;
@@ -223,27 +228,26 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: 400;
-    color: #3D4670;
+    color: #3d4670;
     margin-bottom: 8px;
     /* Espaciado debajo del label */
     display: block;
     /* Ocupa toda la línea */
     letter-spacing: 0.4px;
     /* Espaciado entre letras */
-    line-height: 1.0;
+    line-height: 1;
     /* Aumenta el espacio entre líneas */
 }
 
-
 .contenedor .footer {
-    background: #3D4670;
-    color: #FFFFFF;
+    background: #3d4670;
+    color: #ffffff;
     grid-area: footer;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #3D4670;
+    background-color: #3d4670;
     color: #ffffff;
     cursor: pointer;
     padding: 18px;
@@ -257,14 +261,14 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #FFCE3F;
-    border: 4px solid #E8EAF1;
+    background-color: #ffce3f;
+    border: 4px solid #e8eaf1;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 15px;
-    background-color: #FFFFFF;
+    padding: 10px;
+    background-color: #ffffff;
     display: none;
     overflow: hidden;
     border-radius: 30px 10% 0px 0%;
@@ -277,7 +281,7 @@ body {
     margin: 5px;
     line-height: 1.6;
     /* Espacio vertical entre líneas */
-    color: #3D4670;
+    color: #3d4670;
     text-align: left;
     letter-spacing: 0.05em;
     display: block;
@@ -291,7 +295,7 @@ body {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #E8EAF1;
+    color: #e8eaf1;
     float: right;
     margin-left: 5px;
 }
@@ -314,8 +318,8 @@ body {
 
 /* Estilos para botones */
 button {
-    background-color: #79ADE0;
-    color: #FFFFFF;
+    background-color: #79ade0;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -323,14 +327,14 @@ button {
 }
 
 button:hover {
-    background-color: #FFCE3F;
+    background-color: #ffce3f;
 }
 
 /* Estilos para botones para ver el video */
 button,
 .video-button {
-    background-color: #79ADE0;
-    color: #FFFFFF;
+    background-color: #79ade0;
+    color: #ffffff;
     border: none;
     border-radius: 50px;
     padding: 10px 20px;
@@ -344,13 +348,13 @@ button,
 }
 
 .video-button:hover {
-    background-color: #3D4670;
-    border: 2px solid #FFCE3F;
+    background-color: #3d4670;
+    border: 2px solid #ffce3f;
     /* Estilo hover opcional */
 }
 
 .btn-estilo {
-    background-color: #3D4670;
+    background-color: #3d4670;
     /* Color de fondo del botón */
     color: #ffffff;
     /* Color del texto */
@@ -370,21 +374,21 @@ button,
 }
 
 .btn-estilo:hover {
-    background-color: #79ADE0;
+    background-color: #79ade0;
     /* Color de fondo al pasar el mouse */
 }
 
 .btn-estilo:focus {
     outline: none;
     /* Eliminar el contorno al hacer clic */
-    box-shadow: 0 0 0 3px #FFCE3F;
+    box-shadow: 0 0 0 3px #ffce3f;
     /* Sombra de enfoque con color #3D4670 */
 }
 
 .btn-estilo:disabled {
-    background-color: #E8EAF1;
+    background-color: #e8eaf1;
     /* Color de fondo cuando está deshabilitado */
-    color: #FFFFFF;
+    color: #ffffff;
     /* Color del texto cuando está deshabilitado */
     cursor: not-allowed;
     /* Cursor de no permitido */
