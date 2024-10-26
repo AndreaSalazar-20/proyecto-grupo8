@@ -5,701 +5,881 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de razas</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!--navegador-->
+    <link rel="stylesheet" href="../CSS/razas.css"> <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Raleway:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"><!-- Fuentes -->
 </head>
 
 <body>
+    <div class="contenedor">
+        <header class="header">
+            <h2>Apartado HEADER - Contenido de index</h2>
+        </header>
+        <!-- Fin div header -->
 
-    <main id="intro"> <!--Introducción-->
-        <h1> ¿Por qué es importante conocer las razas? </h1>
-        <p> Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que ambos
-            puedan vivir felices.
-            Cada raza tiene su propia personalidad, nivel de actividad y cuidados especiales que debes considerar. Por
-            ejemplo, algunos perros
-            son más adecuados para familias con niños pequeños, mientras que otros requieren un nivel de actividad
-            física más elevado o un espacio
-            amplio.
-        </p>
-        <p>
-            Además, al comprender su temperamento y necesidades de entrenamiento, puede garantizar una convivencia
-            armoniosa y satisfacer sus
-            necesidades físicas y emocionales. A continuación, utiliza los filtros para encontrar la raza que mejor se
-            ajuste a ti y a tu hogar.
-        </p>
+        <main class="contenido">
+            <!--   <h1>Contenido</h1> -->
+            <!--Introducción-->
+            <h2>¿Por qué es importante conocer las razas?</h2>
+            <p>
+                Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que
+                ambos puedan vivir felices. Cada raza tiene su propia personalidad, nivel de actividad y cuidados
+                especiales
+                que debes considerar. Por ejemplo, algunos perros son más adecuados para familias con niños pequeños,
+                mientras que otros requieren un nivel de actividad física más elevado o un espacio amplio.
+            </p>
 
-        <hr>
+            <p>
+                Además, al comprender su temperamento y necesidades de entrenamiento, puedes garantizar una convivencia
+                armoniosa y satisfacer sus necesidades físicas y emocionales. A continuación, utiliza los filtros para
+                encontrar la raza que mejor se ajuste a ti y a tu hogar.
+            </p>
+        </main>
+        <!-- Fin div main -->
 
-        <div class="razas-grid"> <!--Tipos de raza-raza1-->
-            <article class="razas">
-                <img src="../imagenes/perros/dogoArgentino.png" width="20%" alt="Dogo Argentino">
-                <h3>Dogo Argentino</h3>
-                <p><strong>Grupo:</strong> Perros de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong> Moderado</p>
-                <p><strong>Tamaño:</strong> Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Blanco</p>
-                <p><strong>Peso:</strong> 40-45 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.</p>
+        <aside class="sidebar">
+            <!-- Contenedor principal -->
+            <div class="filtros">
+                <!-- Sección de filtros -->
+                <form id="Filtro-razas" action="/resultado-filtro" method="GET">
+                    <h3>Filtrar razas</h3>
+                    <br />
+                    <label for="nombre-raza" class="label-filtro">Buscar por nombre de raza:</label>
+                    <select id="nombre-raza" class="filtro-raza" name="nombre-raza1">
+                        <option></option>
+                        <option value="Dogo">Dogo Argentino</option>
+                        <!--1 al 25 perros-->
+                        <option value="Fila">Fila Brasileiro</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Pastor">Pastor Alemán</option>
+                        <option value="Rottweiler">Rottweiler</option>
+                        <option value="ShihTzu">Shih Tzu</option>
+                        <option value="Caniche">Caniche</option>
+                        <option value="L.Retriever">Labrador Retriever</option>
+                        <option value="Bóxer">Bóxer</option>
+                        <option value="Bulldog">Bulldog Frances</option>
+                        <option value="Bulldog">Bulldog Inglés</option>
+                        <option value="Yorkshire">Yorkshire terrier</option>
+                        <option value="Beagle">Beagle</option>
+                        <option value="G.Retriever">Golden Retriever</option>
+                        <option value="Akita">Akita Inu</option>
+                        <option value="Mestizo">Perro mestizo</option>
+                        <option value="Dachshund">Dachshund</option>
+                        <option value="Cocker">Cocker Spaniel</option>
+                        <option value="Maltés">Maltés</option>
+                        <option value="M.Cocker">Maltés con Cocker</option>
+                        <option value="Husky">Husky siberiano</option>
+                        <option value="Bernardo">San Bernardo</option>
+                        <option value="Pomerania">Pomerania</option>
+                        <option value="Samoyedo">Samoyedo</option>
+                        <option value="Corgi">Corgi</option>
+                    </select>
+                    <br />
 
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
+                    <label for="grupo" class="label-filtro">Grupo:</label>
+                    <select id="grupo" class="filtro-grupo" name="grupo">
+                        <option></option>
+                        <option value="Deportivo">Deportivo</option>
+                        <option value="Compania">De Compañía</option>
+                        <option value="Trabajo">De Trabajo</option>
+                        <option value="Guardia">De Guardia</option>
+                        <option value="Caza">De Caza</option>
+                        <option value="Pastoreo">De Pastoreo</option>
+                    </select>
+                    <br />
 
-                <div class="descripción" style="display:none;">
-                    <p>Raza argentina creada para la caza mayor, fuerte, protector y valiente.</p>
+                    <label for="Ladridos" class="label-filtro">Nivel de Ladridos:</label>
+                    <select id="Ladridos" class="filtro-ladrido" name="Ladridos">
+                        <option></option>
+                        <option value="bajo">Bajo</option>
+                        <option value="moderado">Moderado</option>
+                        <option value="alto">Alto</option>
+                    </select>
+                    <br />
+
+                    <label for="tamaño" class="label-filtro">Tamaño:</label>
+                    <select id="tamaño" class="filtro-tamaño" name="tamaño">
+                        <option></option>
+                        <option value="Pequeños">Pequeño</option>
+                        <option value="Medianos">Mediano</option>
+                        <option value="Grandes">Grande</option>
+                    </select>
+                    <br />
+
+                    <label for="esperanza" class="label-filtro">Esperanza de vida:</label>
+                    <select id="esperanza" class="filtro-esperanza" name="esperanza">
+                        <option></option>
+                        <option value="baja">Menos de 10 años</option>
+                        <option value="media">10-12 años</option>
+                        <option value="alta">Más de 12 años</option>
+                    </select>
+                    <br />
+
+                    <label for="peso" class="label-filtro">Peso:</label>
+                    <select id="peso" class="filtro-peso" name="peso">
+                        <option></option>
+                        <option value="ligero">Menos de 10 kg</option>
+                        <option value="medio">10-25 kg</option>
+                        <option value="pesado">Más de 25 kg</option>
+                    </select>
+                    <br />
+
+                    <label for="colores" class="label-filtro">Colores:</label>
+                    <select id="colores" class="filtro-colores" name="colores">
+                        <option></option>
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                        <option value="marron">Marrón</option>
+                        <option value="tricolor">Tricolor</option>
+                    </select>
+                    <br />
+
+                    <label for="enfermedades" class="label-filtro">Posibles enfermedades:</label>
+                    <select id="enfermedades" class="filtro-enfermedades" name="enfermedades">
+                        <option></option>
+                        <option value="displasia">Displasia de cadera</option>
+                        <option value="problemas_piel">Problemas de piel</option>
+                        <option value="cardiacos">Problemas cardíacos</option>
+                    </select>
+                    <br />
+
+                    <button class="btn-estilo" type="reset">Limpiar todo</button>
+                    <button class="btn-estilo" id="boton-busqueda" type="button">Buscar</button>
+
+                </form>
+            </div>
+        </aside>
+        <!-- Fin div aside -->
+
+        <div class="coleccion">
+            <!-- Perro 1 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/dogoArgentino.png" width="50%" alt="Dogo Argentino" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Dogo Argentino</h3>
+                    <p class="descripcion-texto">Raza argentina creada para la caza mayor, fuerte, protector y valiente.
+                    </p>
                 </div>
-
-                <a href="https://youtu.be/kL9yaJ4VkbI?si=nL_NNU7hfDRCcTqh" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza2-->
-            <article class="razas">
-                <img src="../imagenes/perros/filaBrasileiro.png" width="20%" alt="Fila">
-                <h3>Fila Brasileiro</h3>
-                <p><strong>Grupo:</strong> Perros de guardia</p>
-                <p><strong>Nivel de ladrido:</strong> Bajo</p>
-                <p><strong>Tamaño:</strong> Grande</p>
-                <p><strong>Esperanza de vida:</strong> 9-12 años</p>
-                <p><strong>Colores del manto:</strong> León, leonado, atigrado</p>
-                <p><strong>Peso:</strong> 40-45 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Raza brasileña poderosa y leal, ideal para la guardia y protección.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> Moderado</p>
+                            <p><strong>Tamaño:</strong> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco</p>
+                            <p><strong>Peso:</strong> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.
+                            </p>
+                        </div>
+                        <a href="https://youtu.be/kL9yaJ4VkbI?si=nL_NNU7hfDRCcTqh" target="_blank"
+                            class="video-button">Ver video</a>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 1 -->
 
-                <a href="https://www.youtube.com/watch?v=KncEG1h_NkM&ab_channel=SoyUnPerro" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza3-->
-            <article class="razas">
-                <img src="../imagenes/perros/chihuahua.png" width="20%" alt="Chihuahua">
-                <p><strong>Grupo:</strong> Perros de compañía</p>
-                <p><strong>Nivel de ladrido:</strong> Alto </p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-20 años</p>
-                <p><strong>Colores del manto:</strong> Negro, blanco, chocolate, crema, dorado</p>
-                <p><strong>Peso:</strong> 1-3 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso traqueal</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Pequeño, valiente y alerta, conocido por su carácter protector y enérgico.</p>
+            <!-- Perro 2 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/filaBrasileiro.png" width="50%" alt="Fila" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Fila Brasileiro</h3>
+                    <p class="descripcion-texto">Raza brasileña poderosa y leal, ideal para la guardia y protección.</p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=jvuGZh9vvPc&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza4-->
-            <article class="razas">
-                <img src="../imagenes/perros/pastorAleman.png" width="20%" alt="Pastor">
-                <h3>Pastor Alemán</h3>
-                <p><strong>Grupo:</strong> Perros de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong> Moderado </p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 9-13 años</p>
-                <p><strong>Colores del manto:</strong> Negro con fuego, sable</p>
-                <p><strong>Peso:</strong> 30-40 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, displasia de codo, torsión gástrica.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Inteligente, versátil y leal, utilizado en tareas de protección y servicio.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de guardia</p>
+                            <p><strong>Nivel de ladrido:</strong> Bajo</p>
+                            <p><strong>Tamaño:</strong> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 9-12 años</p>
+                            <p><strong>Colores del manto:</strong> León, leonado, atigrado</p>
+                            <p><strong>Peso:</strong> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares</p>
+                            <a href="https://www.youtube.com/watch?v=KncEG1h_NkM&ab_channel=SoyUnPerro" target="_blank"
+                                class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 2 -->
 
-                <a href="https://www.youtube.com/watch?v=CcwceR_QdPg&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza5-->
-            <article class="razas">
-                <img src="../imagenes/perros/rottweiler.png" width="20%" alt="Rottweiler">
-                <h3>Rottweiler</h3>
-                <p><strong>Grupo:</strong> Perros de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong> Bajo a Moderado </p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                <p><strong>Colores del manto:</strong> Negro con marcas fuego</p>
-                <p><strong>Peso:</strong> 40-60 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Displasia de cadera, torsión gástrica, problemas cardíacos</p>
+            <!-- Perro 3 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/chihuahua.png" width="50%" alt="Chihuahua" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Chihuahua</h3>
+                    <p class="descripcion-texto">Pequeño, valiente y alerta, conocido por su carácter protector y
+                        enérgico.</p>
                 </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de compañía</p>
+                            <p><strong>Nivel de ladrido:</strong> Alto</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-20 años</p>
+                            <p><strong>Colores del manto:</strong> Negro, blanco, chocolate, crema, dorado</p>
+                            <p><strong>Peso:</strong> 1-3 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso
+                                traqueal</p>
 
-                <a href="https://www.youtube.com/watch?v=282JA4gogxk&ab_channel=TodoSobreelPerro" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza6-->
-            <article class="razas">
-                <img src="../imagenes/perros/shihTzu.png" width="20%" alt="Tzu">
-                <h3>Shih Tzu</h3>
-                <p><strong>Grupo:</strong> Perros de compañia</p>
-                <p><strong>Nivel de ladrido:</strong> Bajo a Moderado </p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 10-16 años</p>
-                <p><strong>Colores del manto:</strong> Blanco, dorado, marrón, negro</p>
-                <p><strong>Peso:</strong> 4-7 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas oculares, displasia de
-                    cadera.
-                </p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Afectuoso y sociable, con un pelaje distintivo y gran compañía.</p>
+                            <a href="https://www.youtube.com/watch?v=jvuGZh9vvPc&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 3 -->
 
-                <a href="https://www.youtube.com/watch?v=E-g2w4aQJgM&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza7-->
-            <article class="razas">
-                <img src="../imagenes/perros/caniche.png" width="20%" alt="Caniche">
-                <h3>Caniche - Poodle</h3>
-                <p><strong>Grupo:</strong>Perros de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Varía (miniatura, mediano, grande)</p>
-                <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                <p><strong>Colores del manto:</strong> Blanco, negro, gris, marrón, albaricoque</p>
-                <p><strong>Peso:</strong> Varía según el tamaño 2-32 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares, epilepsia.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.</p>
+            <!-- Perro 4 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/pastorAleman.png" width="50%" alt="Pastor" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Pastor Alemán</h3>
+                    <p class="descripcion-texto">Inteligente, versátil y leal, utilizado en tareas de protección y
+                        servicio.</p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=CJZgj7K28Xs&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza8-->
-            <article class="razas">
-                <img src="../imagenes/perros/labradorRetriever.png" width="20%" alt="Labrador">
-                <h3>Labrador Retriever</h3>
-                <p><strong>Grupo:</strong>Perros de caza</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Amarillo, chocolate, negro</p>
-                <p><strong>Peso:</strong> 25-36 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares, obesidad</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Amigable, obediente y versátil, utilizado para labores de asistencia y caza.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> Moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 9-13 años</p>
+                            <p><strong>Colores del manto:</strong> Negro con fuego, sable</p>
+                            <p><strong>Peso:</strong> 30-40 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, displasia de codo, torsión
+                                gástrica.</p>
+                            <a href="https://www.youtube.com/watch?v=CcwceR_QdPg&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 4 -->
 
-                <a href="https://www.youtube.com/watch?v=A21GxQdrtME&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza9-->
-            <article class="razas">
-                <img src="../imagenes/perros/boxer.png" width="20%" alt="Bóxer">
-                <h3>Bóxer</h3>
-                <p><strong>Grupo:</strong>Perros de Trabajo</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Atigrado, leonado</p>
-                <p><strong>Peso:</strong> 25-32 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas cardíacos, displasia de cadera, cáncer.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Energético, juguetón y protector, ideal para familias y tareas de vigilancia.</p>
+            <!-- Perro 5 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/rottweiler.png" width="50%" alt="Rottweiler" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Rottweiler</h3>
+                    <p class="descripcion-texto">Fuerte, protector y confiable, ideal para guardia y tareas de trabajo.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=uQnyxk0lBH0&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza10-->
-            <article class="razas">
-                <img src="../imagenes/perros/bulldogFrances.png" width="20%" alt="Francés">
-                <h3>Bulldog Francés</h3>
-                <p><strong>Grupo:</strong>Perros de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                <p><strong>Tamaño:</strong>Pequeño a mediano</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Blanco, negro, leonado, atigrado</p>
-                <p><strong>Peso:</strong> 8-14 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas de piel, luxación de rótula
-                </p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> Negro con marcas fuego</p>
+                            <p><strong>Peso:</strong> 40-60 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=282JA4gogxk&ab_channel=TodoSobreelPerro"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 5 -->
 
-                <a href="https://www.youtube.com/watch?v=nybbPfS4woI&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza11-->
-            <article class="razas">
-                <img src="../imagenes/perros/bulldogIngles.png" width="20%" alt="Inglés">
-                <h3>Bulldog Inglés</h3>
-                <p><strong>Grupo:</strong>Perros de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                <p><strong>Tamaño:</strong>Mediano</p>
-                <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                <p><strong>Colores del manto:</strong> Blanco, leonado, atigrado</p>
-                <p><strong>Peso:</strong> 18-50 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas articulares, displasia de
-                    cadera.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Calmado, cariñoso y de aspecto robusto, un perro familiar confiable.</p>
+            <!-- Perro 6 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/shihTzu.png" width="50%" alt="Tzu" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Shih Tzu</h3>
+                    <p class="descripcion-texto">Afectuoso y sociable, con un pelaje distintivo y gran compañía.</p>
                 </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 10-16 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco, dorado, marrón, negro</p>
+                            <p><strong>Peso:</strong> 4-7 kg</p>
+                            <p>
+                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas oculares,
+                                displasia de
+                                cadera.
+                            </p>
 
-                <a href="https://www.youtube.com/watch?v=V23DbldqWW0&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza12-->
-            <article class="razas">
-                <img src="../imagenes/perros/yorkshireTerrier.png" width="20%" alt="Yorkshire">
-                <h3>Yorkshire Terrier</h3>
-                <p><strong>Grupo:</strong>Perros de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Alto</p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                <p><strong>Colores del manto:</strong> Azul y fuego</p>
-                <p><strong>Peso:</strong> 2-3 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas dentales, colapso traqueal.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Enérgico, valiente y muy protector, pese a su pequeño tamaño.</p>
+                            <a href="https://www.youtube.com/watch?v=E-g2w4aQJgM&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 6 -->
 
-                <a href="https://www.youtube.com/watch?v=d_1TyXepyPY&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
+            <!-- Perro 7 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/caniche.png" width="50%" alt="Caniche" />
 
-        <div class="razas-grid"> <!--Otra raza13-->
-            <article class="razas">
-                <img src="../imagenes/perros/beagle.png" width="20%" alt="Beagle">
-                <h3>Beagle</h3>
-                <p><strong>Grupo:</strong>Perros de caza</p>
-                <p><strong>Nivel de ladrido:</strong>Alto</p>
-                <p><strong>Tamaño:</strong>Mediano</p>
-                <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                <p><strong>Colores del manto:</strong> Tricolor, blanco, negro y marrón</p>
-                <p><strong>Peso:</strong> 9-11 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Hipotiroidismo, epilepsia, problemas de oído</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Olfateador nato, amigable y juguetón, con gran instinto de caza.</p>
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Caniche - Poodle</h3>
+                    <p class="descripcion-texto">
+                        Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=d9H-v5ZIq4U&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza14-->
-            <article class="razas">
-                <img src="../imagenes/perros/goldenRetriever.png" width="20%" alt="Retriever">
-                <h3>Golden Retriever</h3>
-                <p><strong>Grupo:</strong>Perros de caza</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Dorado, crema</p>
-                <p><strong>Peso:</strong> 25-40 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas cardíacos, cáncer</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Cariñoso, amigable y muy inteligente, popular por su lealtad.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Varía (miniatura, mediano, grande)</p>
+                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco, negro, gris, marrón, albaricoque</p>
+                            <p><strong>Peso:</strong> Varía según el tamaño 2-32 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                                epilepsia.</p>
+                            <a href="https://www.youtube.com/watch?v=CJZgj7K28Xs&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 7 -->
 
-                <a href="https://www.youtube.com/watch?v=dfdPn4pF9Ec&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
+            <!-- Perro 8 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/labradorRetriever.png" width="50%" alt="Labrador" />
 
-        <div class="razas-grid"> <!--Otra raza15-->
-            <article class="razas">
-                <img src="../imagenes/perros/akitaInu.png" width="20%" alt="Akita">
-                <h3>Akita Inu</h3>
-                <p><strong>Grupo:</strong>Perros de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Blanco, rojo, atigrado</p>
-                <p><strong>Peso:</strong> 32-50 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares, hipotiroidismo</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Digno, leal y protector, conocido por su temperamento reservado.</p>
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Labrador Retriever</h3>
+                    <p class="descripcion-texto">
+                        Amigable, obediente y versátil, utilizado para labores de asistencia y caza.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=eDzmgtkfd3k&ab_channel=ExpertoAnimal" target="_blank">Ver
-                    video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza16-->
-            <article class="razas">
-                <img src="../imagenes/perros/perroMestizo.png" width="20%" alt="mestizo">
-                <h3>Perro mestizo</h3>
-                <p><strong>Grupo:</strong>Varia</p>
-                <p><strong>Nivel de ladrido:</strong>Varia</p>
-                <p><strong>Tamaño:</strong>Varia</p>
-                <p><strong>Esperanza de vida:</strong> 10-18 años</p>
-                <p><strong>Colores del manto:</strong> Varia</p>
-                <p><strong>Peso:</strong> Varia</p>
-                <p><strong>Enfermedades comunes:</strong> Varía según su composición genética</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Varía según la mezcla de razas, pero tienden a ser adaptables y únicos en temperamento.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Amarillo, chocolate, negro</p>
+                            <p><strong>Peso:</strong> 25-36 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares,
+                                obesidad</p>
+                            <a href="https://www.youtube.com/watch?v=A21GxQdrtME&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 8 -->
 
-                <a href="https://www.youtube.com/watch?v=qSDKBIuJPCg&ab_channel=TuAmigoIncondicional"
-                    target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza17-->
-            <article class="razas">
-                <img src="../imagenes/perros/dachshund.png" width="20%" alt="Dachshund">
-                <h3>Perro Salchicha - Dachshund</h3>
-                <p><strong>Grupo:</strong>Perro de caza</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                <p><strong>Colores del manto:</strong> Rojo, negro y fuego, chocolate</p>
-                <p><strong>Peso:</strong> 7-14 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas de columna, luxación de rótula, obesidad.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Determinado y valiente, criado para cazar tejones y otras presas.</p>
+            <!-- Perro 9 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/boxer.png" width="50%" alt="Bóxer" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Bóxer</h3>
+                    <p class="descripcion-texto">
+                        Energético, juguetón y protector, ideal para familias y tareas de vigilancia.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=t4BJ0Zvan8I&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza18-->
-            <article class="razas">
-                <img src="../imagenes/perros/cockerSpaniel.png" width="20%" alt="cockerSpaniel">
-                <h3>Cocker Spaniel</h3>
-                <p><strong>Grupo:</strong>Perro de caza</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Mediano</p>
-                <p><strong>Esperanza de vida:</strong> 12-14 años</p>
-                <p><strong>Colores del manto:</strong> Dorado, negro, tricolor</p>
-                <p><strong>Peso:</strong> 12-16 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas oculares, otitis, displasia de cadera.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Dulce y sociable, con grandes instintos para la caza y el rastreo.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de Trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Atigrado, leonado</p>
+                            <p><strong>Peso:</strong> 25-32 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas cardíacos, displasia de cadera, cáncer.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=uQnyxk0lBH0&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 9 -->
 
-                <a href="https://www.youtube.com/watch?v=tWn2wUF3EGg&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
+            <!-- Perro 10 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/bulldogFrances.png" width="50%" alt="Francés" />
 
-        <div class="razas-grid"> <!--Otra raza19-->
-            <article class="razas">
-                <img src="../imagenes/perros/maltes.png" width="20%" alt="Maltés">
-                <h3>Maltés</h3>
-                <p><strong>Grupo:</strong>Perro de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                <p><strong>Colores del manto:</strong> Blanco</p>
-                <p><strong>Peso:</strong> 3-4 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, problemas oculares.
-                </p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Pequeño, elegante y cariñoso, con un pelaje largo y sedoso.</p>
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Bulldog Francés</h3>
+                    <p class="descripcion-texto">
+                        Inteligente y activo, popular por su elegancia y habilidades de aprendizaje.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=QaxO5ecz_OY&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza20-->
-            <article class="razas">
-                <img src="../imagenes/perros/maltesxCocker.png" width="20%" alt="maltesConCocker">
-                <h3>Maltés con Cocker</h3>
-                <p><strong>Grupo:</strong>Perro de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Pequeño a mediano</p>
-                <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                <p><strong>Colores del manto:</strong> Varía</p>
-                <p><strong>Peso:</strong> 4-12 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas oculares.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Cruce afectuoso y juguetón, con características de ambas razas.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+                            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco, negro, leonado, atigrado</p>
+                            <p><strong>Peso:</strong> 8-14 kg</p>
+                            <p>
+                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas de piel,
+                                luxación de rótula
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=nybbPfS4woI&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 10 -->
 
-                <a href="https://www.youtube.com/watch?v=7H6gOgzNhPE&t=25s&ab_channel=OxitocinaMagazine" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza21-->
-            <article class="razas">
-                <img src="../imagenes/perros/huskySiberiano.png" width="20%" alt="Husky">
-                <h3>Husky Siberiano</h3>
-                <p><strong>Grupo:</strong>Perro de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo - Tienden a aullar más que ladrar.</p>
-                <p><strong>Tamaño:</strong>Mediano</p>
-                <p><strong>Esperanza de vida:</strong> 12-14 años</p>
-                <p><strong>Colores del manto:</strong> Blanco</p>
-                <p><strong>Peso:</strong> 16-27 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares, hipotiroidismo</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Energético, independiente y resistente, criado para tirar trineos.</p>
+            <!-- Perro 11 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/bulldogIngles.png" width="30%" alt="Inglés" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Bulldog Inglés</h3>
+                    <p class="descripcion-texto">Calmado, cariñoso y de aspecto robusto, un perro familiar confiable.
+                    </p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=Hqrv7lt_-TA&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza22-->
-            <article class="razas">
-                <img src="../imagenes/perros/sanBernardo.png" width="20%" alt="Bernardo">
-                <h3>San Bernardo</h3>
-                <p><strong>Grupo:</strong>Perro de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                <p><strong>Colores del manto:</strong> Blanco con marrón</p>
-                <p><strong>Peso:</strong> 64-120 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, torsión gástrica, problemas cardíacos</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Gentil, calmado y fuerte, famoso por sus labores de rescate en montañas.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+                            <p><strong>Tamaño:</strong>Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco, leonado, atigrado</p>
+                            <p><strong>Peso:</strong> 18-50 kg</p>
+                            <p>
+                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas articulares,
+                                displasia de
+                                cadera.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=V23DbldqWW0&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 11 -->
 
-                <a href="https://www.youtube.com/watch?v=E7K0LueBN-0&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza23-->
-            <article class="razas">
-                <img src="../imagenes/perros/pomerania.png" width="20%" alt="pomerania">
-                <h3>Pomerania</h3>
-                <p><strong>Grupo:</strong>Perro de compañia</p>
-                <p><strong>Nivel de ladrido:</strong>Alto</p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                <p><strong>Colores del manto:</strong> Naranja, negro, blanco, marrón</p>
-                <p><strong>Peso:</strong> 1.5-3.5 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso traqueal.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Vivaz, alerta y muy protector, con un pelaje esponjoso y gran carácter.</p>
+            <!-- Perro 12 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/yorkshireTerrier.png" width="50%" alt="Yorkshire" />
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Yorkshire Terrier</h3>
+                    <p class="descripcion-texto">Enérgico, valiente y muy protector, pese a su pequeño tamaño.</p>
                 </div>
-
-                <a href="https://www.youtube.com/watch?v=IHq2BLkkO2s&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
-
-        <div class="razas-grid"> <!--Otra raza24-->
-            <article class="razas">
-                <img src="../imagenes/perros/samoyedo.png" width="20%" alt="Samoyedo">
-                <h3>Samoyedo</h3>
-                <p><strong>Grupo:</strong>Perro de trabajo</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Grande</p>
-                <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                <p><strong>Colores del manto:</strong> Blanco</p>
-                <p><strong>Peso:</strong> 40-45 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Sociable, amistoso y resistente, conocido por su distintivo pelaje blanco.</p>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Alto</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> Azul y fuego</p>
+                            <p><strong>Peso:</strong> 2-3 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas dentales, colapso
+                                traqueal.</p>
+                            <a href="https://www.youtube.com/watch?v=d_1TyXepyPY&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin Perro 12 -->
 
-                <a href="https://www.youtube.com/watch?v=hvErXjc-Q28&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
-        </div>
+            <!-- Perro 13 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/beagle.png" width="50%" alt="Beagle" />
 
-        <div class="razas-grid"> <!--Otra raza25-->
-            <article class="razas">
-                <img src="../imagenes/perros/corgi.png" width="20%" alt="Corgi">
-                <h3>Corgi</h3>
-                <p><strong>Grupo:</strong>Perro de pastoreo</p>
-                <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                <p><strong>Tamaño:</strong>Pequeño</p>
-                <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                <p><strong>Colores del manto:</strong> Rojo, sable, tricolor</p>
-                <p><strong>Peso:</strong> 9-14 kg</p>
-                <p><strong>Enfermedades comunes:</strong> Problemas de columna, displasia de cadera.</p>
-
-                <button class="ver-mas">Ver más</button> <!--Botón de ver más-->
-
-                <div class="descripción" style="display:none;">
-                    <p>Valiente, activo y excelente pastor, con patas cortas y cuerpo alargado.</p>
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Beagle</h3>
+                    <p class="descripcion-texto">Olfateador nato, amigable y juguetón, con gran instinto de caza.</p>
                 </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong>Alto</p>
+                            <p><strong>Tamaño:</strong>Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> Tricolor, blanco, negro y marrón</p>
+                            <p><strong>Peso:</strong> 9-11 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Hipotiroidismo, epilepsia, problemas de oído</p>
+                            <a href="https://www.youtube.com/watch?v=d9H-v5ZIq4U&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 13 -->
 
-                <a href="https://www.youtube.com/watch?v=7kybSEln8Mw&ab_channel=ExpertoAnimal" target="_blank">Ver video</a>
-            </article>
+            <!-- Perro 14 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/goldenRetriever.png" width="50%" alt="Retriever" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Golden Retriever</h3>
+                    <p class="descripcion-texto">Cariñoso, amigable y muy inteligente, popular por su lealtad.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Dorado, crema</p>
+                            <p><strong>Peso:</strong> 25-40 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas cardíacos, cáncer
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=dfdPn4pF9Ec&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 14 -->
+
+            <!-- Perro 15 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/akitaInu.png" width="50%" alt="Akita" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Akita Inu</h3>
+                    <p class="descripcion-texto">Digno, leal y protector, conocido por su temperamento reservado.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco, rojo, atigrado</p>
+                            <p><strong>Peso:</strong> 32-50 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                                hipotiroidismo</p>
+                            <a href="https://www.youtube.com/watch?v=eDzmgtkfd3k&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>ç
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 15 -->
+
+            <!-- Perro 16 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/index/perroMainSitting.png" width="50%" alt="mestizo" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Perro mestizo</h3>
+                    <p class="descripcion-texto">
+                        Varía según la mezcla de razas, pero tienden a ser adaptables y únicos en temperamento.
+                    </p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Varia</p>
+                            <p><strong>Nivel de ladrido:</strong>Varia</p>
+                            <p><strong>Tamaño:</strong>Varia</p>
+                            <p><strong>Esperanza de vida:</strong> 10-18 años</p>
+                            <p><strong>Colores del manto:</strong> Varia</p>
+                            <p><strong>Peso:</strong> Varia</p>
+                            <p><strong>Enfermedades comunes:</strong> Varía según su composición genética</p>
+                            <a href="https://www.youtube.com/watch?v=qSDKBIuJPCg&ab_channel=TuAmigoIncondicional"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 16 -->
+
+            <!-- Perro 17 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/dachshund.png" width="50%" alt="Dachshund" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Perro Salchicha - Dachshund</h3>
+                    <p class="descripcion-texto">Determinado y valiente, criado para cazar tejones y otras presas.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de caza</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> Rojo, negro y fuego, chocolate</p>
+                            <p><strong>Peso:</strong> 7-14 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas de columna, luxación de rótula,
+                                obesidad.</p>
+                            <a href="https://www.youtube.com/watch?v=t4BJ0Zvan8I&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 17 -->
+
+            <!-- Perro 18 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/cockerSpaniel.png" width="50%" alt="cockerSpaniel" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Cocker Spaniel</h3>
+                    <p class="descripcion-texto">Dulce y sociable, con grandes instintos para la caza y el rastreo.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de caza</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 12-14 años</p>
+                            <p><strong>Colores del manto:</strong> Dorado, negro, tricolor</p>
+                            <p><strong>Peso:</strong> 12-16 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas oculares, otitis, displasia de cadera.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=tWn2wUF3EGg&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 18 -->
+
+            <!-- Perro 19 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/maltes.png" width="50%" alt="Maltés" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Maltés</h3>
+                    <p class="descripcion-texto">Pequeño, elegante y cariñoso, con un pelaje largo y sedoso.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco</p>
+                            <p><strong>Peso:</strong> 3-4 kg</p>
+                            <p>
+                                <strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, problemas
+                                oculares.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=QaxO5ecz_OY&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 19 -->
+
+            <!-- Perro 20 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/maltesConCocker.png" width="50%"
+                    alt="maltesConCocker" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Maltés con Cocker</h3>
+                    <p class="descripcion-texto">Cruce afectuoso y juguetón, con características de ambas razas.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> Varía</p>
+                            <p><strong>Peso:</strong> 4-12 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas oculares.</p>
+                            <a href="https://www.youtube.com/watch?v=7H6gOgzNhPE&t=25s&ab_channel=OxitocinaMagazine"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 20 -->
+
+            <!-- Perro 21 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/huskySiberiano.png" width="50%" alt="Husky" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Husky Siberiano</h3>
+                    <p class="descripcion-texto">Energético, independiente y resistente, criado para tirar trineos.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo - Tienden a aullar más que ladrar.</p>
+                            <p><strong>Tamaño:</strong>Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> 12-14 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco</p>
+                            <p><strong>Peso:</strong> 16-27 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                                hipotiroidismo</p>
+                            <a href="https://www.youtube.com/watch?v=Hqrv7lt_-TA&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 21 -->
+
+            <!-- Perro 22 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/sanBernardo.png" width="50%" alt="Bernardo" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">San Bernardo</h3>
+                    <p class="descripcion-texto">Gentil, calmado y fuerte, famoso por sus labores de rescate en
+                        montañas.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco con marrón</p>
+                            <p><strong>Peso:</strong> 64-120 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, torsión gástrica, problemas
+                                cardíacos</p>
+                            <a href="https://www.youtube.com/watch?v=E7K0LueBN-0&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 22 -->
+
+            <!-- Perro 23 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/pomerania.png" width="50%" alt="pomerania" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Pomerania</h3>
+                    <p class="descripcion-texto">Vivaz, alerta y muy protector, con un pelaje esponjoso y gran carácter.
+                    </p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong>Alto</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> Naranja, negro, blanco, marrón</p>
+                            <p><strong>Peso:</strong> 1.5-3.5 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso
+                                traqueal.</p>
+                            <a href="https://www.youtube.com/watch?v=IHq2BLkkO2s&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 23 -->
+
+            <!-- Perro 24 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/samoyedo.png" width="50%" alt="Samoyedo" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Samoyedo</h3>
+                    <p class="descripcion-texto">Sociable, amistoso y resistente, conocido por su distintivo pelaje
+                        blanco.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Grande</p>
+                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> Blanco</p>
+                            <p><strong>Peso:</strong> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares.</p>
+                            <a href="https://www.youtube.com/watch?v=hvErXjc-Q28&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 24 -->
+
+            <!-- Perro 25 -->
+            <div class="card">
+                <img class="tituloImag" src="../imagenes/perros/corgi.png" width="50%" alt="Corgi" />
+
+                <div class="descripcion">
+                    <h3 class="titulo-razas">Corgi</h3>
+                    <p class="descripcion-texto">Valiente, activo y excelente pastor, con patas cortas y cuerpo
+                        alargado.</p>
+                </div>
+                <div class="accordionGrid">
+                    <button class="accordion">Ver más</button>
+                    <div class="panel">
+                        <div class="textofiltro">
+                            <p><strong>Grupo:</strong>Perro de pastoreo</p>
+                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
+                            <p><strong>Tamaño:</strong>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> Rojo, sable, tricolor</p>
+                            <p><strong>Peso:</strong> 9-14 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> Problemas de columna, displasia de cadera.</p>
+                            <a href="https://www.youtube.com/watch?v=7kybSEln8Mw&ab_channel=ExpertoAnimal"
+                                target="_blank" class="video-button">Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Perro 25 -->
         </div>
-    </main>
-    <hr>
+        <!-- Fin div coleccion -->
 
-    <inside> <!--Sección de filtros para el catálogo de razas-->
-        <form id="Filtro-razas" action="/resultado-filtro" method="GET">
-            <!--Cada campo tiene una etiqueta (label) asociada y un select (desplegable) para que el usuario seleccione la opción que desee-->
-            <label for="nombre-raza">Buscar por nombre de raza:</label> <!--Filtro por nombre de raza-->
-            <select id="nombre-raza" name="nombre-raza1">
-                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
-                <option value="Dogo">Dogo Argentino</option> <!-- Desde aquí hacia abajo, añadiré más razas-->
-                <option value="Fila">Fila Brasileiro</option>
-                <option value="Chihuahua">Chihuahua</option>
-                <option value="Pastor">Pastor Alemán</option>
-                <option value="Rottweiler">Rottweiler</option>
-                <option value="ShihTzu">Shih Tzu</option>
-                <option value="Caniche">Caniche</option>
-                <option value="L.Retriever">Labrador Retriever</option>
-                <option value="Bóxer">Bóxer</option>
-                <option value="Bulldog">Bulldog Frances</option>
-                <option value="Bulldog">Bulldog Inglés</option>
-                <option value="Yorkshire">Yorkshire terrier</option>
-                <option value="Beagle">Beagle</option>
-                <option value="G.Retriever">Golden Retriever</option>
-                <option value="Akita">Akita Inu</option>
-                <option value="Mestizo">Perro mestizo</option>
-                <option value="Dachshund">Dachshund</option>
-                <option value="Cocker">Cocker Spaniel</option>
-                <option value="Maltés">Maltés</option>
-                <option value="M.Cocker">Maltés con Cocker</option>
-                <option value="Husky">Husky siberiano</option>
-                <option value="Bernardo">San Bernardo</option>
-                <option value="Pomerania">Pomerania</option>
-                <option value="Samoyedo">Samoyedo</option>
-                <option value="Corgi">Corgi</option>
-            </select>
-
-            <h3>Filtrar razas</h3> <!--Filtro por características-->
-            <label for="grupo">Grupo:</label>
-            <select id="grupo" name="grupo">
-                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
-                <option value="Deportivo">Deportivo</option>
-                <option value="Compania">De Compañía</option>
-                <option value="Trabajo">De Trabajo</option>
-                <option value="Guardia">De Guardia</option>
-                <option value="Guardia">De Caza</option>
-                <option value="Guardia">De Pastoreo</option>
-            </select>
-
-            <label for="Ladridos">Nivel de Ladridos:</label>
-            <select id="Ladridos" name="Ladridos"> <!--Filtro nivel de ladridos-->
-                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
-                <option value="bajo">Bajo</option>
-                <option value="moderado">Moderado</option>
-                <option value="alto">Alto</option>
-            </select>
-
-            <label for="tamaño">Tamaño:</label> <!--Filtro por tamaño del perro-->
-            <select id="Tamaño" name="Tamaño">
-                <option></option> <!--En blanco para forzarlos a rellenar/usar-->
-                <option value="Pequeños">Pequeño</option>
-                <option value="Medianos">Mediano</option>
-                <option value="Grandes">Grande</option>
-            </select>
-
-            <label for="esperanza">Esperanza de vida:</label> <!--Filtro por esperanza de vida-->
-            <select id="esperanza" name="esperanza">
-                <option></option>
-                <option value="baja">Menos de 10 años</option>
-                <option value="media">10-12 años</option>
-                <option value="alta">Más de 12 años</option>
-            </select>
-
-            <label for="peso">Peso:</label> <!--Filtro por peso-->
-            <select id="peso" name="peso">
-                <option></option>
-                <option value="ligero">Menos de 10 kg</option>
-                <option value="medio">10-25 kg</option>
-                <option value="pesado">Más de 25 kg</option>
-            </select>
-
-            <label for="colores">Colores:</label> <!--Filtro por el manto/pelo de los perros-->
-            <select id="colores" name="colores">
-                <option></option>
-                <option value="blanco">Blanco</option>
-                <option value="negro">Negro</option>
-                <option value="marron">Marrón</option>
-                <option value="marron">Tricolor</option> <!--No se si modificar esta parte-->
-            </select>
-
-            <label for="enfermedades">Posibles enfermedades:</label> <!--Filtro por posibles enfermedades-->
-            <select id="enfermedades" name="enfermedades">
-                <option></option>
-                <option value="displasia">Displasia de cadera</option>
-                <option value="problemas_piel">Problemas de piel</option>
-                <option value="cardiacos">Problemas cardíacos</option>
-            </select>
-
-            <button type="reset">Limpiar todo</button> <!--Botón para limpiar los filtros-->
-
-            <button type="submit">Entregar</button> <!--Botón para enviar los filtros y buscar la raza-->
-        </form>
-    </inside>
-
-    <!--AQUÍ AGREGARE LAS FUNCIONALIDADES DE JAVASCRIPT-->
+        <footer class="footer">
+            <h3>FOOTER</h3>
+        </footer>
+        <!-- Fin div footer -->
+    </div>
 </body>
+<script src="../Scripts/razas.js"></script> <!--Js-->
 
 </html>
