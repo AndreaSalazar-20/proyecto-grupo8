@@ -16,3 +16,15 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+// Selecciona todas las tarjetas con la clase .card
+const cards = document.querySelectorAll('.card');
+
+// Itera sobre cada tarjeta y añade un evento de clic
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        // Alterna la clase 'active' en la tarjeta
+        card.classList.toggle('active');
+    });
+});
+
