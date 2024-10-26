@@ -72,6 +72,11 @@ body {
     gap: 10px;
 }
 
+.hidden {
+    display: none;
+    /* Oculta el elemento y no ocupa espacio */
+}
+
 /* Aqui empieza las cards */
 .card {
     display: grid;
