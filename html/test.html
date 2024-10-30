@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <title>Mi raza ideal</title>
+</head>
+<script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
+<body>
+    <header class="headerwrap">
+        <a href="../index.html">
+            <img src="../imagenes/logoHuellitas.png" alt="Logo" class="logo">
+          </a>
+        <nav>
+          <ul class="navmn">
+            <li><a href="#">Comunidad</a></li>
+            <li><a href="#">Donaciones</a></li>
+            <li>
+              <a href="#">¡Adopta!</a>
+              <ul class="dropdown">
+                <li><a href="#">Historias</a></li>
+                <li><a href="#">Mi raza ideal</a></li>
+                <li><a href="#">Catálogo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a class="btnlg" href="#">Iniciar Sesión</a>
+      </header>
+
+    <main class="test-intro">
+        <h1>¡Mi 'perrijo' perfecto!</h1>
+        <p>Sabemos lo mucho que deseas que una mascota forme parte de tu vida.
+            Sin embargo, es importante considerar varios aspectos: las razas
+            grandes requieren más espacio, mientras que las pequeñas, aunque 
+            ocupan menos, necesitan más mimos. Algunas razas son más enérgicas,
+            mientras que otras prefieren descansar durante el día. También es 
+            importante tener en cuenta el tiempo que puedes dedicarle a tu mascota, 
+            sin que esto interfiera demasiado con tus actividades diarias. <br> 
+            Por eso, te invitamos a realizar este breve pero decisivo test para 
+            determinar qué raza de perro se adapta mejor a ti.
+        </p>
+    </main>
+
+    <div class="instructions">
+        <h2>Instruciones:</h2>
+        <p>Tomate tu tiempo para leer las 10 preguntas, no existen respuestas incorrectas.
+            Recuerda que los resultados te ayudaran a tener mas en claro que razas son 
+            mas adecuadas para ti y tu estilo de vida.
+        </p>
+    </div>
+
+    <!-- agregar mas opciones de input -->
+
+    <div class="progress">
+        <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+    <form id="breeds-quiz">
+        <div class="questions">
+            <h3>1. Cuando es finde, normalmente busco gastar mi tiempo...</h3>
+            <label>
+                <input type="radio" name="q1" value="a"> 
+                <span class="custom-radio"></span>Con mis amigos o mi familia
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="b"> 
+                <span class="custom-radio"></span>En mis pasatiempos, en casa
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="c"> 
+                <span class="custom-radio"></span>En lo que se presente para la ocasion
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>2. Disfruto mucho de la naturaleza y los exteriores</h3>
+            <label>
+                <input type="radio" name="q2" value="a"> 
+                <span class="custom-radio"></span>Totalmente de acuerdo
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="b"> 
+                <span class="custom-radio"></span>No es algo que me moleste
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="c"> 
+                <span class="custom-radio"></span>Prefiero pasarla adentro
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>3. Me considero una persona con paciencia</h3>
+            <label>
+                <input type="radio" name="q3" value="a"> 
+                <span class="custom-radio"></span>¡Si lo soy!
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="b"> 
+                <span class="custom-radio"></span>De vez en cuando...
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="c"> 
+                <span class="custom-radio"></span>Realmente, me gustan las cosas al momento
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>4. Ya he tenido mascotas anteriormente</h3>
+            <label>
+                <input type="radio" name="q4" value="a"> 
+                <span class="custom-radio"></span>Si he tenido mascotas
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="b"> 
+                <span class="custom-radio"></span>Tuve una/algunas mascotas pero fue hace tiempo
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="c"> 
+                <span class="custom-radio"></span>Nunca he tenido mascotas antes
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>5. Los pelajes que prefiero son...</h3>
+            <label>
+                <input type="radio" name="q5" value="a"> 
+                <span class="custom-radio"></span>Abundante pelaje
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="b"> 
+                <span class="custom-radio"></span>Pelaje corto
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="c"> 
+                <span class="custom-radio"></span>Me es indeferente, la verdad
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>6. ¿Que tanto ladridos puedo soportar?</h3>
+            <label>
+                <input type="radio" name="q6" value="a"> 
+                <span class="custom-radio"></span>Soporto que los perros se expresen
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="b"> 
+                <span class="custom-radio"></span>De vez en cuando no me molesta
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="c"> 
+                <span class="custom-radio"></span>Me gusta que no ladren demasiado
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>7. ¿Cuanto espacio disponible tengo en mi hogar?</h3>
+            <label>
+                <input type="radio" name="q7" value="a"> 
+                <span class="custom-radio"></span>Mucho espacio para una mascota
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="b"> 
+                <span class="custom-radio"></span>Moderado, pero se pueden acomodar algunas cosas
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="c"> 
+                <span class="custom-radio"></span>Realmente no tengo mucho espacio
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>8. ¿Perros grandes o pequeños?</h3>
+            <label>
+                <input type="radio" name="q8" value="a"> 
+                <span class="custom-radio"></span>Grandes
+            </label><br>
+            <label>
+                <input type="radio" name="q8" value="b"> 
+                <span class="custom-radio"></span>¡Da igual!
+            </label><br>
+            <label>
+                <input type="radio" name="q8" value="c"> 
+                <span class="custom-radio"></span>Pequeños
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>9. Me encantan los abrazos</h3>
+            <label>
+                <input type="radio" name="q9" value="a"> 
+                <span class="custom-radio"></span>Si soy
+            </label><br>
+            <label>
+                <input type="radio" name="q9" value="b"> 
+                <span class="custom-radio"></span>No soy
+            </label><br>
+            <label>
+                <input type="radio" name="q9" value="c"> 
+                <span class="custom-radio"></span>Ocasionalmente
+            </label>
+        </div>
+
+        <div class="questions">
+            <h3>10. <del>¿Que tanto ladridos puedo soportar?</del></h3>
+            <label>
+                <input type="radio" name="q10" value="a">
+                <span class="custom-radio"></span>Soporto que los perros se expresen
+            </label><br>
+            <label>
+                <input type="radio" name="q10" value="b">
+                <span class="custom-radio"></span>De vez en cuando no me molesta
+            </label><br>
+            <label>
+                <input type="radio" name="q10" value="c">
+                <span class="custom-radio"></span>Me gusta que no ladren demasiado
+            </label>
+        </div>
+
+        <br>
+
+        <button class="btnsubmit" type="submit">Enviar Respuestas</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+        <h2>Resultados</h2>
+        <p id="score"></p>
+    </div>
+
+<br>
+
+<script src="../Scripts/test.js"></script>
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contacto</h3>
+          <div class="contact-text">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>85 Av. Norte y 15 Calle Poniente, #905, Colonia Escalón, San Salvador</p>
+          </div>
+          <div class="contact-text">
+            <i class="fa-solid fa-phone"></i>
+            <p>+503 5555 5555</p> 
+          </div>
+          <div class="contact-text">
+            <i class="fa-solid fa-envelope"></i>
+            <p>huellasentuvida@gmail.com</p>
+          </div>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Útiles</h3>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+          <div class="social-media">
+            <a href="" class="fa-brands fa-facebook"></a>
+            <a href="" class="fa-brands fa-twitter"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+          </div>
+      </div>
+    </div>
+    <div class="footer-image">
+      <img src="../imagenes/logoHuellitas.png" alt="Descripción de la imagen">
+    </div>
+    <div class="bottom">
+      <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
+    </div>
+</footer>
+
+</body>
+</html>
