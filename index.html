@@ -7,93 +7,121 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
-  <title>🐾Huellas en tu Vida🐾</title>
+  <title>Huellas en tu Vida</title>
+  <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico"><!--copiar este icono-->
 </head>
 <script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
 <body>
 
-
   <header class="headerwrap">
-    <img src="../proyecto-grupo8/imagenes/logoHuellitas.png" alt="Logo" class="logo">
+    <a href="../proyecto-grupo8/index.html">
+      <img src="imagenes/logoHuellitas.png" alt="Logo" class="logo">
+    </a>
     <nav>
       <ul class="navmn">
         <li><a href="html/redSocial.html">Comunidad</a></li>
         <li><a href="html/donaciones.html">Donaciones</a></li>
-        <li>
-          <a href="#">¡Adopta!</a>
+        <li>¡Adopta!
+          <!-- <a href="#">¡Adopta!</a> -->
           <ul class="dropdown">
             <li><a href="html/adopciones/adopciones.html">Quiero adoptar</a></li>
-            <li><a href="html/formulario.html">formulario</a></li>
+            <li><a href="html/formulario.html">Solicitud</a></li>
             <li><a href="html/test.html">Mi raza ideal</a></li>
             <li><a href="html/razas.html">Catálogo</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <a class="btnlg" href="#">Iniciar Sesión</a>
+    <a class="btnlg" href="html/login.html">Iniciar Sesión</a>
   </header>
   
-  <main id="main-container">
-    <div class="text-section">
+  <main class="main-container">
+    <div class="main-txt">
       <h1 class="maintitle">¡Anímate a dejar <br>Huellas en tu vida!</h1>
       <p>Cambia tu vida y la de un peludito adoptando uno hoy</p>
-      <button class="btnmain">¡Quiero adoptar!</button>
+      <a href="html/adopciones/adopciones.html">
+        <button class="btnmain">¡Quiero adoptar!</button>
+      </a>
     </div>
-    <div class="img-section">
-      <img src="../proyecto-grupo8/imagenes/index/iconoDogPawLove.png" alt="">
+    <div class="main-img">
+      <img src="../proyecto-grupo8/imagenes/index/perroLabradorRetriever3.png" alt="">
     </div>
   </main>
-
-
-
-  
-  <section class="concept-section">
-    <div>
-      <h2>¿Por qué huellas en tu vida?</h2>
-      <p>Este nombre transmite la idea de que los perritos no solo llenan nuestros hogares, 
-        sino que también dejan una huella imborrable en nuestras vidas. Enfocados en 
-        la adopción de perros, destacando cómo cada uno de ellos puede transformar la vida de una 
-        persona para mejor.</p>
-    </div>
-    <div>
-      <img src="../proyecto-grupo8/imagenes/index/cariciaPerroMain.jpg" width="40%" alt="">
-    </div>
-  </section>
-
 
 
   <div class="categories">
     <h2>Que puedes encontrar aqui...</h2>
     <section class="boxlayout">
       <div class="boxes1"> <img src="../proyecto-grupo8/imagenes/index/conceptDogRefugie.png"  alt="">
-        <p>Apoyo a refugios de perros locales encontrando el hogar perfecto para ellos.</p></div>
+        <p>Ofrecemos apoyo a refugios de perros locales encontrando el hogar perfecto para ellos.</p></div>
       <div class="boxes1"> <img src="../proyecto-grupo8/imagenes/index/conceptDogBone.png"  alt="">
-        <p>En la tienda encontraras diferentes productos para cuidar a tu perrito.</p></div>
+        <p>Un espacio donde puedas compartir tus historias con una gran comunidad amantes de los animales. </p></div>
       <div class="boxes1"><img src="../proyecto-grupo8/imagenes/index/conceptDogLove.png"  alt="">
-        <p>Un espacio donde puedas compartir tus historias con una gran comunidad
-          amantes de los animales.</p></div>
+        <p>Buscamos que los procesos de adopcion sean eficientes para ayudarte a 
+          encontrar la mascota perfecta</p></div>
       </section>
   </div>
 
-  <section class="adopt-section">
-    <h2>Cada perro merece una oportunidad.</h2>
-    <p>Sabemos lo importante que es elegir a la mascota perfecta, pero tambien buscamos resaltar las
-      cualidades unicas de cada raza. Date una vuelta por el <a href="#">catalogo de razas</a> y 
-      descubre la esencia unica de cada perrito.</p>
-      <img src="../proyecto-grupo8/imagenes/index/sittingDogo.jpg" width="50%" alt="">
+  <section class="donations-container">
+      <div class="img-donat">
+        <img src="./imagenes/index/ownerHuggingDog2.jpg" alt="Imagen del banner"
+        style="border-radius: 50% 25% / 60% 40%">
+      </div>
+      <div class="txt-donat">
+        <h2 class="title3">Tus donaciones ayudan a mantener y cuidar a nuestros
+          refugios locales y centros de rescate caninos.
+        </h2>
+        <a href="/html/donaciones.html">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </a>
+      </div>
+  </section>
+
+  <section class="adopt-container">
+    <div class="txt-adoption">
+      <h2>Cada perro merece una oportunidad.</h2>
+      <p>Sabemos lo importante que es elegir a la mascota perfecta, pero tambien buscamos resaltar las
+        cualidades unicas de cada raza. Date una vuelta por el <a href="html/razas.html">catalogo de razas</a> y 
+        descubre la esencia unica de cada perrito.</p>
+    </div>
+    <div class="img-adoption">
+      <img src="../proyecto-grupo8/imagenes/index/cuteDogSitting.png" width="70%" alt="">
+    </div>
   </section>
 
 
-  <section class="social-section">
-    <h2>Se parte de nuestra comunidad.</h2>
-    <p>Crea tu cuenta, comparte tus experiencias y ayuda a otros amantes de los
-      perros. <br>Si ya tienes una cuenta ¡vamos, <a href="#">inicia sesion</a> y 
-      presumenos a tu perrijo!
-    </p>
-    <img src="../proyecto-grupo8/imagenes/index/huggingOwner.jpg" width="50%" alt="">
+  <section class="concept-container">
+    <div class="img-concept"> 
+      <img src="../proyecto-grupo8//imagenes/index/ownerPlayingDog.jpg" alt="perro y dueño"
+      style="border-radius: 70% 30% / 40% 60%">
+    </div>
+    <div class="txt-concept">
+      <h2>¿Por qué huellas en tu vida? 🐾🐶💕</h2>
+      <p>Este nombre transmite la idea de que los perritos no solo llenan nuestros hogares, 
+        sino que también dejan una huella imborrable en nuestras vidas. Enfocados en 
+        la adopción de perros, destacando cómo cada uno de ellos puede transformar la vida de una 
+        persona para mejor.</p>
+    </div>
   </section>
 
-  <br>
+  <section class="social-container">
+    <div class="txt-social">
+      <h2>¡Se parte de nuestra comunidad!</h2>
+      <p>Crea tu cuenta, comparte tus experiencias y ayuda a otros amantes de los
+        perros. <br>Si ya tienes una cuenta ¡vamos, <a href="html/login.html">inicia sesion</a> y 
+        presumenos a tu perrijo!</p>
+    </div>
+    <div class="img-social">
+      <img src="../proyecto-grupo8/imagenes/index/dogFamilySitting.png" alt="">
+    </div>
+  </section>
+
+  <button id="upBtn" onclick="scrollToTop()" title="Ir al comienzo" style="display:none;">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../proyecto-grupo8/Scripts/main.js"></script>
 
   <footer class="footer">
     <div class="footer-container">
@@ -131,9 +159,12 @@
       </div>
     </div>
     <div class="footer-image">
-      <img src="../proyecto-grupo8/imagenes/logoHuellitas.png" alt="Descripción de la imagen">
+      <img src="../proyecto-grupo8/imagenes/logoHuellitas.png" alt="Logo">
     </div>
     <div class="bottom">
       <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
     </div>
 </footer>
+
+</body>
+</html>
