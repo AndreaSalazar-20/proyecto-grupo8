@@ -7,7 +7,7 @@
 body {
     background-color: #3D4670;
     background-size: cover;
-    background-image: url('/imagenes/index/background1.png');
+    /*  background-image: url('/imagenes/index/background1.png'); */
     background-position: center center;
 
 }

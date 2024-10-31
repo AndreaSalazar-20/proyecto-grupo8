@@ -6,7 +6,7 @@
 /* Aqui empieza el body */
 body {
     background-color: #ffffff;
-    background-image: url('/imagenes/index/background1.png');
+    /*    background-image: url('/imagenes/index/background1.png'); */
     background-position: center center;
 }
 
