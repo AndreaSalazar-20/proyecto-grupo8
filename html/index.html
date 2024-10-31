@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Huellas en tu Vida</title>
+  <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico"><!--copiar este icono-->
+</head>
+
+<body>
+
+  <header class="headerwrap">
+    <a href="../html/index.html">
+      <img src="../imagenes/logoHuellitas.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <ul class="navmn">
+        <li><a href="../html/redSocial.html">Comunidad</a></li>
+        <li><a href="../html/donaciones.html">Donaciones</a></li>
+        <li>¡Adopta!
+          <!-- <a href="#">¡Adopta!</a> -->
+          <ul class="dropdown">
+            <li><a href="../html/adopciones/adopciones.html">Quiero adoptar</a></li>
+            <li><a href="../html/formulario.html">Solicitud</a></li>
+            <li><a href="../html/test.html">Mi raza ideal</a></li>
+            <li><a href="../html/catalogo/razas.html">Catálogo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a class="btnlg" href="../html/login.html">Iniciar Sesión</a>
+  </header>
+  
+  <main class="main-container">
+    <div class="main-txt">
+      <h1 class="maintitle">¡Anímate a dejar <br>Huellas en tu vida!</h1>
+      <p>Cambia tu vida y la de un peludito adoptando uno hoy</p>
+      <a href="../html/adopciones/adopciones.html">
+        <button class="btnmain">¡Quiero adoptar!</button>
+      </a>
+    </div>
+    <div class="main-img">
+      <img src="../imagenes/index/perroLabradorRetriever3.png" alt="">
+    </div>
+  </main>
+
+
+  <div class="categories">
+    <h2>Que puedes encontrar aqui...</h2>
+    <section class="boxlayout">
+      <div class="boxes1"> <img src="../imagenes/index/conceptDogRefugie.png"  alt="">
+        <p>Ofrecemos apoyo a refugios de perros locales encontrando el hogar perfecto para ellos.</p></div>
+      <div class="boxes1"> <img src="../imagenes/index/conceptDogBone.png"  alt="">
+        <p>Un espacio donde puedas compartir tus historias con una gran comunidad amantes de los animales. </p></div>
+      <div class="boxes1"><img src="../imagenes/index/conceptDogLove.png"  alt="">
+        <p>Buscamos que los procesos de adopcion sean eficientes para ayudarte a 
+          encontrar la mascota perfecta</p></div>
+      </section>
+  </div>
+
+  <section class="donations-container">
+      <div class="img-donat">
+        <img src="../imagenes/index/ownerHuggingDog2.jpg" alt="Imagen del banner"
+        style="border-radius: 50% 25% / 60% 40%">
+      </div>
+      <div class="txt-donat">
+        <h2 class="title3">Tus donaciones ayudan a mantener y cuidar a nuestros
+          refugios locales y centros de rescate caninos.
+        </h2>
+        <a href="../html/donaciones.html">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </a>
+      </div>
+  </section>
+
+  <section class="adopt-container">
+    <div class="txt-adoption">
+      <h2>Cada perro merece una oportunidad.</h2>
+      <p>Sabemos lo importante que es elegir a la mascota perfecta, pero tambien buscamos resaltar las
+        cualidades unicas de cada raza. Date una vuelta por el <a href="../html/catalogo/razas.html">catalogo de razas</a> y 
+        descubre la esencia unica de cada perrito.</p>
+    </div>
+    <div class="img-adoption">
+      <img src="../imagenes/index/cuteDogSitting.png" width="70%" alt="">
+    </div>
+  </section>
+
+
+  <section class="concept-container">
+    <div class="img-concept"> 
+      <img src="../imagenes/index/ownerPlayingDog.jpg" alt="perro y dueño"
+      style="border-radius: 70% 30% / 40% 60%">
+    </div>
+    <div class="txt-concept">
+      <h2>¿Por qué huellas en tu vida? 🐾🐶💕</h2>
+      <p>Este nombre transmite la idea de que los perritos no solo llenan nuestros hogares, 
+        sino que también dejan una huella imborrable en nuestras vidas. Enfocados en 
+        la adopción de perros, destacando cómo cada uno de ellos puede transformar la vida de una 
+        persona para mejor.</p>
+    </div>
+  </section>
+
+  <section class="social-container">
+    <div class="txt-social">
+      <h2>¡Se parte de nuestra comunidad!</h2>
+      <p>Crea tu cuenta, comparte tus experiencias y ayuda a otros amantes de los
+        perros. <br>Si ya tienes una cuenta ¡vamos, <a href="../html/login.html">inicia sesion</a> y 
+        presumenos a tu perrijo!</p>
+    </div>
+    <div class="img-social">
+      <img src="../imagenes/index/dogFamilySitting.png" alt="">
+    </div>
+  </section>
+
+  <button id="upBtn" onclick="scrollToTop()" title="Ir al comienzo" style="display:none;">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contacto</h3>
+          <div class="contact-text">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>85 Av. Norte y 15 Calle Poniente, #905, Colonia Escalón, San Salvador</p>
+          </div>
+          <div class="contact-text">
+            <i class="fa-solid fa-phone"></i>
+            <p>+503 5555 5555</p> 
+          </div>
+          <div class="contact-text">
+            <i class="fa-solid fa-envelope"></i>
+            <p>huellasentuvida@gmail.com</p>
+          </div>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Útiles</h3>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+          <div class="social-media">
+            <a href="" class="fa-brands fa-facebook"></a>
+            <a href="" class="fa-brands fa-twitter"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+          </div>
+      </div>
+    </div>
+    <div class="footer-image">
+      <img src="../imagenes/logoHuellitas.png" alt="Logo">
+    </div>
+    <div class="bottom">
+      <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
+    </div>
+</footer>
+
+</body>
+  <script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../Scripts/main.js"></script>
+</html>
