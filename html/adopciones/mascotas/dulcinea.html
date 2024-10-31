@@ -4,126 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perrita Dulcinea!</title>
-    <script
-      src="https://kit.fontawesome.com/62db8d69e5.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../../../CSS/mascotas.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"/>
+    
+    <!--Referencias hacia el index-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../../../CSS/style.css">
+    <script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
   </head>
+  
   <body>
-    <header>
-      <div>
-        <!--logo para mientras-->
-        <img src="../../imagenes/logoHuellitas.png" width="10%" alt="">
-      </div>
-      <!--El navegador podria ser depegable pero creo que necesito agregar el css-->
+    <header class="headerwrap">
+      <img src="../../../imagenes/logoHuellitas.png" alt="Logo" class="logo">
       <nav>
-        <li><a href="../../Razas.html">Raza de perros</a></li>
-        <li><a href="../../adopciones/adopciones.html">Adopta!</a></li>
-        <li><a href="../../donaciones.html">Donaciones</a></li>
-        <li><a href="../../Redsocial.html">Comunidad</a></li>
-      </nav>
-    </header>
-    <hr />
-
-    <div>
-      <div>
-        <img
-          src="../../../imagenes/adopciones/dulcinea.jpeg"
-          alt="Dulcinea"
-          title="Dulcinea"
-          width="100%"
-          height="100%"
-        />
-      </div>
-      <div>
-        <div><h1>Dulcinea</h1></div>
-        <div><h4>La Libertad, El Salvador</h4></div>
-      </div>
-      <div>
-        <ul>
-          <li><h3>RAZA: Bulldog Inglés</h3></li>
-          <li><h3>SEXO: Hembra</h3></li>
-          <li><h3>EDAD: 2 años</h3></li>
-          <li><h3>COLOR: Marrón oscuro y blanco</h3></li>
-          <li><h3>TAMAÑO: Mediano</h3></li>
+        <ul class="navmn">
+          <li><a href="html/redSocial.html">Comunidad</a></li>
+          <li><a href="html/donaciones.html">Donaciones</a></li>
           <li>
-            <h3>
-              PERSONALIDAD: Cariñosa, dulce, y juguetona. Perfecta para convivir
-              con niños y otros perros.
-            </h3>
+            <a href="#">¡Adopta!</a>
+            <ul class="dropdown">
+              <li><a href="html/adopciones/adopciones.html">Quiero adoptar</a></li>
+              <li><a href="html/formulario.html">formulario</a></li>
+              <li><a href="html/test.html">Mi raza ideal</a></li>
+              <li><a href="html/razas.html">Catálogo</a></li>
+            </ul>
           </li>
         </ul>
-      </div>
-      <br />
-      <div><h1>VAMOS! DULCINEA NECESITA UN HOGAR!</h1></div>
+      </nav>
+      <a class="btnlg" href="#">Iniciar Sesión</a>
+    </header>
+
+    <div class="title1">
+      <h1>¿Te gustaría saber más de Dulcinea?</h1>
     </div>
-    <!--Mensaje para realizar la adopción-->
-    <div>
-      <div>
+
+    <!--Primer container-->
+    <div class="container">
+      <div class="containerDog">
+        <div class="imgDog">
+          <img src="../../../imagenes/adopciones/dulcinea.jpeg" />
+        </div>
+      </div>
+
+      <div class="containerdetails">
+        <div class="name">
+          <h1>Dulcinea</h1>
+          <h4>Ahuachapán, El Salvador</h4>
+        </div>
+        <div class="about">
+          <h2>Características</h2>
+          <p>
+            Es una perrita alegre, juguetona y divertida. Adora jugar con las personas que la alimentan.
+            Le encanta salir a pasear en compañía.
+          </p>
+        </div>
+        <div class="chrs">
+          <div>
+            <i class="fa-solid fa-dog"></i>
+            <h3>RAZA:</h3>
+            <p>Bulldog inglés</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-venus-mars"></i>
+            <h3>SEXO:</h3>
+            <p>Hembra</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-clock"></i>
+            <h3>EDAD:</h3>
+            <p>2 años</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h3>COLOR:</h3>
+            <p>Pelaje marrón y blanco</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <h3>TAMAÑO:</h3>
+            <p>Mediano</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Segundo container-->
+    <div class="container2">
+      <div class="comentario"><h1>VAMOS! DULCINEA NECESITA UN HOGAR!</h1></div>
+
+      <!--Mensaje para realizar la adopción-->
+      <div class="adoptar">
         <h3>
-          Si deseas que se una a tu familia puedes comunicarte con nosotros por
-          medio de nuestras redes sociales
+          Si deseas que se una a tu familia, entonces...
+          <button class="btnadoptar">Realizar adopción</button>
         </h3>
-        <h3>Solo debes de presionar</h3>
-        <button>Adóptame</button>
       </div>
     </div>
 
-    <div>
+    <!--Tercer container-->
+    <div class="comentario2">
+      <h1>También te puede interesar conocer las demás secciones</h1>
+    </div>
+    <div class="referencias">
       <!--Referencias a las otras páginas por medio de imágenes-->
-      <aside>
-        <div>
-          <a href="../../../html/donaciones.html">
-            <img
-              src="../../../imagenes/adopciones/donaciones.jpg"
-              width="200px"
-              height="200px"
-            />
-          </a>
-        </div>
-        <br />
-        <div>
-          <a href="../../../html/razas.html">
-            <img
-              src="../../../imagenes/adopciones/razas.jpg"
-              width="200px"
-              height="200px"
-            />
-          </a>
-        </div>
-        <br />
-        <div>
-          <a href="../../../html/redSocial.html">
-            <img
-              src="../../../imagenes/adopciones/redSocial.jpg"
-              width="200px"
-              height="200px"
-            />
-          </a>
-        </div>
-        <br />
-      </aside>
+      <div class="section">
+        <a href="../../../html/donaciones.html">
+          <img src="../../../imagenes/adopciones/donaciones.jpg" width="200px" height="200px"/>
+        </a>
+      </div>
+      <div class="section">
+        <a href="../../../html/razas.html">
+          <img src="../../../imagenes/adopciones/razas.jpg" width="200px" height="200px"/>
+        </a>
+      </div>
+      <div class="section">
+        <a href="../../../html/redSocial.html">
+          <img src="../../../imagenes/adopciones/redSocial.jpg" width="200px" height="200px"/>
+        </a>
+      </div>
+      <div class="section">
+        <a href="../../../html/adopciones/adopciones.html">
+          <img src="../../../imagenes/adopciones/adopciones.jpg" width="200px" height="200px"/>
+        </a>
+      </div>
     </div>
 
-    <hr />
-    <footer>
-      <!--Aqui empieza el footer👀❤️-->
-      <div>
-        <div>
-          <h4>Siguenos</h4>
-          <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-solid fa-envelope"></i></li>
-          </ul>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Contacto</h3>
+            <div class="contact-text">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>85 Av. Norte y 15 Calle Poniente, #905, Colonia Escalón, San Salvador</p>
+            </div>
+            <div class="contact-text">
+              <i class="fa-solid fa-phone"></i>
+              <p>+503 5555 5555</p> 
+            </div>
+            <div class="contact-text">
+              <i class="fa-solid fa-envelope"></i>
+              <p>huellasentuvida@gmail.com</p>
+            </div>
         </div>
-        <div>
-          <h4>Acerca de...</h4>
-          <p>&copy; 2024 Huellas en tu Vida. Todos los derechos reservados.</p>
+        <div class="footer-section">
+          <h3>Enlaces Útiles</h3>
+            <ul>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Soporte</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+            <div class="social-media">
+              <a href="" class="fa-brands fa-facebook"></a>
+              <a href="" class="fa-brands fa-twitter"></a>
+              <a href="" class="fa-brands fa-instagram"></a>
+            </div>
         </div>
       </div>
-    </footer>
-    <hr />
+      <div class="footer-image">
+        <img src="../../../imagenes/logoHuellitas.png" alt="Descripción de la imagen">
+      </div>
+      <div class="bottom">
+        <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
+      </div>
+  </footer>
+
   </body>
 </html>

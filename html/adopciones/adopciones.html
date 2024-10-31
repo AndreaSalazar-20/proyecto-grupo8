@@ -3,199 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopta!</title>
+    <title>Quiero adoptar!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/adopciones.css">
+    <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <div><!--logo para mientras-->
-            <img src="../../imagenes/logoHuellitas.png" width="10%" alt="">
-        </div><!--El navegador podria ser depegable pero creo que necesito agregar el css-->
+    <header class="headerwrap">
+        <img src="../../imagenes/logoHuellitas.png" alt="Logo" class="logo">
         <nav>
-            <li><a href="../Razas.html">Raza de perros</a></li>
-            <li><a href="./Adopciones.html">Adopta!</a></li>
-            <li><a href="../Donaciones.html">Donaciones</a></li>
-            <li><a href="../Redsocial.html">Comunidad</a></li>
+          <ul class="navmn">
+            <li><a href="html/redSocial.html">Comunidad</a></li>
+            <li><a href="html/donaciones.html">Donaciones</a></li>
+            <li>
+              <a href="#">¡Adopta!</a>
+              <ul class="dropdown">
+                <li><a href="html/adopciones/adopciones.html">Quiero adoptar</a></li>
+                <li><a href="html/formulario.html">formulario</a></li>
+                <li><a href="html/test.html">Mi raza ideal</a></li>
+                <li><a href="html/razas.html">Catálogo</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <hr>
-    <div>
-        <h1>Es la hora de buscar a tu nuevo mejor amigo!</h1>
+        <a class="btnlg" href="#">Iniciar Sesión</a>
+      </header>
+    
+    <div class="title1">
+        <h1>¡Es la hora de buscar a tu nuevo mejor amigo!</h1>
+        <h2>Hemos encontrado algunos amigos para ti</h2>
     </div>
-    <hr>
-    <div>
-        <Form action="buscar.html" method="GET">
-            <label for="nombrePerro">Buscar por nombre:</label>
-            <input type="text" id="nombrePerro" name="nombrePerro" placeholder="Ingresa el nombre del perro">
-            <button type=<btnbuscar"submit">Buscar</button>
-        </form>
+
+    <div class="btnbuscar">
+            <input type="text" placeholder="Buscar por nombre:">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
-    <br>
-    <div>
-        <article>
-            <a href="../../html/adopciones/mascotas/toby.html">
-                <img src="../../imagenes/adopciones/toby.jpg" alt="Toby" title="Toby" height="200px" width="250px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Toby</h2></li>
-                    <li><h3>Mestizo</h3></li>
-                    <li><h3>Macho</h3></li>
-                </ul>
+
+    <div class="container">
+        <div class="contenedor-card">
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/appa.html">
+                    <img src="../../imagenes/adopciones/appa.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Appa</h2>
+                    <div class="h3">
+                        <h3>Chihuahua</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
-        <article>
-            <a href="../../html/adopciones/mascotas/dulcinea.html">
-                <img src="../../imagenes/adopciones/dulcinea.jpeg" alt="Dulcinea" title="Dulcinea" height="300px" width="250px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Dulcinea</h2></li>
-                    <li><h3>Bulldog Inglés</h3></li>
-                    <li><h3>Hembra</h3></li>
-                </ul>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/ginebra.html">
+                    <img src="../../imagenes/adopciones/ginebra.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Ginebra</h2>
+                    <div class="h3">
+                        <h3>Bulldog inglés</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
-        <article>
-            <a href="../../html/adopciones/mascotas/bruno.html">
-                <img src="../../imagenes/adopciones/bruno.jpeg" alt="Bruno" title="Bruno" height="300px" width="150px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Bruno</h2></li>
-                    <li><h3>Pitbull Blue</h3></li>
-                    <li><h3>Macho</h3></li>
-                </ul>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/bruno.html">
+                    <img src="../../imagenes/adopciones/bruno.jpg">
+                </a>              
+                <div class="contenido">
+                    <h2>Bruno</h2>
+                    <div class="h3">
+                        <h3>Pitbull blue</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
-        <article>
-            <a href="../../html/adopciones/mascotas/ginebra.html">
-                <img src="../../imagenes/adopciones/ginebra.jpeg" alt="Ginebra" title="Ginebra" height="300px" width="250px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Ginebra</h2></li>
-                    <li><h3>Bulldog Inglés</h3></li>
-                    <li><h3>Hembra</h3></li>
-                </ul>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/joy.html">
+                    <img src="../../imagenes/adopciones/joy.jpeg">
+                </a>               
+                <div class="contenido">
+                    <h2>Joy</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
-        <article>
-            <a href="../../html/adopciones/mascotas/joy.html">
-                <img src="../../imagenes/adopciones/joy.jpeg" alt="Joy" title="Joy" height="300px" width="250px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Joy</h2></li>
-                    <li><h3>Mestizo</h3></li>
-                    <li><h3>Hembra</h3></li>
-                </ul>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/dulcinea.html">
+                    <img src="../../imagenes/adopciones/dulcinea.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Dulcinea</h2>
+                    <div class="h3">
+                        <h3>Bulldog inglés</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
-        <article>
-            <a href="../../html/adopciones/mascotas/dantes.html">
-                <img src="../../imagenes/adopciones/dantes.jpeg" alt="Dantes" title="Dantes" height="300px" width="250px">
-            </a>
-            <div>
-                <ul>
-                    <li><h2>Dantes</h2></li>
-                    <li><h3>Bulldog Inglés</h3></li>
-                    <li><h3>Macho</h3></li>
-                </ul>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/ori.html">
+                    <img src="../../imagenes/adopciones/ori.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Ori</h2>
+                    <div class="h3">
+                        <h3>Chihuahua</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
             </div>
-        </article>
-        <br>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/toby.html">
+                    <img src="../../imagenes/adopciones/toby.png">
+                </a>
+                <div class="contenido">
+                    <h2>Toby</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/dantes.html">
+                    <img src="../../imagenes/adopciones/dantes.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Dantes</h2>
+                    <div class="h3">
+                        <h3>Bulldog inglés</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/love.html">
+                    <img src="../../imagenes/adopciones/love.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Love</h2>
+                    <div class="h3">
+                        <h3>Chihuahua</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/white.html">
+                    <img src="../../imagenes/adopciones/white.jpg">
+                </a>
+                <div class="contenido">
+                    <h2>White</h2>
+                    <div class="h3">
+                        <h3>Retriever</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/samy.html">
+                    <img src="../../imagenes/adopciones/samy.jpg">
+                </a>
+                <div class="contenido">
+                    <h2>Samy</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/arthur.html">
+                    <img src="../../imagenes/adopciones/arthur.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Arthur</h2>
+                    <div class="h3">
+                        <h3>Chihuahua</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/reyna.html">
+                    <img src="../../imagenes/adopciones/reyna.png">
+                </a>
+                <div class="contenido">
+                    <h2>Reyna</h2>
+                    <div class="h3">
+                        <h3>Beagle</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/maya.html">
+                    <img src="../../imagenes/adopciones/maya.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Maya</h2>
+                    <div class="h3">
+                        <h3>Chihuahua</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/max.html">
+                    <img src="../../imagenes/adopciones/max.jpg">
+                </a>
+                <div class="contenido">
+                    <h2>Max</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/luna.html">
+                    <img src="../../imagenes/adopciones/luna.jpg">
+                </a>
+                <div class="contenido">
+                    <h2>Luna</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/loki.html">
+                    <img src="../../imagenes/adopciones/loki.png">
+                </a>
+                <div class="contenido">
+                    <h2>Loki</h2>
+                    <div class="h3">
+                        <h3>Salchicha</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/nya.html">
+                    <img src="../../imagenes/adopciones/nya.jpeg">
+                </a>
+                <div class="contenido">
+                    <h2>Nya</h2>
+                    <div class="h3">
+                        <h3>Retriever</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/susan.html">
+                    <img src="../../imagenes/adopciones/susan.png">
+                </a>
+                <div class="contenido">
+                    <h2>Susan</h2>
+                    <div class="h3">
+                        <h3>Bulldog francés</h3>
+                        <h3>Hembra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../../html/adopciones/mascotas/rocky.html">
+                    <img src="../../imagenes/adopciones/rocky.png">
+                </a>
+                <div class="contenido">
+                    <h2>Rocky</h2>
+                    <div class="h3">
+                        <h3>Mestizo</h3>
+                        <h3>Macho</h3>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+        <!--Sección de categorías para buscar alguna característica de los perritos-->
+        <div class="contenedor-categoria">
+            <div class="categoria">
+                <h2>Categorías <i class="fa-solid fa-list"></i></h2>
+            </div>
+            
+            <!--Categorias-->
+            <div class="menu">
+                <p>Raza <i class="fa-solid fa-plus"></i></p> 
+                <p>Ubicación <i class="fa-solid fa-plus"></i></p> 
+                <p>Género <i class="fa-solid fa-plus"></i></p> 
+                <p>Edad <i class="fa-solid fa-plus"></i></p> 
+                <p>Tamaño <i class="fa-solid fa-plus"></i></p> 
+            </div>
         
-
-
-        <!--Sección de categorías para buscar alguna característica de los perritos-->\
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <h2>Categorías <i class="fa-solid fa-list"></i></h2>
-                    </div>
-                    <!--Categoria RAZA-->
-                    <div>
-                        <div>
-                            Raza <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                    <!--Categoria GÉNERO-->
-                    <div>
-                        <div>
-                            Género <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                    <!--Categoria EDAD-->
-                    <div>
-                        <div>
-                            Edad <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                    <!--Categoria TAMAÑO-->
-                    <div>
-                        <div>
-                            Tamaño <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!--Referencias a las otras páginas por medio de imágenes-->
-            <aside>
-                <div>
-                    <a href="../donaciones.html">
-                        <img src="../../imagenes/adopciones/donaciones.jpg" width="200px" height="200px">
-                    </a>
-                </div>
-                <br>
-                <div>
-                    <a href="../Razas.html">
-                        <img src="../../imagenes/adopciones/razas.jpg" width="200px" height="200px">
-                    </a>
-                </div>
-                <br>
-                <div>
-                    <a href="../Redsocial.html">
-                        <img src="../../imagenes/adopciones/redSocial.jpg" width="200px" height="200px">
-                    </a>
-                </div>
-                <br>
-
-            </aside>
+            <div class="referencias">
+                <a href="../donaciones.html">
+                    <img src="../../imagenes/adopciones/donaciones.jpg" width="200px" height="200px">
+                </a>
+                <a href="../Razas.html">
+                    <img src="../../imagenes/adopciones/razas.jpg" width="200px" height="200px">
+                </a>
+                <a href="../Redsocial.html">
+                    <img src="../../imagenes/adopciones/redSocial.jpg" width="200px" height="200px">
+                </a>
+            </div>
         </div>
     </div>
 
-
-
-    <hr>
-    <footer><!--Aqui empieza el footer👀❤️-->
-        <div>
-            <div>
-                <h4>Siguenos</h4>
-                <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-solid fa-envelope"></i></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Acerca de...</h4>
-                <p>&copy; 2024 Huellas en tu Vida. Todos los derechos reservados.</p>
-            </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contacto</h3>
+              <div class="contact-text">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>85 Av. Norte y 15 Calle Poniente, #905, Colonia Escalón, San Salvador</p>
+              </div>
+              <div class="contact-text">
+                <i class="fa-solid fa-phone"></i>
+                <p>+503 5555 5555</p> 
+              </div>
+              <div class="contact-text">
+                <i class="fa-solid fa-envelope"></i>
+                <p>huellasentuvida@gmail.com</p>
+              </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+              <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Síguenos</h3>
+              <div class="social-media">
+                <a href="" class="fa-brands fa-facebook"></a>
+                <a href="" class="fa-brands fa-twitter"></a>
+                <a href="" class="fa-brands fa-instagram"></a>
+              </div>
+          </div>
+        </div>
+        <div class="footer-image">
+          <img src="../../imagenes/logoHuellitas.png" alt="Descripción de la imagen">
+        </div>
+        <div class="bottom">
+          <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
         </div>
     </footer>
-    <hr>
+
 </body>
 </html>
