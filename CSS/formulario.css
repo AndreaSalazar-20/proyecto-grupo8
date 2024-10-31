@@ -59,9 +59,25 @@ form input {
     transition: 0.5s;
 }
 
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3d4670b9;
+    font-size: 1.2em;
+}
+
 .input-text {
-    width: 102%;
+    width: 111%;
     padding: 12px 20px;
+    padding-left: 44px;
     margin: 8px 0;
     border: 2px solid #79ADE0;
     border-radius: 50px;

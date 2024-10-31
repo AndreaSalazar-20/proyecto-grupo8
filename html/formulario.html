@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 
@@ -17,11 +19,27 @@
         <!-- Paso 1: Información Personal -->
         <form id="form1">
             <h3>Información Personal</h3>
-            <input type="text" class="input-text" placeholder="Nombre completo" name="nombre" required />
-            <input type="number" class="input-text" placeholder="DUI" name="dui" min="0" pattern="^[0-9]+$" required />
-            <input type="text" class="input-text" placeholder="Dirección" name="direccion" required />
-            <input type="tel" class="input-text" placeholder="Teléfono" name="telefono" required />
-            <input type="email" class="input-text" placeholder="Correo electrónico" name="correo" required />
+            <div class="input-container">
+                <i class="fas fa-user"></i> <!-- Icono de usuario -->
+                <input type="text" class="input-text" placeholder="Nombre completo" name="nombre" required />
+            </div>
+            <div class="input-container">
+                <i class="fas fa-id-card"></i> <!-- Icono de identificación -->
+                <input type="number" class="input-text" placeholder="DUI" name="dui" min="0" pattern="^[0-9]+$"
+                    required />
+            </div>
+            <div class="input-container">
+                <i class="fas fa-map-marker-alt"></i> <!-- Icono de ubicación -->
+                <input type="text" class="input-text" placeholder="Dirección" name="direccion" required />
+            </div>
+            <div class="input-container">
+                <i class="fas fa-phone"></i> <!-- Icono de teléfono -->
+                <input type="tel" class="input-text" placeholder="Teléfono" name="telefono" required />
+            </div>
+            <div class="input-container">
+                <i class="fas fa-envelope"></i> <!-- Icono de correo electrónico -->
+                <input type="email" class="input-text" placeholder="Correo electrónico" name="correo" required />
+            </div>
             <div class="btn-box">
                 <button type="button" id="next1">Siguiente</button>
             </div>
@@ -30,15 +48,17 @@
         <!-- Paso 2: Estilo de Vida -->
         <form id="form2">
             <h3>Estilo de Vida</h3>
-            <input type="number" class="input-text" placeholder="¿Cuántas horas al día estarás en casa?" name="horas"
-                required />
+            <div class="input-container">
+                <i class="fas fa-clock"></i> <!-- Icono de horas en casa -->
+                <input type="number" class="input-text" placeholder="¿Cuántas horas al día estarás en casa?"
+                    name="horas" required />
+            </div>
             <div class="pregunta">
                 <label class="label-titulo">Vivienda:</label><br>
                 <input type="radio" id="propia" name="vivienda" value="Propia" />
                 <label for="propia" class="label-text">Propia</label><br>
                 <input type="radio" id="alquiler" name="vivienda" value="Alquiler" />
                 <label for="alquiler" class="label-text">Alquiler</label><br>
-
             </div>
             <div class="pregunta">
                 <label class="label-titulo">¿Tienes un jardín?</label><br>
@@ -95,40 +115,46 @@
         <!-- Paso 5: Preferencias del Perro -->
         <form id="form5">
             <h3>Preferencias del Perro</h3>
-            <select name="tamano" required class="input-text">
-                <option value="" disabled selected>¿Qué tamaño de perro prefieres?</option>
-                <option value="Pequeño">Pequeño</option>
-                <option value="Mediano">Mediano</option>
-                <option value="Grande">Grande</option>
-            </select>
-            <select name="nombre_raza" required class="input-text">
-                <option value="" disabled selected>¿Tienes alguna preferencia de raza?</option>
-                <option value="Fila">Fila Brasileiro</option>
-                <option value="Chihuahua">Chihuahua</option>
-                <option value="Pastor">Pastor Alemán</option>
-                <option value="Rottweiler">Rottweiler</option>
-                <option value="ShihTzu">Shih Tzu</option>
-                <option value="Caniche">Caniche</option>
-                <option value="L.Retriever">Labrador Retriever</option>
-                <option value="Bóxer">Bóxer</option>
-                <option value="Bulldog">Bulldog Frances</option>
-                <option value="Bulldog">Bulldog Inglés</option>
-                <option value="Yorkshire">Yorkshire terrier</option>
-                <option value="Beagle">Beagle</option>
-                <option value="G.Retriever">Golden Retriever</option>
-                <option value="Akita">Akita Inu</option>
-                <option value="Mestizo">Perro mestizo</option>
-                <option value="Dachshund">Dachshund</option>
-                <option value="Cocker">Cocker Spaniel</option>
-                <option value="Maltés">Maltés</option>
-                <option value="M.Cocker">Maltés con Cocker</option>
-                <option value="Husky">Husky siberiano</option>
-                <option value="Bernardo">San Bernardo</option>
-                <option value="Pomerania">Pomerania</option>
-                <option value="Samoyedo">Samoyedo</option>
-                <option value="Corgi">Corgi</option>
-                <!-- Agrega más opciones según tu lista -->
-            </select>
+            <div class="input-container">
+                <i class="fas fa-dog"></i> <!-- Icono de tamaño de perro -->
+                <select name="tamano" required class="input-text">
+                    <option value="" disabled selected>¿Qué tamaño de perro prefieres?</option>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-dog"></i> <!-- Icono de tamaño de perro -->
+                <select name="nombre_raza" required class="input-text">
+                    <option value="" disabled selected>¿Tienes alguna preferencia de raza?</option>
+                    <option value="Fila">Fila Brasileiro</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Pastor">Pastor Alemán</option>
+                    <option value="Rottweiler">Rottweiler</option>
+                    <option value="ShihTzu">Shih Tzu</option>
+                    <option value="Caniche">Caniche</option>
+                    <option value="L.Retriever">Labrador Retriever</option>
+                    <option value="Bóxer">Bóxer</option>
+                    <option value="Bulldog">Bulldog Frances</option>
+                    <option value="Bulldog">Bulldog Inglés</option>
+                    <option value="Yorkshire">Yorkshire terrier</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="G.Retriever">Golden Retriever</option>
+                    <option value="Akita">Akita Inu</option>
+                    <option value="Mestizo">Perro mestizo</option>
+                    <option value="Dachshund">Dachshund</option>
+                    <option value="Cocker">Cocker Spaniel</option>
+                    <option value="Maltés">Maltés</option>
+                    <option value="M.Cocker">Maltés con Cocker</option>
+                    <option value="Husky">Husky siberiano</option>
+                    <option value="Bernardo">San Bernardo</option>
+                    <option value="Pomerania">Pomerania</option>
+                    <option value="Samoyedo">Samoyedo</option>
+                    <option value="Corgi">Corgi</option>
+                    <!-- Agrega más opciones según tu lista -->
+                </select>
+            </div>
             <div class="btn-box">
                 <button type="button" id="back4">Atrás</button>
                 <button type="button" id="next5">Siguiente</button>
