@@ -1,7 +1,20 @@
 body {
   background-image: url('../imagenes/index/background1.png');
-  font-family: 'Quicksand', sans-serif;
   margin: 0;  
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: #3d4670;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #3d4670;
+  margin: 20px 0;
 }
 
 header  {
@@ -101,7 +114,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 50px;
   margin: 0px auto;
 }
 
@@ -121,14 +134,14 @@ nav {
 }
 
 .maintitle {
-  font-family:'Quicksand';
+  font-family:'Quicksand', sans-serif;
   font-size: 60px;
   color: #79ade0;
   margin: 10px 0;
 }
 
 .main-txt p {
-  font-family:'Quicksand';
+  font-family:'Quicksand', sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0;
@@ -136,6 +149,7 @@ nav {
 }
 
 .btnmain {
+  font-family:'Quicksand', sans-serif;
   padding: 10px 15px;
   font-size: 16px;
   font-weight: 600;
@@ -186,12 +200,6 @@ nav {
 .main-img img {
   max-width: 55%;
   height: auto;
-  object-fit: contain;
-}
-
-.main-txt, .main-img {
-  flex: 1 1 48%;
-  max-width: 1200px;
 }
 
 
@@ -216,16 +224,12 @@ nav {
 
 
 .categories {
-  font-family: 'Quicksand', sans-serif;
-  color: #3d4670;
   margin: 40px auto;
   padding: 60px;
   text-align: center;
 }
 
 .categories h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
   margin-bottom:30px;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -253,11 +257,12 @@ nav {
   
 .boxes1 {
   flex: 1 1 30%;
-  max-width: 300px;
+  max-width: 240px;
   margin: 10px;
   text-align: center;
   background-color: #e8eaf1;
-  padding: 60px 20px 20px 20px;
+  padding: 60px 20px 50px 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.124), 0 6px 20px 0 rgba(0, 0, 0, 0.162);
   border-radius: 50px;
 }
 
@@ -302,20 +307,18 @@ nav {
 }
 
 .img-donat img {
-  max-width: 60%;
+  max-width: 48%;
   height: auto;
 }
 
 .txt-donat {
   flex: 1;
-  font-size: 25px;
-  color: #3d4670;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
-  padding: 0 25px;
+  text-align: center;
+  padding-right: 40px;
   max-width: 48%;
 }
 
@@ -325,7 +328,7 @@ nav {
 
 .txt-donat a {
   margin-top: 5px;
-  font-size: 30px;
+  font-size: 40px;
   color: #3d4670;
 }
 
@@ -354,10 +357,8 @@ nav {
   flex-wrap: wrap;
   font-size: 25px;
   color: #3d4670;
-  padding: 20px;
+  padding: 99px;
   box-sizing: border-box;
-  margin: 20px auto;
-  max-width: 1200px;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -370,9 +371,7 @@ nav {
 .txt-adoption {
   flex: 1;
   text-align: center;
-  padding: 50px;
   max-width: 48%;
-  font-size: 25px;
   box-sizing: border-box;
 }
 
@@ -400,7 +399,7 @@ nav {
 }
 
 .img-adoption img {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
@@ -410,7 +409,7 @@ nav {
   justify-content: center;
   background-color: #79ade0;
   flex-wrap: wrap-reverse;
-  padding: 25px;
+  padding: 80px;
   margin: 0px auto;
   opacity: 0;
   transform: translateX(20px);
@@ -440,25 +439,22 @@ nav {
 
 .txt-concept {
   flex: 1;
-  font-size: 25px;
-  color: #3d4670;
   box-sizing: border-box;
-  text-align: right;
+  text-align: center;
   padding-right: 40px;
   max-width: 48%;
 }
 
-.txt-concept h2 {
+/* .txt-concept h2 {
   font-size: 50px;
-}
+} */
 
 .social-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 60px 25px;
-  font-size: 25px;
+  padding: 99px;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -470,8 +466,6 @@ nav {
 .txt-social {
   flex: 1;
   text-align: center;
-  font-size: 25px;
-  color: #3d4670;
   padding: 25px;
   max-width: 48%;
 }
@@ -504,6 +498,7 @@ nav {
 #upBtn {
   display: none;
   position: fixed;
+  cursor: pointer;
   bottom: 30px;
   right: 30px;
   z-index: 99;
@@ -585,6 +580,7 @@ margin: 20px;
 }
 
 .contact-text p {
+  color: #f6f7f8;
   margin: 0;
   font-size: 1em;
 }
