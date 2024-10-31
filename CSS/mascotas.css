@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1{
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;  
+    background-color: #E8EAF1;
+}
+
+.title1 h1{
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    color: #3D4670;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 40px;
+    align-items: flex-start;    
+    
+}
+
+.containerDog{ 
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;/*Centra los elementos horizontalmente*/
+    align-items: center;/*Centra los elementos verticalmente*/
+}
+
+.imgDog{
+    height: auto;
+    width:  400px;/*El tamaño de cada card en una columna*/
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+.imgDog img{
+    border-radius: 20px;
+    width: 100%; /*El tamaño de cada imagen dentro de la card*/
+    height: 100%; /*El tamaño de cada imagen dentro de la card*/
+}
+
+.containerdetails{
+    padding: 10px;
+    margin-right: 15%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+    height: auto;
+}
+
+.containerdetails .name{
+    margin-bottom: 30px;
+}
+
+.name h1{
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.name h4{
+    font-family: "Quicksand", sans-serif;
+    color: #3D4670;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+.about p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.chrs div{
+    height: auto;
+    display: flex;
+    margin-bottom: 10px; 
+    align-items: center;
+    text-align: center;
+}
+
+.chrs h3{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.chrs p{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chrs i{
+    margin-right: 10px;
+    background-color: #ffce3f;
+    width: 40px;
+    height: 40px; 
+    border-radius: 10px;
+    color: #fff;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.container2{
+    background-color: #E8EAF1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container2 .comentario{
+    margin-bottom: 20px;
+}
+
+.container2 .adoptar{
+    margin-bottom: 20px;
+}
+
+.container2 button{
+    margin-left: 10px;
+}
+
+.comentario h1{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.adoptar h3{
+    display: flex;
+    font-family: "Quicksand", sans-serif;   
+    font-size: 25px;
+    font-weight: 800;
+    color: #3D4670;
+    justify-content: center;
+    align-items: center;
+}
+
+.adoptar button{
+    background-color: #79ade0;
+    color: #f6f7f8;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight:700;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+
+.btnadoptar:hover{
+    background-color: #ffce3f;
+    color: #79ADE0;
+}
+
+.comentario2{
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.comentario2 h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.referencias{
+    display: flex;
+    margin-bottom: 50px;
+    padding: 20px;/*top, right, bottom, left*/
+    justify-content: center; /*Centra los elementos horizontalmente*/
+    gap: 60px;
+    flex-wrap: wrap; /* Para que los elementos se ajusten en varias filas si es necesario */
+}
+
+.section img{
+    border-radius: 20px;
+    transition: all 400ms ease;/*Efecto suave con transición de 400 milisegundos*/
+}
+
+.section img:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,8);
+    transform: translateY(-3%);/*La card se levantará un % como efecto*/
+}

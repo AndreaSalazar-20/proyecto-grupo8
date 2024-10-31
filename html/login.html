@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login & register</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico"><!--copiar este icono-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <script src="https://kit.fontawesome.com/61322ee628.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -30,14 +35,10 @@
 
         <!--Formulario para registrarse al sistema-->
         <form action="" class="signup-form">
-          <h2 class="title">Regístrate!</h2>
+          <h2 class="title">Registrarse</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Usuario">
-          </div>
-          <div class="input-field">
-            <i class="fas fa-phone"></i>
-            <input type="phone" placeholder="Teléfono">
           </div>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
@@ -47,7 +48,7 @@
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Contraseña">
           </div>
-          <input type="submit" value="Registrarse" class="btn">
+          <input type="submit" value="Registrar" class="btn">
           
         </form>
       </div>
@@ -56,8 +57,8 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3 class="title3">Has regresado!</h3>
-            <h4 class="title4">Nos alegra tenerte de vuelta!</h4>
+            <h3 class="title3">¡Has regresado!</h3>
+            <h4 class="title4">¡Nos alegra tenerte de vuelta!</h4>
             <button class="btn" id="signin-btn">Iniciar sesión</button>
           </div>
           <img src="../imagenes/cuteDog.png" alt="" class="image">
@@ -67,13 +68,18 @@
         <div class="panel right-panel">
           <div class="content">
             <h3 class="title3">¿No estás registrado?</h3>
-            <h4 class="title4">Regístrate y sé parte de nuestra comunidad!</h4>
-            <button class="btn" id="signup-btn">Registrarse</button>
+            <h4 class="title4">¡Regístrate y sé parte de nuestra comunidad!</h4>
+            <button class="btn" id="signup-btn">Registrar</button>
           </div>
           <img src="../imagenes/familyDogs.png" alt="" class="image">
         </div>
-
       </div>
+
+      <a href="../html/index.html">
+        <button id="upBtn2" title="Ir al comienzo" style="display:block;">
+          <img src="../imagenes/favicon.ico">
+        </button>
+      </a>
 
     </div>
     <script src="../Scripts/login.js"></script>
