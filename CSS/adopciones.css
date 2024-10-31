@@ -72,14 +72,15 @@ body{
     display: flex;
     gap: 20px;
     align-items: flex-start; /*Alinea los elementos al inicio de la línea, independientes en altura*/
+    justify-content: space-between;
 }
 
 .contenedor-card{
+    margin-left: 30px;
     /*background: #a11818;*/
-    padding: 0;
-    margin-left: 50px;
+    min-width: 60%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;/*Si los elementos no caben, irán en la siguiente linea*/
     
@@ -87,7 +88,7 @@ body{
 
 .card{
     height:auto;
-    width: 20%;/*El tamaño de cada card en una columna*/
+    width: 200px;/*El tamaño de cada card en una columna, puede ser 20%*/
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
@@ -130,17 +131,31 @@ body{
 }
 
 .contenedor-categoria{
-    margin-right: 50px;
+    margin-right: 30px;
     /*background-color: #E8EAF1;*/
     border-radius: 10px;
     padding: 20px;
+    width: 20%;
     background-size: cover;
     background-position: center center;
     display: flex;
     flex-direction: column;
-    width: 20%;
     justify-content: space-between;
-    height: auto;
+}
+
+.toggleMenu{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffce3f;
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggleMenu:hover{
+    background-color: #79ADE0;
+    color: #fff;
 }
 
 .contenedor-categoria h2{
@@ -153,15 +168,97 @@ body{
 } 
 
 .menu{
-    
-    margin-top: 20px;
     margin-bottom: 20px;
 }
-.menu p{
+
+.menu .box{
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E8EAF1;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box:hover{
+    background-color: #3D4670;
+    color: #fff;
+}
+
+
+.boxMenu{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #E8EAF1;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boxMenu .raza-option{
+    padding: 6px 0 6px 20px;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 20px;
+}
+
+.raza-option:hover{
+    background-color: #79ADE0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.boxMenu .ubicacion-option{
+    padding: 6px 0 6px 20px;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.ubicacion-option:hover{
+    background-color: #79ADE0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.boxMenu .genero-option{
+    padding: 6px 0 6px 20px;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.genero-option:hover{
+    background-color: #79ADE0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.boxMenu .size-option{
+    padding: 6px 0 6px 20px;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.size-option:hover{
+    background-color: #79ADE0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.menu p{
     display: flex;
     justify-content: space-between; /*Alinea el icono a la derecha*/
     align-items: center; /*Centra verticalmente*/
