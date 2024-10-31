@@ -168,7 +168,10 @@ body{
 } 
 
 .menu{
+    overflow: hidden;
+    height: 0; /* Oculto inicialmente */
     margin-bottom: 20px;
+    transition: height 0.3s ease;
 }
 
 .menu .box{
@@ -180,7 +183,6 @@ body{
     background-color: #E8EAF1;
     margin-bottom: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .box:hover{

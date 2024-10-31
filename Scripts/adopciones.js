@@ -42,8 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Mostrar y ocultar menú de categorías
     toggleMenu.addEventListener("click", function() {
-        menu.style.display = menu.style.display === "none" ? "block" : "none";
+        if (menu.style.height === "0px" || menu.style.height === "") {
+            menu.style.height = "auto"; //altura al tamaño del contenido
+        } else {
+            menu.style.height = "0px";
+        }
+
+        //Todos los submenús estén cerrados al abrir "Categorías"
+        razaMenu.style.display = "none";
+        ubicacionMenu.style.display = "none";
+        generoMenu.style.display = "none";
+        sizeMenu.style.display = "none";
     });
+
+    
 
     //-----------------------------------------FILTRO DE RAZAS----------------------------------------------------//
     // Mostrar y ocultar submenú de razas
