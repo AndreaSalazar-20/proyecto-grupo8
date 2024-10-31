@@ -366,6 +366,7 @@ nav {
   opacity: 1;
 }
 
+/*Gabriela-Red Social*/
 
 .txt-adoption {
   flex: 1;
@@ -635,9 +636,13 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
+
+=======
 .bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
   color: #e8eaf1;
 }
+>>>>>>> origin
