@@ -140,9 +140,16 @@ h3 {
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     color: #3d4670;
 
+}
+
+.descripion01 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    color: #3d4670;
 }
 
 .titulo-razas {
@@ -258,6 +265,8 @@ p {
     outline: none;
     transition: 0.4s;
     border-radius: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
 }
 
 .active,
@@ -272,6 +281,7 @@ p {
     display: none;
     overflow: hidden;
     border-radius: 30px 10% 0px 0%;
+    text-align: left;
 }
 
 .accordion:after {
@@ -294,7 +304,6 @@ p {
     margin: 5px;
     line-height: 1.6;
     color: #3d4670;
-    text-align: left;
     letter-spacing: 0.05em;
     display: block;
     margin-inline-start: 1px;
