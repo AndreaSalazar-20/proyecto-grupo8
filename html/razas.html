@@ -7,6 +7,7 @@
     <title>Catálogo de razas</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!--navegador-->
     <link rel="stylesheet" href="../CSS/razas.css"> <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- CSS LILIANA -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Raleway:wght@400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -24,19 +25,23 @@
             <!--   <h1>Contenido</h1> -->
             <!--Introducción-->
             <h2>¿Por qué es importante conocer las razas?</h2>
-            <p>
-                Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que
-                ambos puedan vivir felices. Cada raza tiene su propia personalidad, nivel de actividad y cuidados
-                especiales
-                que debes considerar. Por ejemplo, algunos perros son más adecuados para familias con niños pequeños,
-                mientras que otros requieren un nivel de actividad física más elevado o un espacio amplio.
-            </p>
+            <div class="descripcion01">
+                <p>
+                    Al adoptar un perro, es fundamental conocer sus características y necesidades para asegurarte de que
+                    ambos puedan vivir felices. Cada raza tiene su propia personalidad, nivel de actividad y cuidados
+                    especiales que debes considerar. Por ejemplo, algunos perros son más adecuados para familias con
+                    niños pequeños,
+                    mientras que otros requieren un nivel de actividad física más elevado o un espacio amplio.
+                </p>
 
-            <p>
-                Además, al comprender su temperamento y necesidades de entrenamiento, puedes garantizar una convivencia
-                armoniosa y satisfacer sus necesidades físicas y emocionales. A continuación, utiliza los filtros para
-                encontrar la raza que mejor se ajuste a ti y a tu hogar.
-            </p>
+                <p>
+                    Además, al comprender su temperamento y necesidades de entrenamiento, puedes garantizar una
+                    convivencia
+                    armoniosa y satisfacer sus necesidades físicas y emocionales. A continuación, utiliza los filtros
+                    para
+                    encontrar la raza que mejor se ajuste a ti y a tu hogar.
+                </p>
+            </div>
         </main>
         <!-- Fin div main -->
 
@@ -49,9 +54,9 @@
                     <br />
                     <label for="nombre-raza" class="label-filtro">Buscar por nombre de raza:</label>
                     <select id="nombre-raza" class="filtro-raza" name="nombre-raza1">
-                        <option></option>
-                        <option value="Dogo">Dogo Argentino</option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <!--1 al 25 perros-->
+                        <option value="Dogo">Dogo Argentino</option>
                         <option value="Fila">Fila Brasileiro</option>
                         <option value="Chihuahua">Chihuahua</option>
                         <option value="Pastor">Pastor Alemán</option>
@@ -81,19 +86,19 @@
 
                     <label for="grupo" class="label-filtro">Grupo:</label>
                     <select id="grupo" class="filtro-grupo" name="grupo">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="Deportivo">Deportivo</option>
-                        <option value="Compania">De Compañía</option>
-                        <option value="Trabajo">De Trabajo</option>
-                        <option value="Guardia">De Guardia</option>
-                        <option value="Caza">De Caza</option>
-                        <option value="Pastoreo">De Pastoreo</option>
+                        <option value="Compania">Compañía</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Guardia">Guardia</option>
+                        <option value="Caza">Caza</option>
+                        <option value="Pastoreo">Pastoreo</option>
                     </select>
                     <br />
 
                     <label for="Ladridos" class="label-filtro">Nivel de Ladridos:</label>
                     <select id="Ladridos" class="filtro-ladrido" name="Ladridos">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="bajo">Bajo</option>
                         <option value="moderado">Moderado</option>
                         <option value="alto">Alto</option>
@@ -102,7 +107,7 @@
 
                     <label for="tamaño" class="label-filtro">Tamaño:</label>
                     <select id="tamaño" class="filtro-tamaño" name="tamaño">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="Pequeños">Pequeño</option>
                         <option value="Medianos">Mediano</option>
                         <option value="Grandes">Grande</option>
@@ -111,7 +116,7 @@
 
                     <label for="esperanza" class="label-filtro">Esperanza de vida:</label>
                     <select id="esperanza" class="filtro-esperanza" name="esperanza">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="baja">Menos de 10 años</option>
                         <option value="media">10-12 años</option>
                         <option value="alta">Más de 12 años</option>
@@ -120,7 +125,7 @@
 
                     <label for="peso" class="label-filtro">Peso:</label>
                     <select id="peso" class="filtro-peso" name="peso">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="ligero">Menos de 10 kg</option>
                         <option value="medio">10-25 kg</option>
                         <option value="pesado">Más de 25 kg</option>
@@ -129,7 +134,7 @@
 
                     <label for="colores" class="label-filtro">Colores:</label>
                     <select id="colores" class="filtro-colores" name="colores">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="blanco">Blanco</option>
                         <option value="negro">Negro</option>
                         <option value="marron">Marrón</option>
@@ -139,7 +144,7 @@
 
                     <label for="enfermedades" class="label-filtro">Posibles enfermedades:</label>
                     <select id="enfermedades" class="filtro-enfermedades" name="enfermedades">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="displasia">Displasia de cadera</option>
                         <option value="problemas_piel">Problemas de piel</option>
                         <option value="cardiacos">Problemas cardíacos</option>
@@ -167,13 +172,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong> Moderado</p>
-                            <p><strong>Tamaño:</strong> Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco</p>
-                            <p><strong>Peso:</strong> 40-45 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.
+                            <p><strong>Grupo:</strong> <br> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco</p>
+                            <p><strong>Peso:</strong> <br> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, sordera, problemas de
+                                piel.
                             </p>
                         </div>
                         <a href="https://youtu.be/kL9yaJ4VkbI?si=nL_NNU7hfDRCcTqh" target="_blank"
@@ -194,13 +200,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de guardia</p>
-                            <p><strong>Nivel de ladrido:</strong> Bajo</p>
-                            <p><strong>Tamaño:</strong> Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 9-12 años</p>
-                            <p><strong>Colores del manto:</strong> León, leonado, atigrado</p>
-                            <p><strong>Peso:</strong> 40-45 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares</p>
+                            <p><strong>Grupo:</strong> <br> Perros de guardia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 9-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Atigrado</p>
+                            <p><strong>Peso:</strong> <br> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas articulares
+                            </p>
                             <a href="https://www.youtube.com/watch?v=KncEG1h_NkM&ab_channel=SoyUnPerro" target="_blank"
                                 class="video-button">Ver video</a>
                         </div>
@@ -208,6 +215,7 @@
                 </div>
             </div>
             <!-- Fin Perro 2 -->
+
 
             <!-- Perro 3 -->
             <div class="card">
@@ -221,14 +229,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de compañía</p>
-                            <p><strong>Nivel de ladrido:</strong> Alto</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-20 años</p>
-                            <p><strong>Colores del manto:</strong> Negro, blanco, chocolate, crema, dorado</p>
-                            <p><strong>Peso:</strong> 1-3 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso
-                                traqueal</p>
+                            <p><strong>Grupo:</strong> <br> Perros de compañía</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Alto</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-20 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Negro, blanco, chocolate, crema, dorado</p>
+                            <p><strong>Peso:</strong> <br> 1-3 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas dentales, luxación de rótula,
+                                colapso traqueal</p>
 
                             <a href="https://www.youtube.com/watch?v=jvuGZh9vvPc&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -250,14 +258,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong> Moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 9-13 años</p>
-                            <p><strong>Colores del manto:</strong> Negro con fuego, sable</p>
-                            <p><strong>Peso:</strong> 30-40 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, displasia de codo, torsión
-                                gástrica.</p>
+                            <p><strong>Grupo:</strong> <br> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 9-13 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Negro con fuego, sable</p>
+                            <p><strong>Peso:</strong> <br> 30-40 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, displasia de codo,
+                                torsión gástrica.</p>
                             <a href="https://www.youtube.com/watch?v=CcwceR_QdPg&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
@@ -278,13 +286,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                            <p><strong>Colores del manto:</strong> Negro con marcas fuego</p>
-                            <p><strong>Peso:</strong> 40-60 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.
+                            <p><strong>Grupo:</strong> <br> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo a Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Negro con marcas fuego</p>
+                            <p><strong>Peso:</strong> <br> 40-60 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, sordera, problemas de
+                                piel.
                             </p>
                             <a href="https://www.youtube.com/watch?v=282JA4gogxk&ab_channel=TodoSobreelPerro"
                                 target="_blank" class="video-button">Ver video</a>
@@ -305,16 +314,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong> Bajo a Moderado</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 10-16 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco, dorado, marrón, negro</p>
-                            <p><strong>Peso:</strong> 4-7 kg</p>
-                            <p>
-                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas oculares,
-                                displasia de
-                                cadera.
+                            <p><strong>Grupo:</strong> <br> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo a Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-16 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco, dorado, marrón, negro</p>
+                            <p><strong>Peso:</strong> <br> 4-7 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas respiratorios, problemas oculares,
+                                displasia de cadera.
                             </p>
 
                             <a href="https://www.youtube.com/watch?v=E-g2w4aQJgM&ab_channel=ExpertoAnimal"
@@ -339,13 +346,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Varía (miniatura, mediano, grande)</p>
-                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco, negro, gris, marrón, albaricoque</p>
-                            <p><strong>Peso:</strong> Varía según el tamaño 2-32 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                            <p><strong>Grupo:</strong> <br> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Varía (miniatura, mediano, grande)</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco, negro, gris, marrón, albaricoque</p>
+                            <p><strong>Peso:</strong> <br> Varía según el tamaño 2-32 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas oculares,
                                 epilepsia.</p>
                             <a href="https://www.youtube.com/watch?v=CJZgj7K28Xs&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -369,13 +376,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de caza</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Amarillo, chocolate, negro</p>
-                            <p><strong>Peso:</strong> 25-36 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares,
+                            <p><strong>Grupo:</strong> <br> Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo a moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Amarillo, chocolate, negro</p>
+                            <p><strong>Peso:</strong> <br> 25-36 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas articulares,
                                 obesidad</p>
                             <a href="https://www.youtube.com/watch?v=A21GxQdrtME&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -398,13 +405,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de Trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Atigrado, leonado</p>
-                            <p><strong>Peso:</strong> 25-32 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas cardíacos, displasia de cadera, cáncer.
+                            <p><strong>Grupo:</strong> <br> Perros de Trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Atigrado, leonado</p>
+                            <p><strong>Peso:</strong> <br> 25-32 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas cardíacos, displasia de cadera,
+                                cáncer.
                             </p>
                             <a href="https://www.youtube.com/watch?v=uQnyxk0lBH0&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -428,14 +436,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco, negro, leonado, atigrado</p>
-                            <p><strong>Peso:</strong> 8-14 kg</p>
+                            <p><strong>Grupo:</strong> <br> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño a mediano</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco, negro, leonado, atigrado</p>
+                            <p><strong>Peso:</strong> <br> 8-14 kg</p>
                             <p>
-                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas de piel,
+                                <strong>Enfermedades comunes:</strong> <br> Problemas respiratorios, problemas de piel,
                                 luxación de rótula
                             </p>
                             <a href="https://www.youtube.com/watch?v=nybbPfS4woI&ab_channel=ExpertoAnimal"
@@ -458,14 +466,15 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                            <p><strong>Tamaño:</strong>Mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco, leonado, atigrado</p>
-                            <p><strong>Peso:</strong> 18-50 kg</p>
+                            <p><strong>Grupo:</strong> <br> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco, leonado, atigrado</p>
+                            <p><strong>Peso:</strong> <br> 18-50 kg</p>
                             <p>
-                                <strong>Enfermedades comunes:</strong> Problemas respiratorios, problemas articulares,
+                                <strong>Enfermedades comunes:</strong> <br> Problemas respiratorios, problemas
+                                articulares,
                                 displasia de
                                 cadera.
                             </p>
@@ -488,13 +497,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Alto</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                            <p><strong>Colores del manto:</strong> Azul y fuego</p>
-                            <p><strong>Peso:</strong> 2-3 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas dentales, colapso
+                            <p><strong>Grupo:</strong> <br> Perros de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Alto</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Azul y fuego</p>
+                            <p><strong>Peso:</strong> <br> 2-3 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Luxación de rótula, problemas dentales,
+                                colapso
                                 traqueal.</p>
                             <a href="https://www.youtube.com/watch?v=d_1TyXepyPY&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -516,13 +526,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de caza</p>
-                            <p><strong>Nivel de ladrido:</strong>Alto</p>
-                            <p><strong>Tamaño:</strong>Mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                            <p><strong>Colores del manto:</strong> Tricolor, blanco, negro y marrón</p>
-                            <p><strong>Peso:</strong> 9-11 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Hipotiroidismo, epilepsia, problemas de oído</p>
+                            <p><strong>Grupo:</strong> <br>Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong> <br>Alto</p>
+                            <p><strong>Tamaño:</strong> <br> Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Tricolor, blanco, negro y marrón</p>
+                            <p><strong>Peso:</strong> <br> 9-11 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Hipotiroidismo, epilepsia, problemas de oído
+                            </p>
                             <a href="https://www.youtube.com/watch?v=d9H-v5ZIq4U&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
@@ -543,13 +554,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de caza</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo a moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Dorado, crema</p>
-                            <p><strong>Peso:</strong> 25-40 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas cardíacos, cáncer
+                            <p><strong>Grupo:</strong> <br>Perros de caza</p>
+                            <p><strong>Nivel de ladrido:</strong> <br>Bajo a moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Dorado, crema</p>
+                            <p><strong>Peso:</strong> <br> 25-40 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas cardíacos,
+                                cáncer
                             </p>
                             <a href="https://www.youtube.com/watch?v=dfdPn4pF9Ec&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -571,16 +583,16 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perros de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco, rojo, atigrado</p>
-                            <p><strong>Peso:</strong> 32-50 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                            <p><strong>Grupo:</strong> <br> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco, rojo, atigrado</p>
+                            <p><strong>Peso:</strong> <br> 32-50 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas oculares,
                                 hipotiroidismo</p>
                             <a href="https://www.youtube.com/watch?v=eDzmgtkfd3k&ab_channel=ExpertoAnimal"
-                                target="_blank" class="video-button">Ver video</a>ç
+                                target="_blank" class="video-button">Ver video</a>
                         </div>
                     </div>
                 </div>
@@ -601,13 +613,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Varia</p>
-                            <p><strong>Nivel de ladrido:</strong>Varia</p>
-                            <p><strong>Tamaño:</strong>Varia</p>
-                            <p><strong>Esperanza de vida:</strong> 10-18 años</p>
-                            <p><strong>Colores del manto:</strong> Varia</p>
-                            <p><strong>Peso:</strong> Varia</p>
-                            <p><strong>Enfermedades comunes:</strong> Varía según su composición genética</p>
+                            <p><strong>Grupo:</strong> <br> Varia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Varia</p>
+                            <p><strong>Tamaño:</strong> <br> Varia</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-18 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Varia</p>
+                            <p><strong>Peso:</strong> <br> Varia</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Varía según su composición genética</p>
                             <a href="https://www.youtube.com/watch?v=qSDKBIuJPCg&ab_channel=TuAmigoIncondicional"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
@@ -628,13 +640,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de caza</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                            <p><strong>Colores del manto:</strong> Rojo, negro y fuego, chocolate</p>
+                            <p><strong>Grupo:</strong> <br> Perro de caza</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Rojo, negro y fuego, chocolate</p>
                             <p><strong>Peso:</strong> 7-14 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas de columna, luxación de rótula,
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas de columna, luxación de rótula,
                                 obesidad.</p>
                             <a href="https://www.youtube.com/watch?v=t4BJ0Zvan8I&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -656,13 +668,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de caza</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 12-14 años</p>
-                            <p><strong>Colores del manto:</strong> Dorado, negro, tricolor</p>
-                            <p><strong>Peso:</strong> 12-16 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas oculares, otitis, displasia de cadera.
+                            <p><strong>Grupo:</strong> <br> Perro de caza</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br>Mediano</p>
+                            <p><strong>Esperanza de vida:</strong><br> 12-14 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Dorado, negro, tricolor</p>
+                            <p><strong>Peso:</strong> <br> 12-16 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas oculares, otitis, displasia de
+                                cadera.
                             </p>
                             <a href="https://www.youtube.com/watch?v=tWn2wUF3EGg&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -684,14 +697,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco</p>
-                            <p><strong>Peso:</strong> 3-4 kg</p>
-                            <p>
-                                <strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, problemas
+                            <p><strong>Grupo:</strong> <br> Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco</p>
+                            <p><strong>Peso:</strong> <br> 3-4 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas dentales, luxación de rótula,
+                                problemas
                                 oculares.
                             </p>
                             <a href="https://www.youtube.com/watch?v=QaxO5ecz_OY&ab_channel=ExpertoAnimal"
@@ -715,13 +728,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Pequeño a mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                            <p><strong>Colores del manto:</strong> Varía</p>
-                            <p><strong>Peso:</strong> 4-12 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Luxación de rótula, problemas oculares.</p>
+                            <p><strong>Grupo:</strong> <br> Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño a mediano</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-15 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Varía</p>
+                            <p><strong>Peso:</strong> <br> 4-12 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Luxación de rótula, problemas oculares.</p>
                             <a href="https://www.youtube.com/watch?v=7H6gOgzNhPE&t=25s&ab_channel=OxitocinaMagazine"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
@@ -742,13 +755,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo - Tienden a aullar más que ladrar.</p>
-                            <p><strong>Tamaño:</strong>Mediano</p>
-                            <p><strong>Esperanza de vida:</strong> 12-14 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco</p>
-                            <p><strong>Peso:</strong> 16-27 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares,
+                            <p><strong>Grupo:</strong> <br> Perro de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo - Tienden a aullar más que ladrar.</p>
+                            <p><strong>Tamaño:</strong> <br> Mediano</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-14 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco</p>
+                            <p><strong>Peso:</strong> <br> 16-27 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas oculares,
                                 hipotiroidismo</p>
                             <a href="https://www.youtube.com/watch?v=Hqrv7lt_-TA&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -771,13 +784,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong>Bajo</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 8-10 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco con marrón</p>
-                            <p><strong>Peso:</strong> 64-120 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, torsión gástrica, problemas
+                            <p><strong>Grupo:</strong> <br> Perro de trabajo </p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 8-10 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco con marrón</p>
+                            <p><strong>Peso:</strong> <br> 64-120 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, torsión gástrica,
+                                problemas
                                 cardíacos</p>
                             <a href="https://www.youtube.com/watch?v=E7K0LueBN-0&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -800,13 +814,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de compañia</p>
-                            <p><strong>Nivel de ladrido:</strong>Alto</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-16 años</p>
-                            <p><strong>Colores del manto:</strong> Naranja, negro, blanco, marrón</p>
+                            <p><strong>Grupo:</strong> <br> Perro de compañia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Alto</p>
+                            <p><strong>Tamaño:</strong> <br> Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-16 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Naranja, negro, blanco, marrón</p>
                             <p><strong>Peso:</strong> 1.5-3.5 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas dentales, luxación de rótula, colapso
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas dentales, luxación de rótula,
+                                colapso
                                 traqueal.</p>
                             <a href="https://www.youtube.com/watch?v=IHq2BLkkO2s&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
@@ -829,13 +844,13 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco</p>
-                            <p><strong>Peso:</strong> 40-45 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas oculares.</p>
+                            <p><strong>Grupo:</strong> <br> Perro de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco</p>
+                            <p><strong>Peso:</strong> <br> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas oculares.</p>
                             <a href="https://www.youtube.com/watch?v=hvErXjc-Q28&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
@@ -857,20 +872,22 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong>Perro de pastoreo</p>
-                            <p><strong>Nivel de ladrido:</strong>Moderado</p>
-                            <p><strong>Tamaño:</strong>Pequeño</p>
-                            <p><strong>Esperanza de vida:</strong> 12-15 años</p>
-                            <p><strong>Colores del manto:</strong> Rojo, sable, tricolor</p>
-                            <p><strong>Peso:</strong> 9-14 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Problemas de columna, displasia de cadera.</p>
-                            <a href="https://www.youtube.com/watch?v=7kybSEln8Mw&ab_channel=ExpertoAnimal"
+                            <p><strong>Grupo:</strong> <br> Perros de pastoreo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br>Pequeño</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 12-15 años </p>
+                            <p><strong>Colores del manto:</strong> <br> Rojo, sable y tricolor</p>
+                            <p><strong>Peso:</strong> <br> 9-14 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Problemas de columna, displasia de cadera.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=hvErXjc-Q28&ab_channel=ExpertoAnimal"
                                 target="_blank" class="video-button">Ver video</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Fin Perro 25 -->
+
         </div>
         <!-- Fin div coleccion -->
 
