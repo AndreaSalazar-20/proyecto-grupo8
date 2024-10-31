@@ -49,9 +49,9 @@
                     <br />
                     <label for="nombre-raza" class="label-filtro">Buscar por nombre de raza:</label>
                     <select id="nombre-raza" class="filtro-raza" name="nombre-raza1">
-                        <option></option>
-                        <option value="Dogo">Dogo Argentino</option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <!--1 al 25 perros-->
+                        <option value="Dogo">Dogo Argentino</option>
                         <option value="Fila">Fila Brasileiro</option>
                         <option value="Chihuahua">Chihuahua</option>
                         <option value="Pastor">Pastor Alemán</option>
@@ -81,19 +81,19 @@
 
                     <label for="grupo" class="label-filtro">Grupo:</label>
                     <select id="grupo" class="filtro-grupo" name="grupo">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="Deportivo">Deportivo</option>
-                        <option value="Compania">De Compañía</option>
-                        <option value="Trabajo">De Trabajo</option>
-                        <option value="Guardia">De Guardia</option>
-                        <option value="Caza">De Caza</option>
-                        <option value="Pastoreo">De Pastoreo</option>
+                        <option value="Compania">Compañía</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Guardia">Guardia</option>
+                        <option value="Caza">Caza</option>
+                        <option value="Pastoreo">Pastoreo</option>
                     </select>
                     <br />
 
                     <label for="Ladridos" class="label-filtro">Nivel de Ladridos:</label>
                     <select id="Ladridos" class="filtro-ladrido" name="Ladridos">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="bajo">Bajo</option>
                         <option value="moderado">Moderado</option>
                         <option value="alto">Alto</option>
@@ -102,7 +102,7 @@
 
                     <label for="tamaño" class="label-filtro">Tamaño:</label>
                     <select id="tamaño" class="filtro-tamaño" name="tamaño">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="Pequeños">Pequeño</option>
                         <option value="Medianos">Mediano</option>
                         <option value="Grandes">Grande</option>
@@ -111,7 +111,7 @@
 
                     <label for="esperanza" class="label-filtro">Esperanza de vida:</label>
                     <select id="esperanza" class="filtro-esperanza" name="esperanza">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="baja">Menos de 10 años</option>
                         <option value="media">10-12 años</option>
                         <option value="alta">Más de 12 años</option>
@@ -120,7 +120,7 @@
 
                     <label for="peso" class="label-filtro">Peso:</label>
                     <select id="peso" class="filtro-peso" name="peso">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="ligero">Menos de 10 kg</option>
                         <option value="medio">10-25 kg</option>
                         <option value="pesado">Más de 25 kg</option>
@@ -129,7 +129,7 @@
 
                     <label for="colores" class="label-filtro">Colores:</label>
                     <select id="colores" class="filtro-colores" name="colores">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="blanco">Blanco</option>
                         <option value="negro">Negro</option>
                         <option value="marron">Marrón</option>
@@ -139,7 +139,7 @@
 
                     <label for="enfermedades" class="label-filtro">Posibles enfermedades:</label>
                     <select id="enfermedades" class="filtro-enfermedades" name="enfermedades">
-                        <option></option>
+                        <option value="" disabled selected class="texto">Selecciona una opción</option>
                         <option value="displasia">Displasia de cadera</option>
                         <option value="problemas_piel">Problemas de piel</option>
                         <option value="cardiacos">Problemas cardíacos</option>
@@ -167,13 +167,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de trabajo</p>
-                            <p><strong>Nivel de ladrido:</strong> Moderado</p>
-                            <p><strong>Tamaño:</strong> Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 10-12 años</p>
-                            <p><strong>Colores del manto:</strong> Blanco</p>
-                            <p><strong>Peso:</strong> 40-45 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, sordera, problemas de piel.
+                            <p><strong>Grupo:</strong> <br> Perros de trabajo</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Moderado</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 10-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Blanco</p>
+                            <p><strong>Peso:</strong> <br> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, sordera, problemas de
+                                piel.
                             </p>
                         </div>
                         <a href="https://youtu.be/kL9yaJ4VkbI?si=nL_NNU7hfDRCcTqh" target="_blank"
@@ -194,13 +195,14 @@
                     <button class="accordion">Ver más</button>
                     <div class="panel">
                         <div class="textofiltro">
-                            <p><strong>Grupo:</strong> Perros de guardia</p>
-                            <p><strong>Nivel de ladrido:</strong> Bajo</p>
-                            <p><strong>Tamaño:</strong> Grande</p>
-                            <p><strong>Esperanza de vida:</strong> 9-12 años</p>
-                            <p><strong>Colores del manto:</strong> León, leonado, atigrado</p>
-                            <p><strong>Peso:</strong> 40-45 kg</p>
-                            <p><strong>Enfermedades comunes:</strong> Displasia de cadera, problemas articulares</p>
+                            <p><strong>Grupo:</strong> <br> Perros de guardia</p>
+                            <p><strong>Nivel de ladrido:</strong> <br> Bajo</p>
+                            <p><strong>Tamaño:</strong> <br> Grande</p>
+                            <p><strong>Esperanza de vida:</strong> <br> 9-12 años</p>
+                            <p><strong>Colores del manto:</strong> <br> Atigrado</p>
+                            <p><strong>Peso:</strong> <br> 40-45 kg</p>
+                            <p><strong>Enfermedades comunes:</strong> <br> Displasia de cadera, problemas articulares
+                            </p>
                             <a href="https://www.youtube.com/watch?v=KncEG1h_NkM&ab_channel=SoyUnPerro" target="_blank"
                                 class="video-button">Ver video</a>
                         </div>
@@ -208,6 +210,7 @@
                 </div>
             </div>
             <!-- Fin Perro 2 -->
+
 
             <!-- Perro 3 -->
             <div class="card">
