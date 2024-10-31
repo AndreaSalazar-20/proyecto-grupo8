@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Aqui empieza el body */
+body {
+    background-color: #ffffff;
+    /*    background-image: url('/imagenes/index/background1.png'); */
+    background-position: center center;
+}
+
+/* Aqui empieza el contenedor */
+.contenedor {
+    width: 100%;
+    max-width: auto;
+    margin: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        'header header header header header'
+        'contenido contenido contenido contenido sidebar'
+        'coleccion coleccion coleccion coleccion sidebar'
+        'footer footer footer footer footer';
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .coleccion,
+.contenedor .sidebar,
+.contenedor .footer {
+    padding: 20px;
+
+}
+
+/* Aqui empieza el header */
+.contenedor .header {
+    background-color: #3d4670;
+    color: #ffffff;
+    grid-area: header;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+/* Aqui empieza el contenido */
+.contenedor .contenido {
+    grid-area: contenido;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+}
+
+.contenedor .contenido h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+
+.contenedor .contenido p {
+    list-style: none;
+    margin: 5px;
+    font-weight: 400;
+}
+
+/* Aqui empieza la coleccion */
+.contenedor .coleccion {
+    /* background-color: #e8eaf1; */
+    grid-area: coleccion;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+    /* Oculta el elemento y no ocupa espacio */
+}
+
+/* Aqui empieza las cards */
+.card {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffce3f80;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.card.active::after {
+    opacity: 0;
+}
+
+/* Aqui empieza titulo y descripcion de razas */
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #3d4670;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #3d4670;
+
+}
+
+.descripion01 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    color: #3d4670;
+}
+
+.titulo-razas {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+.descripcion-texto {
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #3d4670;
+    text-align: center;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+/* Aqui empieza contenedor de imagenes */
+.image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tituloImag {
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    min-width: 70%;
+}
+
+/* Aqui empieza el siderbar, contenido lateral */
+.contenedor .sidebar {
+    grid-column: 2 / 4;
+    background: #E8EAF1;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    padding-right: 50px;
+    grid-area: sidebar;
+    border-radius: 10px;
+    height: 820px;
+}
+
+/* Aqui empieza los filtros */
+.filtro-raza,
+.filtro-grupo,
+.filtro-ladrido,
+.filtro-tamaño,
+.filtro-esperanza,
+.filtro-peso,
+.filtro-colores,
+.filtro-enfermedades {
+    border: 2px solid #3d4670;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 50px;
+    line-height: 18px;
+    padding: 9px 8px;
+    width: 100%;
+    white-space: pre-line;
+    margin-bottom: 20px;
+}
+
+.label-filtro {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #3d4670;
+    margin-bottom: 8px;
+    display: block;
+    letter-spacing: 0.4px;
+    line-height: 1;
+}
+
+.texto {
+    opacity: 0.5;
+    /* Ajusta la opacidad según necesites */
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Aqui empieza el footer */
+.contenedor .footer {
+    background: #3d4670;
+    color: #ffffff;
+    grid-area: footer;
+}
+
+/* Aqui empieza el acordeon */
+.accordion {
+    background-color: #3d4670;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ffce3f;
+    border: 4px solid #e8eaf1;
+}
+
+.panel {
+    padding: 10px;
+    background-color: #ffffff;
+    display: none;
+    overflow: hidden;
+    border-radius: 30px 10% 0px 0%;
+    text-align: left;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #e8eaf1;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2796';
+}
+
+/* Aqui empieza los textos de filtro */
+.textofiltro {
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    margin: 5px;
+    line-height: 1.6;
+    color: #3d4670;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+/* Aqui empieza los botones */
+button {
+    background-color: #79ade0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffce3f;
+}
+
+.video-button {
+    background-color: #79ade0;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+    margin-block-start: 3%;
+    margin-block-end: 3%;
+}
+
+.video-button:hover {
+    background-color: #3d4670;
+    border: 2px solid #ffce3f;
+}
+
+.btn-estilo {
+    background-color: #3d4670;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-block-start: 3%;
+    margin-block-end: 3%;
+}
+
+.btn-estilo:hover {
+    background-color: #79ade0;
+}
+
+.btn-estilo:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ffce3f;
+}
+
+.btn-estilo:disabled {
+    background-color: #e8eaf1;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+/* Aqui empieza el media */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-areas:
+            'header header header header header'
+            'contenido contenido contenido contenido contenido'
+            'coleccion coleccion coleccion coleccion coleccion'
+            'sidebar sidebar sidebar sidebar sidebar'
+            'footer footer footer footer footer';
+    }
+}
