@@ -374,6 +374,46 @@ button:hover {
     cursor: not-allowed;
 }
 
+/* bton para flecha */
+
+#upBtn {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    padding: 20px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #3d4670;
+    color: #79ade0;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+#upBtn i {
+    font-size: 15px;
+}
+
+#upBtn:hover {
+    background-color: #79ade0;
+    color: #3d4670;
+}
+
+#upBtn.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#upBtn.hide {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Aqui termina el bton para flecha */
+
 /* Aqui empieza el media */
 @media screen and (max-width: 600px) {
     .contenedor {
