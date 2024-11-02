@@ -8,8 +8,6 @@ body {
     background-color: #ffffff;
     /*   background-image: url('/imagenes/index/background1.png'); */
     background-position: center center;
-    overflow: hidden;
-    /* Evita que el cuerpo se desplace */
 }
 
 /* Aqui empieza el contenedor */
@@ -70,7 +68,6 @@ body {
 
 /* Aqui empieza la coleccion */
 .contenedor .coleccion {
-    /* background-color: #e8eaf1; */
     grid-area: coleccion;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -78,9 +75,13 @@ body {
 }
 
 .hidden {
-    display: none;
-    /* Oculta el elemento y no ocupa espacio */
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
 }
+
 
 /* Aqui empieza las cards */
 .card {
