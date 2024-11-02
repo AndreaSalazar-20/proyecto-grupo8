@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de razas</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico"><!--icono de favicon para title-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!--navegador-->
     <link rel="stylesheet" href="../CSS/razas.css"> <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/style.css"> <!-- CSS LILIANA -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- CSS Liliana -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Raleway:wght@400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,11 +16,30 @@
 </head>
 
 <body>
+
+    <header class="headerwrap">
+        <a href="../html/index.html">
+            <img src="../imagenes/logoHuellitas.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul class="navmn">
+                <li><a href="../html/razas.html">Catálogo</a></li>
+                <!-- <li><a href="../html/test.html">Mi raza ideal</a></li>
+            <li><a href="../html/redSocial.html">Comunidad</a></li> -->
+                <li><a href="../html/donaciones.html">Donaciones</a></li>
+                <li>Procesos
+                    <ul class="dropdown">
+                        <li><a href="../html/formulario.html">Solicitud</a></li>
+                        <li><a href="../html/adopciones/adopciones.html">¡Adopta!</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a class="btnlg" href="../html/login.html">Iniciar Sesión</a>
+    </header>
+
+
     <div class="contenedor">
-        <header class="header">
-            <h2>Apartado HEADER - Contenido de index</h2>
-        </header>
-        <!-- Fin div header -->
 
         <main class="contenido">
             <!--   <h1>Contenido</h1> -->
@@ -891,12 +911,61 @@
         </div>
         <!-- Fin div coleccion -->
 
-        <footer class="footer">
-            <h3>FOOTER</h3>
-        </footer>
-        <!-- Fin div footer -->
+
     </div>
+
+    <button id="upBtn" onclick="scrollToTop()" title="Ir al comienzo" style="display:none;"> <!--Flecha-->
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>85 Av. Norte y 15 Calle Poniente, #905, Colonia Escalón, San Salvador</p>
+                </div>
+                <div class="contact-text">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+503 5555 5555</p>
+                </div>
+                <div class="contact-text">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>huellasentuvida@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="" class="fa-brands fa-facebook"></a>
+                    <a href="" class="fa-brands fa-twitter"></a>
+                    <a href="" class="fa-brands fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-image">
+            <img src="../imagenes/logoHuellitas.png" alt="Logo">
+        </div>
+        <div class="bottom">
+            <small>&copy; 2024 <b>Huellas en tu Vida</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <!-- Fin div footer -->
+
+
 </body>
+<script src="https://kit.fontawesome.com/62db8d69e5.js" crossorigin="anonymous"></script> <!-- spript de la flecha -->
 <script src="../Scripts/razas.js"></script> <!--Js-->
 
 </html>
